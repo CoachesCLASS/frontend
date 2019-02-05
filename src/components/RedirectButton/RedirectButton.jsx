@@ -1,12 +1,8 @@
 import React, { useState } from 'react';
 import { withRouter } from 'react-router-dom';
 import { Button, CircularProgress, Fade } from '@material-ui/core';
-import { makeStyles } from '@material-ui/styles';
-
-const useStyles = makeStyles(theme => ({}));
 
 function RedirectButton(props) {
-  const classes = useStyles();
   const [loading, setLoading] = useState(false)
   
   async function handleClick() {
