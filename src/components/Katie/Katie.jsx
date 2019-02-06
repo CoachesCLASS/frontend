@@ -1,24 +1,41 @@
-import React from 'react';
-import { Grid } from '@material-ui/core';
-import RedirectButton from '../RedirectButton/RedirectButton';
-import Logo from '../../assets/CoachesCLASS.jpeg'
-import './katie.scss'
+import React from "react";
+import { Grid } from "@material-ui/core";
+import RedirectButton from "../RedirectButton/RedirectButton";
+// import Logo from "../../assets/CoachesCLASS.jpeg";
+import "./katie.scss";
+import SimpleAppBar from "./SimpleAppBar/SimpleAppBar";
+import Avatar from "./Avatar/Avatar";
 
 function Katie(props) {
-
   return (
     <>
-      <Grid container alignItems="center">
-        <Grid item>
-          <Grid container justify="center">
-            <Grid item>
-              <img src={Logo} alt="CoachesC.L.A.S.S. logo" className="mainImg" />
-            </Grid>
+      <SimpleAppBar />
+      <Grid container alignItems="center" xs={3}>
+        <Grid
+          item
+          className="userSettingsMenu"
+          style={{ border: "1px solid black" }}
+        >
+          <Grid container className="mainImg" justify="center">
+            <Avatar />
           </Grid>
           <Grid container className="centerAlign" justify="center">
-            <Grid item>
-              <p className="mainTextSpacing">Welcome to Katie</p>
-              <RedirectButton path="/" className="buttonSpacing">Go to Home</RedirectButton>
+            <Grid item justify="center">
+              <p style={{ textAlign: "center", fontSize: 12, padding: 4 }}>
+                Change Photo
+              </p>
+              <RedirectButton path="/" className="buttonSpacing">
+                Account
+              </RedirectButton>
+              <RedirectButton path="/" className="buttonSpacing">
+                Change Password
+              </RedirectButton>
+              <RedirectButton path="/" className="buttonSpacing">
+                Billing Information
+              </RedirectButton>
+              <RedirectButton path="/" className="buttonSpacing">
+                Subscription
+              </RedirectButton>
             </Grid>
           </Grid>
         </Grid>
@@ -27,4 +44,4 @@ function Katie(props) {
   );
 }
 
-export default Katie
+export default Katie;

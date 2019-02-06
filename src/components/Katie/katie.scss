@@ -1,16 +1,24 @@
 .centerAlign {
-  text-align: 'center';
+  text-align: "center";
+  align-items: "center";
 }
 
 .mainImg {
-  width: 100%;
-  margin-top: 2rem;
+  text-align: "center";
+  align-items: "center";
+  height: auto;
 }
 
 .mainTextSpacing {
-  margin-top: 5rem;
+  text-align: "center";
+  margin-top: 2rem;
 }
 
 .buttonSpacing {
+  background-color: grey;
   margin-top: 2rem;
+}
+.userSettingsMenu {
+  padding: 2rem;
+  border: "1px solid black";
 }
