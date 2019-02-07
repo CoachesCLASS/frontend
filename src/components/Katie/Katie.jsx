@@ -5,40 +5,61 @@ import RedirectButton from "../RedirectButton/RedirectButton";
 import "./katie.scss";
 import SimpleAppBar from "./SimpleAppBar/SimpleAppBar";
 import Avatar from "./Avatar/Avatar";
+import ListItemComposition from "./MenuList/MenuList";
+import Link from "@material-ui/core/Link";
 
 function Katie(props) {
   return (
     <>
       <SimpleAppBar />
-      <Grid container alignItems="center" xs={3}>
-        <Grid
-          item
-          className="userSettingsMenu"
-          style={{ border: "1px solid black" }}
-        >
-          <Grid container className="mainImg" justify="center">
-            <Avatar />
-          </Grid>
-          <Grid container className="centerAlign" justify="center">
-            <Grid item justify="center">
-              <p style={{ textAlign: "center", fontSize: 12, padding: 4 }}>
-                Change Photo
-              </p>
-              <RedirectButton path="/" className="buttonSpacing">
-                Account
-              </RedirectButton>
-              <RedirectButton path="/" className="buttonSpacing">
-                Change Password
-              </RedirectButton>
-              <RedirectButton path="/" className="buttonSpacing">
-                Billing Information
-              </RedirectButton>
-              <RedirectButton path="/" className="buttonSpacing">
-                Subscription
-              </RedirectButton>
+      <Grid
+        container
+        direction="row"
+        xs={12}
+        spacing={0}
+        style={{ height: "100%" }}
+      >
+        <Grid container alignItems="center" xs={4}>
+          <Grid
+            item
+            className="userSettingsMenu"
+            style={{ border: "1px solid grey", padding: 6, height: "100%" }}
+          >
+            <Grid container className="mainImg" justify="center">
+              <Avatar />
+              <Grid item justify="center">
+                <div
+                  style={{
+                    textAlign: "center",
+                    fontSize: 12,
+                    marginTop: "1rem"
+                  }}
+                >
+                  <Link
+                    component="button"
+                    onClick={() => {
+                      alert("Use wants to change photo");
+                    }}
+                  >
+                    Change Photo
+                  </Link>
+                </div>
+              </Grid>
+            </Grid>
+            <Grid container className="centerAlign" justify="center">
+              <Grid item style={{ marginTop: 20 }} justify="center">
+                <ListItemComposition />
+              </Grid>
             </Grid>
           </Grid>
         </Grid>
+
+        <Grid
+          container
+          alignItems="center"
+          xs={8}
+          style={{ border: "1px solid grey" }}
+        />
       </Grid>
     </>
   );

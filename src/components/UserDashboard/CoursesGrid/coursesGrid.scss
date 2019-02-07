@@ -1,0 +1,34 @@
+.cardTop {
+  height: 50%;
+  background-color: aqua;
+}
+.courseTitle {
+  font-size: 2rem;
+  color: black;
+}
+.courseSub {
+  font-size: 0.6rem;
+}
+.cardRow {
+  height: 14rem;
+  width: inherit;
+}
+.cardContent {
+  padding-top: 0.5rem !important;
+  padding-bottom: 0;
+  height: 30%;
+}
+.card {
+  height: 100%;
+  overflow: hidden;
+}
+.cardActions {
+  margin-top: 0rem;
+  margin-bottom: 0rem;
+  align-items: flex-end;
+  height: 20%;
+}
+.cardsContainer {
+  width: 80%;
+  padding: 2rem;
+}
