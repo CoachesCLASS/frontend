@@ -1,7 +1,5 @@
 import React from "react";
 import { Grid } from "@material-ui/core";
-import RedirectButton from "../RedirectButton/RedirectButton";
-// import Logo from "../../assets/CoachesCLASS.jpeg";
 import "./katie.scss";
 import SimpleAppBar from "./SimpleAppBar/SimpleAppBar";
 import Avatar from "./Avatar/Avatar";
@@ -11,7 +9,7 @@ import Link from "@material-ui/core/Link";
 function Katie(props) {
   return (
     <>
-      <SimpleAppBar />
+      <SimpleAppBar title="User Settings" />
       <Grid
         container
         direction="row"
@@ -22,8 +20,7 @@ function Katie(props) {
         <Grid container alignItems="center" xs={4}>
           <Grid
             item
-            className="userSettingsMenu"
-            style={{ border: "1px solid grey", padding: 6, height: "100%" }}
+            style={{ border: "1px solid grey", height: "100%", width: "100%" }}
           >
             <Grid container className="mainImg" justify="center">
               <Avatar />
