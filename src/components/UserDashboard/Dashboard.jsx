@@ -1,6 +1,5 @@
 import React from "react";
 import { Grid } from "@material-ui/core";
-import Paper from "@material-ui/core/Paper";
 import "./dashboard.scss";
 import CoursesGrid from "./CoursesGrid/CoursesGrid";
 import SimpleAppBar from "../Katie/SimpleAppBar/SimpleAppBar";
@@ -8,7 +7,7 @@ import NotificationPanel from "./NotificationPanel/NotificationPanel";
 function Dashboard(props) {
   return (
     <>
-      <SimpleAppBar title="My Dashboard" />
+      <SimpleAppBar title="Coaches C.L.A.S.S." />
       <Grid container xs={12} className="contentContainer">
         <Grid item xs={9}>
           <CoursesGrid />
