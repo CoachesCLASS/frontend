@@ -1,7 +1,7 @@
 import React from "react";
 import { Grid } from "@material-ui/core";
 import "./coursesGrid.scss";
-import SimpleAppBar from "../../Katie/SimpleAppBar/SimpleAppBar";
+import SimpleAppBar from "../../../Katie/SimpleAppBar/SimpleAppBar";
 import Link from "@material-ui/core/Link";
 import Card from "@material-ui/core/Card";
 import CardActions from "@material-ui/core/CardActions";
@@ -18,6 +18,7 @@ import MoreVertIcon from "@material-ui/icons/MoreVert";
 function CoursesGrid(props) {
   return (
     <Grid container spacing={24}>
+      {/* this is a card row */}
       <Grid container className="cardRow" item spacing={24}>
         <Grid item>
           <Card className="card">
