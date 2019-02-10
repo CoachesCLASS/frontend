@@ -1,34 +1,51 @@
 import React from "react";
-import PropTypes from "prop-types";
-import { withStyles } from "@material-ui/core/styles";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
-
-const styles = {
-  root: {
-    flexGrow: 1
-  }
-};
-
+import "./simpleAppBar.scss";
+import Tabs from "@material-ui/core/Tabs";
+import Tab from "@material-ui/core/Tab";
+import Grid from "@material-ui/core/Grid/Grid";
 function SimpleAppBar(props) {
-  const { classes } = props;
-
   return (
-    <div className={classes.root}>
-      <AppBar position="static" color="default">
-        <Toolbar>
-          <Typography variant="h6" color="inherit">
-            User Settings
-          </Typography>
-        </Toolbar>
+    <div className="appBar">
+      <AppBar position="static" color="default" xs={12}>
+        <Grid
+          container
+          direction="row"
+          xs={12}
+          spacing={0}
+          // style={{ height: "100%" }}
+        >
+          <Grid item xs={6}>
+            <Toolbar>
+              <Typography variant="h6" color="inherit">
+                {props.title}
+              </Typography>
+            </Toolbar>
+          </Grid>
+          <Grid item xs={6}>
+            <Tabs
+              // value={this.state.value}
+              // onChange={this.handleChange}
+              indicatorColor="primary"
+              textColor="primary"
+              xs={8}
+            >
+              <Tab label="User Settings" />
+              <Tab label="Dashboard" />
+              <Tab label="My Courses" />
+              <Tab label="Calendar" />
+            </Tabs>
+          </Grid>
+        </Grid>
       </AppBar>
     </div>
   );
 }
 
-SimpleAppBar.propTypes = {
-  classes: PropTypes.object.isRequired
-};
+// SimpleAppBar.propTypes = {
+//   name: PropTypes.object.isRequired
+// };
 
-export default withStyles(styles)(SimpleAppBar);
+export default SimpleAppBar;
