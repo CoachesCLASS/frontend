@@ -9,7 +9,7 @@ import Grid from "@material-ui/core/Grid/Grid";
 function SimpleAppBar(props) {
   return (
     <div className="appBar">
-      <AppBar position="static" color="default" xs={12}>
+      <AppBar position="static" color="secondary" xs={12}>
         <Grid
           container
           direction="row"

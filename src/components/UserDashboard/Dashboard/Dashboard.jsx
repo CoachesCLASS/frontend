@@ -2,7 +2,7 @@ import React from "react";
 import { Grid } from "@material-ui/core";
 import "./dashboard.scss";
 import CoursesGrid from "./CoursesGrid/CoursesGrid";
-import SimpleAppBar from "../Katie/SimpleAppBar/SimpleAppBar";
+import SimpleAppBar from "../../Katie/SimpleAppBar/SimpleAppBar";
 import NotificationPanel from "./NotificationPanel/NotificationPanel";
 function Dashboard(props) {
   return (
