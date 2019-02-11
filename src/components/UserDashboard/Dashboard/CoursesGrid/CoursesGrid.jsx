@@ -14,8 +14,12 @@ import ShareIcon from "@material-ui/icons/Share";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import FavoriteIcon from "@material-ui/icons/Favorite";
 import MoreVertIcon from "@material-ui/icons/MoreVert";
+import orange from "@material-ui/core/colors/orange";
+import grey from "@material-ui/core/colors/grey";
 
 function CoursesGrid(props) {
+  var randomMC = require("random-material-color");
+
   return (
     <Grid container spacing={24}>
       {/* this is a card row */}
@@ -23,7 +27,8 @@ function CoursesGrid(props) {
         <Grid item>
           <Card className="card">
             <CardHeader
-              className="cardTop bg-primary"
+              className="cardTop"
+              style={{ backgroundColor: randomMC.getColor() }}
               action={
                 <IconButton>
                   <MoreVertIcon />
@@ -57,7 +62,8 @@ function CoursesGrid(props) {
         <Grid item>
           <Card className="card">
             <CardHeader
-              className="cardTop bg-primary"
+              className="cardTop"
+              style={{ backgroundColor: randomMC.getColor() }}
               action={
                 <IconButton>
                   <MoreVertIcon />
@@ -91,7 +97,8 @@ function CoursesGrid(props) {
         <Grid item>
           <Card className="card">
             <CardHeader
-              className="cardTop bg-primary"
+              className="cardTop"
+              style={{ backgroundColor: randomMC.getColor() }}
               action={
                 <IconButton>
                   <MoreVertIcon />
@@ -127,7 +134,8 @@ function CoursesGrid(props) {
         <Grid item>
           <Card className="card">
             <CardHeader
-              className="cardTop bg-primary"
+              className="cardTop"
+              style={{ backgroundColor: randomMC.getColor() }}
               action={
                 <IconButton>
                   <MoreVertIcon />
@@ -161,7 +169,8 @@ function CoursesGrid(props) {
         <Grid item>
           <Card className="card">
             <CardHeader
-              className="cardTop bg-primary"
+              className="cardTop"
+              style={{ backgroundColor: randomMC.getColor() }}
               action={
                 <IconButton>
                   <MoreVertIcon />
