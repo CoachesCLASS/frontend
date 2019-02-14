@@ -10,9 +10,9 @@
     "bootstrap": "^4.2.1",
     "node-sass": "^4.11.0",
     "random-material-color": "^1.0.3",
-    "react": "^16.8.0-alpha.1",
     "react-calendar": "^2.18.1",
-    "react-dom": "^16.8.0-alpha.1",
+    "react": "^16.8.0",
+    "react-dom": "^16.8.0",
     "react-router-dom": "^4.3.1",
     "react-scripts": "2.1.3"
   },
