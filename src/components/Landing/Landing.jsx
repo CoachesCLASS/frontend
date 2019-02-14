@@ -2,9 +2,10 @@ import React from 'react';
 import RedirectButton from '../RedirectButton/RedirectButton';
 import Logo from '../../assets/CoachesCLASS.jpeg'
 import './landing.scss'
+import { Grid } from "@material-ui/core";
+import Logo from "../../assets/CoachesCLASS.jpeg";
 
 function Landing(props) {
-
   return (
     <div id="container">
         <header id="site-header">
@@ -58,4 +59,4 @@ function Landing(props) {
   );
 }
 
-export default Landing
+export default Landing;
