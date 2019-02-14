@@ -4,11 +4,10 @@ import NotFound404Page from "../NotFound404Page/NotFound404Page";
 import { Grid } from "@material-ui/core";
 import Landing from "../Landing/Landing";
 import UserSettings from "../UserSettings/UserSettings";
-import Katie from '../Katie/Katie';
-import Login from '../Login/Login';
-import Register from '../Register/Register';
-import ResetPassword from '../ResetPassword/ResetPassword';
-import CoursesDashboard from '../Courses/CoursesDashboard';
+import Login from "../Login/Login";
+import Register from "../Register/Register";
+import ResetPassword from "../ResetPassword/ResetPassword";
+import CoursesDashboard from "../Courses/CoursesDashboard";
 import Dashboard from "../UserDashboard/Dashboard/Dashboard";
 import MyCourses from "../MyCourses/MyCourses";
 import CourseHome from "../Course/CourseHome/CourseHome";
@@ -19,7 +18,6 @@ function AppRouter(props) {
         <Switch>
           <Route path="/" exact component={Landing} />
           <Route path="/UserSettings" component={UserSettings} />
-          <Route path="/katie" component={Katie} />
           <Route path="/login" component={Login} />
           <Route path="/register" component={Register} />
           <Route path="/reset" component={ResetPassword} />
