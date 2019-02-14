@@ -1,0 +1,108 @@
+/*CSS everywhere*/
+h1, h2, h3, h4, h5, h6{
+    margin: 5%;
+}
+
+.container {
+    background-color: lightgray;
+}
+
+.logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 35%;
+    border-radius: 50%;
+}
+
+/*Landing slide one div group*/
+.landing-slide-one{
+    padding-bottom: 20%;
+}
+
+.content-container {
+    text-align: center;
+
+    h1 {
+        font-size: 700%;
+        margin: 0%;
+    }
+
+    h3 {
+        font-size: 500%;
+    }
+}
+
+/*Landing slide two div group*/
+.landing-slide-two{
+    width: 100%;
+}
+
+.skills{
+    float: left;
+    padding-left: 10%;
+    width: 40%;
+
+    
+}
+
+.skills h1{
+    font-size: 400%;
+}
+
+.skills h2{
+    font-size: 200%;
+    padding-left: 10%;
+}
+
+.skills h3{
+    font-size: 200%;
+    padding-left: 15%;
+}
+
+.skills h4{
+    font-size: 200%;
+    padding-left: 20%;
+}
+
+.skills h5{
+    font-size: 200%;
+    padding-left: 25%;
+}
+
+.skills h6{
+    font-size: 250%;
+    padding-left: 30%;
+}
+
+.quotes{
+    float: right;
+    padding-right: 10%;
+    width: 40%;
+}
+
+.quotes p{
+    font-size: 200%;
+}
+
+/*Landing slide one div group*/
+.landing-slide-three{
+    padding-top: 20%;
+    padding-bottom: 5%;
+    clear: both;
+    text-align: center;
+}
+
+.landing-slide-three h1{
+    font-size: 400%;
+}
+
+.landing-slide-three button{
+    background-color: gray;
+    border: none;
+    padding: 2%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 300%;
+}
