@@ -1,7 +1,6 @@
 import React from "react";
 import { Grid } from "@material-ui/core";
 import "./coursesGrid.scss";
-import SimpleAppBar from "../../../Katie/SimpleAppBar/SimpleAppBar";
 import Link from "@material-ui/core/Link";
 import Card from "@material-ui/core/Card";
 import CardActions from "@material-ui/core/CardActions";
@@ -14,11 +13,11 @@ import ShareIcon from "@material-ui/icons/Share";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import FavoriteIcon from "@material-ui/icons/Favorite";
 import MoreVertIcon from "@material-ui/icons/MoreVert";
-import orange from "@material-ui/core/colors/orange";
-import grey from "@material-ui/core/colors/grey";
+import { Link as RouterLink } from "react-router-dom";
 
 function CoursesGrid(props) {
   var randomMC = require("random-material-color");
+  const CourseLink = props => <RouterLink to="/CourseHome" {...props} />;
 
   return (
     <Grid container spacing={24}>
@@ -36,7 +35,10 @@ function CoursesGrid(props) {
               }
             />
             <CardContent className="cardContent">
-              <Link style={{ fontSize: "17px", color: "black" }}>
+              <Link
+                style={{ fontSize: "17px", color: "black" }}
+                component={CourseLink}
+              >
                 Entrepreneurship 101
               </Link>
               <Typography
@@ -71,7 +73,10 @@ function CoursesGrid(props) {
               }
             />
             <CardContent className="cardContent">
-              <Link style={{ fontSize: "17px", color: "black" }}>
+              <Link
+                style={{ fontSize: "17px", color: "black" }}
+                component={CourseLink}
+              >
                 Leadership 101
               </Link>
               <Typography
@@ -106,7 +111,10 @@ function CoursesGrid(props) {
               }
             />
             <CardContent className="cardContent">
-              <Link style={{ fontSize: "17px", color: "black" }}>
+              <Link
+                style={{ fontSize: "17px", color: "black" }}
+                component={CourseLink}
+              >
                 Communication Skills
               </Link>
               <Typography
@@ -143,7 +151,10 @@ function CoursesGrid(props) {
               }
             />
             <CardContent className="cardContent">
-              <Link style={{ fontSize: "17px", color: "black" }}>
+              <Link
+                style={{ fontSize: "17px", color: "black" }}
+                component={CourseLink}
+              >
                 Technical Skills
               </Link>
               <Typography
@@ -178,7 +189,10 @@ function CoursesGrid(props) {
               }
             />
             <CardContent className="cardContent">
-              <Link style={{ fontSize: "17px", color: "black" }}>
+              <Link
+                style={{ fontSize: "17px", color: "black" }}
+                component={CourseLink}
+              >
                 Management 101
               </Link>
               <Typography
