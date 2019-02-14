@@ -1,15 +1,15 @@
 import React from "react";
 import { Grid } from "@material-ui/core";
-import "./katie.scss";
+import "./userSettings.scss";
 import SimpleAppBar from "./SimpleAppBar/SimpleAppBar";
 import Avatar from "./Avatar/Avatar";
 import ListItemComposition from "./MenuList/MenuList";
 import Link from "@material-ui/core/Link";
 
-function Katie(props) {
+function UserSettings(props) {
   return (
     <>
-      <SimpleAppBar title="User Settings" />
+      <SimpleAppBar title="Coaches C.L.A.S.S." value={0} />
       <Grid
         container
         direction="row"
@@ -23,8 +23,8 @@ function Katie(props) {
             style={{ border: "1px solid grey", height: "100%", width: "100%" }}
           >
             <Grid container className="mainImg" justify="center">
-              <Avatar />
-              <Grid item justify="center">
+              <Avatar title="Natalie Ryan" initial="N" />
+              <Grid item>
                 <div
                   style={{
                     textAlign: "center",
@@ -44,7 +44,7 @@ function Katie(props) {
               </Grid>
             </Grid>
             <Grid container className="centerAlign" justify="center">
-              <Grid item style={{ marginTop: 20 }} justify="center">
+              <Grid item style={{ marginTop: 20 }}>
                 <ListItemComposition />
               </Grid>
             </Grid>
@@ -62,4 +62,4 @@ function Katie(props) {
   );
 }
 
-export default Katie;
+export default UserSettings;

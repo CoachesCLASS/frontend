@@ -3,7 +3,7 @@ import AppRouter from "./components/AppRouter/AppRouter";
 import { ThemeProvider } from "@material-ui/styles";
 import { CssBaseline, createMuiTheme } from "@material-ui/core";
 import { BrowserRouter as Router } from "react-router-dom";
-import { red, blue, orange } from "@material-ui/core/colors";
+import { red } from "@material-ui/core/colors";
 import axios from "axios";
 
 axios.defaults.baseURL =
@@ -13,7 +13,7 @@ axios.defaults.baseURL =
 
 const theme = {
   palette: {
-    primary: blue,
+    primary: { main: "#fafafa" },
     secondary: { main: "#ff7043" },
     error: red,
     contrastThreshold: 3,
