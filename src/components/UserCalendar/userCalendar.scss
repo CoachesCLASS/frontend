@@ -1,0 +1,25 @@
+.react-calendar {
+  width: 600px;
+  height: 600px;
+}
+.react-calendar__navigation {
+  height: 80px;
+  font-size: 20px;
+  background-color: rgb(182, 180, 180);
+}
+.react-calendar__navigation__label {
+  font-size: 20px !important;
+}
+.react-calendar__month-view__weekdays {
+  height: 60px;
+  font-size: 20px;
+}
+.react-calendar__month-view__days {
+  height: 400px;
+}
+.react-calendar__tile {
+  font-size: 18px;
+}
+.react-calendar__month-view__days__day {
+  font-size: 16px;
+}

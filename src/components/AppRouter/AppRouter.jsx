@@ -11,6 +11,7 @@ import CoursesDashboard from "../Courses/CoursesDashboard";
 import Dashboard from "../UserDashboard/Dashboard/Dashboard";
 import MyCourses from "../MyCourses/MyCourses";
 import CourseHome from "../Course/CourseHome/CourseHome";
+import UserCalendar from "../UserCalendar/UserCalendar";
 function AppRouter(props) {
   return (
     <Grid container justify="center">
@@ -25,6 +26,7 @@ function AppRouter(props) {
           <Route path="/UserDashboard" component={Dashboard} />
           <Route path="/CourseHome" component={CourseHome} />
           <Route path="/MyCourses" component={MyCourses} />
+          <Route path="/UserCalendar" component={UserCalendar} />
           <Route component={NotFound404Page} />
         </Switch>
       </Grid>
