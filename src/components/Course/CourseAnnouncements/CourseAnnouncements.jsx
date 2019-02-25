@@ -1,14 +1,12 @@
 import React from "react";
 import { Grid } from "@material-ui/core";
-import "./courseHome.scss";
+import "./courseAnnouncements.scss";
 import SimpleAppBar from "../../UserSettings/SimpleAppBar/SimpleAppBar";
 import Typography from "@material-ui/core/Typography/Typography";
 import Button from "@material-ui/core/Button/Button";
 import Avatar from "../../UserSettings/Avatar/Avatar";
-import CourseCalendar from "../../Calendar/Calendar";
-import { Link } from "react-router-dom";
-
-function CourseHome(props) {
+import Paper from "@material-ui/core/Paper";
+function CourseAnnouncements(props) {
   return (
     <>
       <SimpleAppBar title="Coaches C.L.A.S.S." value={2} />
@@ -29,14 +27,10 @@ function CourseHome(props) {
           className="courseTabs"
         >
           <div className="buttonWrapper">
-            <Button
-              className="courseTab"
-              component={Link}
-              to="/CourseAnnouncements"
-            >
+            <Button className="courseTabActive" color="primary">
               <Typography
                 component="p"
-                style={{ fontSize: "14px", color: "black" }}
+                style={{ fontSize: "14px", color: "white" }}
               >
                 Announcements
               </Typography>
@@ -44,7 +38,7 @@ function CourseHome(props) {
           </div>
 
           <div className="buttonWrapper">
-            <Button className="courseTab" value="assignments">
+            <Button className="courseTab">
               <Typography
                 component="p"
                 align="center"
@@ -84,10 +78,40 @@ function CourseHome(props) {
             </Button>
           </div>
         </Grid>
-        <CourseCalendar />
+        <Grid container direction="column" spacing={2}>
+          <Grid item>
+            <Paper className="courseAnnouncement" elevation={1}>
+              <Typography variant="h5" component="h3">
+                Test tomorrow
+              </Typography>
+              <Typography component="p" style={{ color: "grey" }}>
+                2/21/19
+              </Typography>
+              <Typography component="p">
+                Paper can be used to build surface or other elements for your
+                application.
+              </Typography>
+            </Paper>
+          </Grid>
+          <Grid item style={{ marginTop: "1rem" }}>
+            <Paper className="courseAnnouncement" elevation={1}>
+              <Typography variant="h5" component="h3">
+                Group project coming up!!
+              </Typography>
+              <Typography component="p" style={{ color: "grey" }}>
+                2/21/19
+              </Typography>
+              <Typography component="p">
+                Paper can be used to build surface or other elements for your
+                application.
+              </Typography>
+            </Paper>
+          </Grid>
+        </Grid>
       </div>
     </>
   );
 }
+// alignItems="center"
 
-export default CourseHome;
+export default CourseAnnouncements;

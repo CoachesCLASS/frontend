@@ -1,0 +1,49 @@
+.courseDetails {
+  height: 270px;
+  width: 690px !important;
+  margin: 0 auto;
+  border-radius: 25px;
+  border: 1px solid grey;
+}
+.wrapper {
+  padding: 2rem;
+}
+.courseTabs {
+  //   height: 270px;
+  width: 690px !important;
+  margin: 0 auto;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+.courseTab {
+  border-radius: 25px !important;
+  border: 1px solid grey !important;
+  width: 325px;
+  text-align: center;
+}
+.buttonWrapper {
+  padding: 0px 10px 0px 10px;
+}
+.courseTabActive {
+  border-radius: 25px !important;
+  border: 1px solid grey !important;
+  width: 325px;
+  text-align: center;
+  color: white !important;
+  background-color: #2196f3 !important;
+}
+.courseAnnouncement {
+  //   height: 270px;
+  max-width: 690px !important;
+  margin: 0 auto;
+  padding: 1rem;
+}
+.announcementTitle {
+  font-size: 25px !important;
+  font-weight: bold;
+  padding: 1rem;
+}
+.announcementDate {
+  font-size: 15px;
+  padding: 1rem;
+}
