@@ -1,7 +1,7 @@
 import React from "react";
 import { Grid } from "@material-ui/core";
 import "./courseAnnouncements.scss";
-import SimpleAppBar from "../../UserSettings/SimpleAppBar/SimpleAppBar";
+import SimpleAppBar from "../../SimpleAppBar/SimpleAppBar";
 import Typography from "@material-ui/core/Typography/Typography";
 import Button from "@material-ui/core/Button/Button";
 import Avatar from "../../UserSettings/Avatar/Avatar";
