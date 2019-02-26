@@ -13,6 +13,10 @@ import MyCourses from "../MyCourses/MyCourses";
 import CourseHome from "../Course/CourseHome/CourseHome";
 import UserCalendar from "../UserCalendar/UserCalendar";
 import CourseAnnouncements from "../Course/CourseAnnouncements/CourseAnnouncements";
+import CourseFiles from "../Course/CourseFiles/CourseFiles";
+import CourseGrades from "../Course/CourseGrades/CourseGrades";
+import CourseAssignments from "../Course/CourseAssignments/CourseAssignments";
+
 function AppRouter(props) {
   return (
     <Grid container justify="center">
@@ -29,6 +33,9 @@ function AppRouter(props) {
           <Route path="/MyCourses" component={MyCourses} />
           <Route path="/UserCalendar" component={UserCalendar} />
           <Route path="/CourseAnnouncements" component={CourseAnnouncements} />
+          <Route path="/CourseFiles" component={CourseFiles} />
+          <Route path="/CourseGrades" component={CourseGrades} />
+          <Route path="/CourseAssignments" component={CourseAssignments} />
           <Route component={NotFound404Page} />
         </Switch>
       </Grid>

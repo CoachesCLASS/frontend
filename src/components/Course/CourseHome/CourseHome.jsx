@@ -44,7 +44,12 @@ function CourseHome(props) {
           </div>
 
           <div className="buttonWrapper">
-            <Button className="courseTab" value="assignments">
+            <Button
+              className="courseTab"
+              component={Link}
+              to="/CourseAssignments"
+              value="assignments"
+            >
               <Typography
                 component="p"
                 align="center"
@@ -62,7 +67,7 @@ function CourseHome(props) {
           className="courseTabs"
         >
           <div className="buttonWrapper">
-            <Button className="courseTab">
+            <Button className="courseTab" component={Link} to="/CourseGrades">
               <Typography
                 component="p"
                 style={{ fontSize: "14px", color: "black" }}
@@ -73,7 +78,7 @@ function CourseHome(props) {
           </div>
 
           <div className="buttonWrapper">
-            <Button className="courseTab">
+            <Button className="courseTab" component={Link} to="/CourseFiles">
               <Typography
                 component="p"
                 align="center"
