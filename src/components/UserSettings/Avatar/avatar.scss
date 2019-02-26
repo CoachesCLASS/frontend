@@ -8,10 +8,14 @@
   width: 160px !important;
   height: 160px !important;
 }
-.purpleAvatar {
-  margin: 10px !important;
+.greyAvatar {
+  margin: 1px !important;
   color: #fff !important;
-  background-color: #673ab7 !important;
+  // background-color: #ffab91 !important;
+  border: none;
+  background-color: #bdbdbd !important;
+  width: 160px !important;
+  height: 160px !important;
 }
 .avatarWrapper {
   height: 100% !important;

@@ -2,9 +2,10 @@ import React from "react";
 import { Grid } from "@material-ui/core";
 import "./userCalendar.scss";
 import { useState } from "react";
-import SimpleAppBar from "../UserSettings/SimpleAppBar/SimpleAppBar";
+import SimpleAppBar from "../SimpleAppBar/SimpleAppBar";
 import CalendarControlPanel from "./CalendarControlPanel/CalendarControlPanel";
 import Calendar from "react-calendar/dist/entry.nostyle";
+import CalendarEventList from "./CalendarEventList/CalendarEventList";
 function UserCalendar(props) {
   const [date, setDate] = useState(new Date());
 
@@ -15,15 +16,20 @@ function UserCalendar(props) {
         <Grid item xs={9}>
           <Grid
             container
-            direction="row"
+            direction="column"
             alignItems="center"
             className="calendarContainer"
           >
-            <Calendar
-              className="calendar"
-              onChange={date => setDate(date)}
-              value={date}
-            />
+            <Grid item>
+              <Calendar
+                className="calendar"
+                onChange={date => setDate(date)}
+                value={date}
+              />
+            </Grid>
+            <Grid item className="calendarEventList">
+              <CalendarEventList date={date.toString().substring(0, 15)} />
+            </Grid>
           </Grid>
         </Grid>
         <Grid item xs={3}>

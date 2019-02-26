@@ -1,7 +1,7 @@
 import React from "react";
 import { Grid } from "@material-ui/core";
 import "./myCourses.scss";
-import SimpleAppBar from "../UserSettings/SimpleAppBar/SimpleAppBar";
+import SimpleAppBar from "../SimpleAppBar/SimpleAppBar";
 import CourseList from "./CourseList/CourseList";
 function MyCourses(props) {
   return (

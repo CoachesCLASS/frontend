@@ -1,7 +1,7 @@
 import React from "react";
 import { Grid } from "@material-ui/core";
 import "./userSettings.scss";
-import SimpleAppBar from "./SimpleAppBar/SimpleAppBar";
+import SimpleAppBar from "../SimpleAppBar/SimpleAppBar";
 import Avatar from "./Avatar/Avatar";
 import ListItemComposition from "./MenuList/MenuList";
 import Link from "@material-ui/core/Link";

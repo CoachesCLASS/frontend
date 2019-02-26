@@ -28,19 +28,13 @@
   margin-top: 20px;
   margin-left: 10px;
 }
-
-.courseAnnouncement {
-  //   height: 270px;
-  max-width: 690px !important;
-  margin: 20px auto 0px auto;
-  padding: 1rem;
-}
-.announcementTitle {
-  font-size: 25px !important;
-  font-weight: bold;
-  padding: 1rem;
-}
-.announcementDate {
-  font-size: 15px;
-  padding: 1rem;
+.scrollable {
+  height: 400px;
+  width: 688px;
+  overflow: scroll;
+  color: white;
+  // scrollbar-base-color:gold;
+  // font-family:sans-serif;
+  margin: 0px auto;
+  padding: 10px;
 }

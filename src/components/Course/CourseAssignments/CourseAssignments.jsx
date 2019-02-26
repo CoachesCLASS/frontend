@@ -1,12 +1,13 @@
 import React from "react";
 import { Grid } from "@material-ui/core";
-import "./courseAnnouncements.scss";
+import "./courseAssignments.scss";
 import SimpleAppBar from "../../SimpleAppBar/SimpleAppBar";
 import Typography from "@material-ui/core/Typography/Typography";
 import Avatar from "../../UserSettings/Avatar/Avatar";
 import Paper from "@material-ui/core/Paper";
 import { NavLink } from "react-router-dom";
-function CourseAnnouncements(props) {
+
+function CourseAssignments(props) {
   return (
     <>
       <SimpleAppBar title="Coaches C.L.A.S.S." value={2} />
@@ -30,9 +31,9 @@ function CourseAnnouncements(props) {
             <Typography className="navtab">Home > </Typography>
           </NavLink>
 
-          <NavLink to="/CourseAnnouncements" className="navLinkActive">
+          <NavLink to="/CourseAssignments" className="navLinkActive">
             <Typography className="navtabActive" color="secondary">
-              Announcements
+              Assignments
             </Typography>
           </NavLink>
         </Grid>
@@ -40,21 +41,7 @@ function CourseAnnouncements(props) {
           <Grid item>
             <Paper className="courseAnnouncement" elevation={1}>
               <Typography variant="h5" component="h3">
-                Test tomorrow
-              </Typography>
-              <Typography component="p" style={{ color: "grey" }}>
-                2/21/19
-              </Typography>
-              <Typography component="p">
-                Paper can be used to build surface or other elements for your
-                application.
-              </Typography>
-            </Paper>
-          </Grid>
-          <Grid item style={{ marginTop: "1rem" }}>
-            <Paper className="courseAnnouncement" elevation={1}>
-              <Typography variant="h5" component="h3">
-                Group project coming up!!
+                COURSE ASSIGNMENTS
               </Typography>
               <Typography component="p" style={{ color: "grey" }}>
                 2/21/19
@@ -70,6 +57,5 @@ function CourseAnnouncements(props) {
     </>
   );
 }
-// alignItems="center"
 
-export default CourseAnnouncements;
+export default CourseAssignments;

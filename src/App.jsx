@@ -13,8 +13,9 @@ axios.defaults.baseURL =
 
 const theme = {
   palette: {
-    primary: { main: "#fafafa" },
-    secondary: { main: "#ff7043" },
+    primary: { main: "#fafafa", dark: "#bdbdbd" },
+    // secondary: { main: "#ff7043" },
+    secondary: { main: "#2196f3" },
     error: red,
     contrastThreshold: 3,
     tonalOffset: 0.2

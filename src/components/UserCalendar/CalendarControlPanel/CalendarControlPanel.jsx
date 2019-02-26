@@ -38,7 +38,10 @@ function CalendarControlPanel(props) {
                   checkedIcon={<CheckBoxIcon fontSize="small" />}
                 />
               }
-              label="Entrepreneurship 101"
+              label={
+                <Typography variant="overline">Entrepreneurship 101</Typography>
+              }
+              style={{ padding: "0px", height: "50px" }}
             />
             <FormControlLabel
               control={
@@ -50,7 +53,10 @@ function CalendarControlPanel(props) {
                   checkedIcon={<CheckBoxIcon fontSize="small" />}
                 />
               }
-              label="Communication Skills"
+              label={
+                <Typography variant="overline">Communication Skills</Typography>
+              }
+              style={{ padding: "0px", height: "50px" }}
             />
             <FormControlLabel
               control={
@@ -62,7 +68,8 @@ function CalendarControlPanel(props) {
                   checkedIcon={<CheckBoxIcon fontSize="small" />}
                 />
               }
-              label="Leadership 101"
+              label={<Typography variant="overline">Leadership 101</Typography>}
+              style={{ padding: "0px", height: "50px" }}
             />
             <FormControlLabel
               control={
@@ -74,7 +81,10 @@ function CalendarControlPanel(props) {
                   checkedIcon={<CheckBoxIcon fontSize="small" />}
                 />
               }
-              label="Technical Skills"
+              label={
+                <Typography variant="overline">Technical Skills</Typography>
+              }
+              style={{ padding: "0px", height: "50px" }}
             />
           </FormGroup>
         </div>
