@@ -6,6 +6,8 @@ import Typography from "@material-ui/core/Typography/Typography";
 import Avatar from "../../UserSettings/Avatar/Avatar";
 import Paper from "@material-ui/core/Paper";
 import { NavLink } from "react-router-dom";
+import SaveAltIcon from "@material-ui/icons/SaveAlt";
+import IconButton from "@material-ui/core/IconButton";
 
 function CourseFiles(props) {
   return (
@@ -15,7 +17,9 @@ function CourseFiles(props) {
         <Grid container alignItems="center" className="courseDetails">
           <Avatar />
           <Grid container style={{ paddingTop: 5 }} justify="center">
-            <Typography component="h6"> Entrepreneurship 101</Typography>
+            <Typography component="h6">
+              {props.match.params.courseName}
+            </Typography>
           </Grid>
           <Grid container style={{ paddingBottom: 15 }} justify="center">
             <Typography component="h6"> Bert Robinson</Typography>
@@ -27,7 +31,10 @@ function CourseFiles(props) {
           alignItems="center"
           className="courseTabs"
         >
-          <NavLink to="/CourseHome" className="navLink">
+          <NavLink
+            to={"/CourseHome/" + props.match.params.courseName}
+            className="navLink"
+          >
             <Typography className="navtab">Home > </Typography>
           </NavLink>
 
@@ -37,22 +44,52 @@ function CourseFiles(props) {
             </Typography>
           </NavLink>
         </Grid>
-        <Grid container direction="column" spacing={2}>
-          <Grid item>
-            <Paper className="courseAnnouncement" elevation={1}>
-              <Typography variant="h5" component="h3">
-                COURSE FILES
-              </Typography>
-              <Typography component="p" style={{ color: "grey" }}>
-                2/21/19
-              </Typography>
-              <Typography component="p">
-                Paper can be used to build surface or other elements for your
-                application.
-              </Typography>
-            </Paper>
-          </Grid>
-        </Grid>
+        <Paper className="fileContainer">
+          <ul style={{ listStyle: "none", paddingLeft: "0px" }}>
+            <li>
+              <Grid container direction="row">
+                <IconButton
+                  style={{
+                    margin: "0px 5px 0px 0px",
+                    padding: "0px 3px 0px 3px"
+                  }}
+                >
+                  <SaveAltIcon />
+                </IconButton>
+                <div style={{ padding: "4px" }}>
+                  <Typography
+                    variant="body2"
+                    component="h3"
+                    style={{ margin: "auto" }}
+                  >
+                    Powerpoint 1
+                  </Typography>
+                </div>
+              </Grid>
+            </li>
+            <li>
+              <Grid container direction="row">
+                <IconButton
+                  style={{
+                    margin: "0px 5px 0px 0px",
+                    padding: "0px 3px 0px 3px"
+                  }}
+                >
+                  <SaveAltIcon />
+                </IconButton>
+                <div>
+                  <Typography
+                    variant="body2"
+                    component="h3"
+                    style={{ margin: "auto" }}
+                  >
+                    Powerpoint 2
+                  </Typography>
+                </div>
+              </Grid>
+            </li>
+          </ul>
+        </Paper>
       </div>
     </>
   );

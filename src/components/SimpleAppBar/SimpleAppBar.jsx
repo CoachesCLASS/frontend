@@ -37,36 +37,29 @@ function SimpleAppBar(props) {
   return (
     <div className="appBar">
       <AppBar position="static" color="secondary">
-        <Grid container direction="row" xs={12} spacing={0}>
+        <Grid container direction="row" xs={12} spacing={0} className="pt-2">
           <Grid item xs={6}>
-            <Toolbar>
-              <img src={logo} alt="" height="25" width="25" className="pr-4" />
+            <Toolbar className="p-0">
+              <img
+                src={logo}
+                alt=""
+                height="65px"
+                width="60px"
+                className="ml-4 mr-3 mb-2"
+              />
 
-              <Typography variant="h6" color="primary">
+              <Typography variant="h6" color="primary" className="mb-2">
                 {props.title}
               </Typography>
             </Toolbar>
           </Grid>
-          <Grid item xs={6}>
+          <Grid item xs={6} className="pb-2">
             <Tabs value={val} indicatorColor="primary" textColor="primary">
               {navTabs.map(tab => (
-                <NavLink to={tab.path} className="navLink">
-                  <Tab
-                    onClick={() => setValue(0)}
-                    label={tab.label}
-                    // to="/UserSettings"
-                    // component={Link}
-                  />
+                <NavLink to={tab.path} className="appBarNavLink">
+                  <Tab onClick={() => setValue(0)} label={tab.label} />
                 </NavLink>
               ))}
-              {/* <Tab
-                onClick={() => setValue(1)}
-                label="Dashboard"
-                // to="/UserDashboard"
-                // component={Link}
-              />
-              <Tab onClick={() => setValue(2)} label="My Courses" />
-              <Tab onClick={() => setValue(3)} label="Calendar" /> */}
             </Tabs>
           </Grid>
         </Grid>

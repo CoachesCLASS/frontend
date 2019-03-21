@@ -7,3 +7,37 @@
   width: 350px;
   margin: 0 auto;
 }
+.react-calendar__navigation {
+  // background-color: #2196f3 !important;
+  background-color: #424242 !important;
+  color: white !important;
+}
+.react-calendar button {
+  // background-color: #2196f3 !important;
+  color: white;
+}
+
+.react-calendar__navigation__prev-button {
+  color: white !important;
+}
+.react-calendar__navigation__prev2-button {
+  color: white !important;
+}
+.react-calendar__navigation__next-button {
+  color: white !important;
+}
+.react-calendar__navigation__next2-button {
+  color: white !important;
+}
+.react-calendar__month-view__days__day {
+  color: black !important;
+}
+.react-calendar__month-view__days__day--neighboringMonth {
+  color: grey !important;
+}
+.react-calendar__month-view__days__day--weekend {
+  color: red !important;
+}
+.react-calendar__tile--active {
+  background-color: #2196f3 !important;
+}

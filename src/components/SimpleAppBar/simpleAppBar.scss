@@ -2,10 +2,11 @@
   flex-grow: 1;
 }
 
-.navLink {
+.appBarNavLink {
   text-decoration: none;
   color: white;
 }
-.logo {
-  // padding-right: 4px;
+.appBarNavLink:hover {
+  color: #2196f3;
+  text-decoration: none;
 }
