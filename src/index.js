@@ -1,3 +1,4 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
 import "./muiBootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import React from "react";
