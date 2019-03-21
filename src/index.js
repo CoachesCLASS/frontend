@@ -1,3 +1,4 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
 import "./muiBootstrap";
 import React from 'react';
 import ReactDOM from 'react-dom';

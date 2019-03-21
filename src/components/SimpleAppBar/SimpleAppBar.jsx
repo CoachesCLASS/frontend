@@ -6,14 +6,14 @@ import "./simpleAppBar.scss";
 import Tabs from "@material-ui/core/Tabs";
 import Tab from "@material-ui/core/Tab";
 import Grid from "@material-ui/core/Grid/Grid";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import logo from "../../assets/CC Logo.png";
 
 const navTabs = [
   {
     label: "Settings",
-    path: "/UserSettings"
+    path: "/UserSettings/account"
   },
   {
     label: "Dashboard",
@@ -31,9 +31,7 @@ const navTabs = [
 
 function SimpleAppBar(props) {
   const [val, setValue] = useState(props.value);
-  useEffect(() => {
-    console.log(val);
-  });
+
   return (
     <div className="appBar">
       <AppBar position="static" color="secondary">
@@ -50,7 +48,7 @@ function SimpleAppBar(props) {
           <Grid item xs={6}>
             <Tabs value={val} indicatorColor="primary" textColor="primary">
               {navTabs.map(tab => (
-                <NavLink to={tab.path} className="navLink">
+                <NavLink to={tab.path} className="navLink" key={tab.label}>
                   <Tab
                     onClick={() => setValue(0)}
                     label={tab.label}
@@ -59,14 +57,6 @@ function SimpleAppBar(props) {
                   />
                 </NavLink>
               ))}
-              {/* <Tab
-                onClick={() => setValue(1)}
-                label="Dashboard"
-                // to="/UserDashboard"
-                // component={Link}
-              />
-              <Tab onClick={() => setValue(2)} label="My Courses" />
-              <Tab onClick={() => setValue(3)} label="Calendar" /> */}
             </Tabs>
           </Grid>
         </Grid>
