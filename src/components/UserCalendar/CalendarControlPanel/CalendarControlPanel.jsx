@@ -8,6 +8,7 @@ import FormGroup from "@material-ui/core/FormGroup";
 import FormControlLabel from "@material-ui/core/FormControlLabel";
 import CheckBoxOutlineBlankIcon from "@material-ui/icons/CheckBoxOutlineBlank";
 import CheckBoxIcon from "@material-ui/icons/CheckBox";
+import blue from "@material-ui/core/colors/blue";
 
 function CalendarControlPanel(props) {
   const [checked1, setChecked1] = useState(true);
@@ -33,6 +34,7 @@ function CalendarControlPanel(props) {
                 <Checkbox
                   checked={checked1}
                   onChange={() => setChecked1(!checked1)}
+                  style={{ color: blue[500] }}
                   value="checked1"
                   icon={<CheckBoxOutlineBlankIcon fontSize="small" />}
                   checkedIcon={<CheckBoxIcon fontSize="small" />}
@@ -47,6 +49,7 @@ function CalendarControlPanel(props) {
               control={
                 <Checkbox
                   checked={checked2}
+                  style={{ color: blue[500] }}
                   onChange={() => setChecked2(!checked2)}
                   value="checked2"
                   icon={<CheckBoxOutlineBlankIcon fontSize="small" />}
@@ -62,6 +65,7 @@ function CalendarControlPanel(props) {
               control={
                 <Checkbox
                   checked={checked3}
+                  style={{ color: blue[500] }}
                   onChange={() => setChecked3(!checked3)}
                   value="checked3"
                   icon={<CheckBoxOutlineBlankIcon fontSize="small" />}
@@ -76,6 +80,7 @@ function CalendarControlPanel(props) {
                 <Checkbox
                   checked={checked4}
                   onChange={() => setChecked4(!checked4)}
+                  style={{ color: blue[500] }}
                   value="checked4"
                   icon={<CheckBoxOutlineBlankIcon fontSize="small" />}
                   checkedIcon={<CheckBoxIcon fontSize="small" />}

@@ -29,13 +29,19 @@ function AppRouter(props) {
           <Route path="/reset" component={ResetPassword} />
           <Route path="/courses" component={CoursesDashboard} />
           <Route path="/UserDashboard" component={Dashboard} />
-          <Route path="/CourseHome" component={CourseHome} />
+          <Route path="/CourseHome/:courseName" component={CourseHome} />
           <Route path="/MyCourses" component={MyCourses} />
           <Route path="/UserCalendar" component={UserCalendar} />
-          <Route path="/CourseAnnouncements" component={CourseAnnouncements} />
-          <Route path="/CourseFiles" component={CourseFiles} />
-          <Route path="/CourseGrades" component={CourseGrades} />
-          <Route path="/CourseAssignments" component={CourseAssignments} />
+          <Route
+            path="/CourseAnnouncements/:courseName"
+            component={CourseAnnouncements}
+          />
+          <Route path="/CourseFiles/:courseName" component={CourseFiles} />
+          <Route path="/CourseGrades/:courseName" component={CourseGrades} />
+          <Route
+            path="/CourseAssignments/:courseName"
+            component={CourseAssignments}
+          />
           <Route component={NotFound404Page} />
         </Switch>
       </Grid>

@@ -6,7 +6,7 @@ import Typography from "@material-ui/core/Typography/Typography";
 import Avatar from "../../UserSettings/Avatar/Avatar";
 import Paper from "@material-ui/core/Paper";
 import { NavLink } from "react-router-dom";
-
+import AssignmentList from "./AssignmentList/AssignmentList";
 function CourseAssignments(props) {
   return (
     <>
@@ -15,7 +15,9 @@ function CourseAssignments(props) {
         <Grid container alignItems="center" className="courseDetails">
           <Avatar />
           <Grid container style={{ paddingTop: 5 }} justify="center">
-            <Typography component="h6"> Entrepreneurship 101</Typography>
+            <Typography component="h6">
+              {props.match.params.courseName}
+            </Typography>
           </Grid>
           <Grid container style={{ paddingBottom: 15 }} justify="center">
             <Typography component="h6"> Bert Robinson</Typography>
@@ -27,7 +29,10 @@ function CourseAssignments(props) {
           alignItems="center"
           className="courseTabs"
         >
-          <NavLink to="/CourseHome" className="navLink">
+          <NavLink
+            to={"/CourseHome/" + props.match.params.courseName}
+            className="navLink"
+          >
             <Typography className="navtab">Home > </Typography>
           </NavLink>
 
@@ -37,20 +42,17 @@ function CourseAssignments(props) {
             </Typography>
           </NavLink>
         </Grid>
-        <Grid container direction="column" spacing={2}>
+        <Grid
+          container
+          direction="column"
+          spacing={2}
+          className="assignmentContainer"
+        >
           <Grid item>
-            <Paper className="courseAnnouncement" elevation={1}>
-              <Typography variant="h5" component="h3">
-                COURSE ASSIGNMENTS
-              </Typography>
-              <Typography component="p" style={{ color: "grey" }}>
-                2/21/19
-              </Typography>
-              <Typography component="p">
-                Paper can be used to build surface or other elements for your
-                application.
-              </Typography>
-            </Paper>
+            <AssignmentList title="Upcoming" />
+          </Grid>
+          <Grid item>
+            <AssignmentList title="Past" />
           </Grid>
         </Grid>
       </div>

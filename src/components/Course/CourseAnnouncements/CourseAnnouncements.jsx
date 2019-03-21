@@ -14,7 +14,10 @@ function CourseAnnouncements(props) {
         <Grid container alignItems="center" className="courseDetails">
           <Avatar />
           <Grid container style={{ paddingTop: 5 }} justify="center">
-            <Typography component="h6"> Entrepreneurship 101</Typography>
+            <Typography component="h6">
+              {" "}
+              {props.match.params.courseName}
+            </Typography>
           </Grid>
           <Grid container style={{ paddingBottom: 15 }} justify="center">
             <Typography component="h6"> Bert Robinson</Typography>
@@ -26,7 +29,10 @@ function CourseAnnouncements(props) {
           alignItems="center"
           className="courseTabs"
         >
-          <NavLink to="/CourseHome" className="navLink">
+          <NavLink
+            to={"/CourseHome/" + props.match.params.courseName}
+            className="navLink"
+          >
             <Typography className="navtab">Home > </Typography>
           </NavLink>
 
