@@ -71,9 +71,14 @@ function CourseGrades(props) {
             <Grid item style={{ marginTop: "0rem", height: "46px" }}>
               <Grid container direction="row" xs={12}>
                 <Grid item xs="4">
+                  <NavLink
+                  to={"/CourseAssignments/" + props.match.params.courseName + "/Homework #1"}
+                  className="navLink"
+                  >
                   <Typography variant="p" style={{ color: "grey" }}>
                     Homework #1
                   </Typography>
+                  </NavLink>
                 </Grid>
                 <Grid item xs="4">
                   <Typography variant="p" style={{ color: "grey" }}>

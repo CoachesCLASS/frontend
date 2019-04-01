@@ -49,10 +49,10 @@ function CourseAssignments(props) {
           className="assignmentContainer"
         >
           <Grid item>
-            <AssignmentList title="Upcoming" />
+            <AssignmentList title="Upcoming" courseName = {props.match.params.courseName}/>
           </Grid>
           <Grid item>
-            <AssignmentList title="Past" />
+            <AssignmentList title="Past" courseName = {props.match.params.courseName}/>
           </Grid>
         </Grid>
       </div>
