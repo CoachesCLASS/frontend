@@ -16,6 +16,7 @@ import CourseAnnouncements from "../Course/CourseAnnouncements/CourseAnnouncemen
 import CourseFiles from "../Course/CourseFiles/CourseFiles";
 import CourseGrades from "../Course/CourseGrades/CourseGrades";
 import CourseAssignments from "../Course/CourseAssignments/CourseAssignments";
+import Assignment from "../Course/CourseAssignments/Assignment/Assignment";
 
 function AppRouter(props) {
   return (
@@ -38,6 +39,10 @@ function AppRouter(props) {
           />
           <Route path="/CourseFiles/:courseName" component={CourseFiles} />
           <Route path="/CourseGrades/:courseName" component={CourseGrades} />
+          <Route
+            path="/CourseAssignments/:courseName/:assignmentName"
+            component={Assignment}
+          />
           <Route
             path="/CourseAssignments/:courseName"
             component={CourseAssignments}

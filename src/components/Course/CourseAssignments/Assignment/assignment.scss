@@ -1,0 +1,39 @@
+.listContainer {
+    padding: 0rem 0rem 1rem 0rem;
+}
+
+.list {
+    list-style: none;
+}
+
+.line {
+    padding: 0rem;
+}
+
+.listTitle {
+    padding: 0.5rem 1rem 0rem 1rem;
+    // float: left;
+}
+
+.assignmentContainer {
+    width: 890px !important;
+    margin: 30px auto 0px auto;
+}
+
+#assignmentInfo {
+    font-size: 1.75em;
+    margin-top: 0;
+    padding: 1em;
+    padding-bottom: 0;
+}
+
+#date {
+    float: right;
+    padding-top: 0.3em;
+    font-size: 0.8em;
+}
+
+#desc {
+    padding-left: 2em;
+    padding-right: 2em;
+}

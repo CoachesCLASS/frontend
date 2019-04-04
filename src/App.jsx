@@ -5,6 +5,8 @@ import { CssBaseline, createMuiTheme } from "@material-ui/core";
 import { BrowserRouter as Router } from "react-router-dom";
 import { red } from "@material-ui/core/colors";
 import axios from "axios";
+import { pdfjs } from 'react-pdf';
+pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
 axios.defaults.baseURL =
   process.env.NODE_ENV === "development"
