@@ -3,20 +3,15 @@ import AppRouter from "./components/AppRouter/AppRouter";
 import { ThemeProvider } from "@material-ui/styles";
 import { CssBaseline, createMuiTheme } from "@material-ui/core";
 import { BrowserRouter as Router } from "react-router-dom";
-import { red } from "@material-ui/core/colors";
-import axios from "axios";
+import { red, blue, white } from "@material-ui/core/colors";
 import { pdfjs } from 'react-pdf';
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
-axios.defaults.baseURL =
-  process.env.NODE_ENV === "development"
-    ? "http://localhost:80/api"
-    : "https://coachesclass.com/api";
-
 const theme = {
   palette: {
-    primary: { main: "#fafafa", dark: "#bdbdbd" },
-    secondary: { main: "#9e9e9e" },
+    primary: blue,
+    secondary: white,
+    // secondary: { main: "#9e9e9e" },
     // secondary: { main: "#2196f3" },
     error: red,
     contrastThreshold: 3,

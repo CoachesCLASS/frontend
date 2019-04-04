@@ -17,28 +17,28 @@ function CalendarEventList(props) {
         <Paper className="event">
           <CalendarEvent
             type="assignment"
-            class="Entrepreneurship 101"
+            className="Entrepreneurship 101"
             title="Homework #1 due"
           />
         </Paper>
         <Paper className="event">
           <CalendarEvent
             type="assignment"
-            class="Technical Skills"
+            className="Technical Skills"
             title="Project proposal due"
           />
         </Paper>
         <Paper className="event">
           <CalendarEvent
             type="assessment"
-            class="Technical Skills"
+            className="Technical Skills"
             title="Microsoft quiz due"
           />
         </Paper>
         <Paper className="event">
           <CalendarEvent
             type="discussion"
-            class="Communication Skills"
+            className="Communication Skills"
             title="Discussion: Why are soft skills important?"
           />
         </Paper>

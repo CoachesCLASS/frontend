@@ -37,7 +37,7 @@ function Landing(props) {
           <h5>Public Speaking</h5><br></br>
           <h6>And many more!</h6> <br></br> <br></br> <br></br>
         </div>
-        <div class="vl"></div>
+        <div className="vl"></div>
         <div className="quotes">
           <br></br> <br></br> <br></br>
           <p>"I love this website. It's helped me so much."</p> <br></br>
