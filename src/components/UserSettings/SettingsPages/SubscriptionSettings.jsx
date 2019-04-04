@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Button, Grid } from '@material-ui/core';
 import { makeStyles } from '@material-ui/styles'
 
@@ -10,11 +10,6 @@ const useStyles = makeStyles(theme => ({
 
 function SubscriptionSettings(props) {
   const classes = useStyles()
-  const [values, setValues] = useState({
-    firstName: '',
-    lastName: '',
-    email: '',
-  });
 
   return (
     <Grid container>

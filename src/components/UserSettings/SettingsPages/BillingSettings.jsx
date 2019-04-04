@@ -1,19 +1,8 @@
-import React, { useState } from 'react';
-import { TextField, Grid } from '@material-ui/core';
+import React from 'react';
+import { Grid } from '@material-ui/core';
 import { PayPalButton } from "react-paypal-button-v2";
 
 function BillingSettings(props) {
-  const [values, setValues] = useState({
-    firstName: '',
-    lastName: '',
-    email: '',
-  });
-
-  const handleChange = name => event => {
-    setValues({ ...values, [name]: event.target.value });
-  };
-
-
   return (
     <Grid container>
       <Grid item xs={1} />
