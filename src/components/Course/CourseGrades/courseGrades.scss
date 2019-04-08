@@ -1,0 +1,40 @@
+.courseDetails {
+  height: 270px;
+  width: 690px !important;
+  margin: 0 auto;
+  border-radius: 25px;
+  border: 1px solid grey;
+}
+.wrapper {
+  padding: 2rem;
+}
+.courseTabs {
+  width: 690px !important;
+  margin: 0px auto;
+  padding-top: 10px;
+}
+
+.navLink {
+  color: black;
+  text-decoration: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.navLinkActive {
+  pointer-events: none;
+  text-decoration: none;
+  padding: 0;
+  margin-top: 20px;
+  margin-left: 10px;
+}
+.scrollable {
+  height: 400px;
+  width: 688px;
+  overflow: scroll;
+  color: white;
+  // scrollbar-base-color:gold;
+  // font-family:sans-serif;
+  margin: 0px auto;
+  padding: 10px;
+}

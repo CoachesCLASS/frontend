@@ -1,5 +1,4 @@
 import React from "react";
-import PropTypes from "prop-types";
 import Avatar from "@material-ui/core/Avatar";
 import Grid from "@material-ui/core/Grid";
 import "./avatar.scss";
@@ -16,7 +15,7 @@ function LetterAvatars(props) {
         justify="center"
         alignItems="flex-start"
       >
-        <Avatar className="orangeAvatar"> {props.initial}</Avatar>
+        <Avatar className="greyAvatar"> {props.initial}</Avatar>
       </Grid>
     </Grid>
   );

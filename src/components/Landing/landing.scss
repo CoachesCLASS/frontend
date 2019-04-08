@@ -1,41 +1,58 @@
+
 /*CSS everywhere*/
 h1, h2, h3, h4, h5, h6{
-    margin: 5%;
+    margin: 3%;
 }
 
 .container {
     background-color: lightgray;
 }
 
+
 .logo{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 35%;
+    width: 25%;
     border-radius: 50%;
+    
 }
+
+.first-page {
+    background-color: #241f47;
+}
+
 
 /*Landing slide one div group*/
 .landing-slide-one{
-    padding-bottom: 20%;
+    padding-bottom: 0.5%;
 }
 
 .content-container {
     text-align: center;
 
     h1 {
-        font-size: 700%;
+        font-size: 500%;
         margin: 0%;
+        font-family: 'Noto Serif', serif;
+        color: #cccccc;
     }
 
     h3 {
-        font-size: 500%;
+        font-size: 200%;
+        font-family: 'Noto Serif', serif;
+        color: #b3b3b3;
     }
 }
 
 /*Landing slide two div group*/
 .landing-slide-two{
     width: 100%;
+    
+    background-color: #b3b3b3;
+    overflow:auto;
+    font-family: 'Noto Serif', serif;
+    
 }
 
 .skills{
@@ -47,7 +64,7 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .skills h1{
-    font-size: 400%;
+    font-size: 275%;
 }
 
 .skills h2{
@@ -71,23 +88,34 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .skills h6{
-    font-size: 250%;
+    font-size: 225%;
     padding-left: 30%;
 }
 
 .quotes{
     float: right;
     padding-right: 10%;
-    width: 40%;
+    
+    
 }
+
+.vl {
+    border-left: 4px solid #000000;
+    height: 75%;
+    position: absolute;
+    left: 45%;
+    margin-left: -3px;
+    
+  }
 
 .quotes p{
     font-size: 200%;
+    text-align: left;
 }
 
 /*Landing slide one div group*/
 .landing-slide-three{
-    padding-top: 20%;
+    padding-top: 3%;
     padding-bottom: 5%;
     clear: both;
     text-align: center;

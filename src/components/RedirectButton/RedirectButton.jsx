@@ -13,7 +13,7 @@ function RedirectButton(props) {
     if (props.onClick) {
       setLoading(true)
       const newProps = await props.onClick()
-      setImmediate(false)
+      setLoading(false)
       var { newPath, newState } = newProps || {}
     }
     window.scrollTo(0, 0)
@@ -32,10 +32,7 @@ function RedirectButton(props) {
         className={props.className}
       >
         {
-          // loading ? (
-          //   // <CircularProgress className={classes.progress} />
-          // ):
-            props.children
+          props.children
         }
       </Button>
       <Fade

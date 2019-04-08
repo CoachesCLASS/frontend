@@ -1,0 +1,12 @@
+.appBar {
+  flex-grow: 1;
+}
+
+.appBarNavLink {
+  text-decoration: none;
+  color: white;
+}
+.appBarNavLink:hover {
+  color: #2196f3;
+  text-decoration: none;
+}

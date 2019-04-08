@@ -11,6 +11,13 @@ import CoursesDashboard from "../Courses/CoursesDashboard";
 import Dashboard from "../UserDashboard/Dashboard/Dashboard";
 import MyCourses from "../MyCourses/MyCourses";
 import CourseHome from "../Course/CourseHome/CourseHome";
+import UserCalendar from "../UserCalendar/UserCalendar";
+import CourseAnnouncements from "../Course/CourseAnnouncements/CourseAnnouncements";
+import CourseFiles from "../Course/CourseFiles/CourseFiles";
+import CourseGrades from "../Course/CourseGrades/CourseGrades";
+import CourseAssignments from "../Course/CourseAssignments/CourseAssignments";
+import Assignment from "../Course/CourseAssignments/Assignment/Assignment";
+
 function AppRouter(props) {
   return (
     <Grid container justify="center">
@@ -23,8 +30,23 @@ function AppRouter(props) {
           <Route path="/reset" component={ResetPassword} />
           <Route path="/courses" component={CoursesDashboard} />
           <Route path="/UserDashboard" component={Dashboard} />
-          <Route path="/CourseHome" component={CourseHome} />
+          <Route path="/CourseHome/:courseName" component={CourseHome} />
           <Route path="/MyCourses" component={MyCourses} />
+          <Route path="/UserCalendar" component={UserCalendar} />
+          <Route
+            path="/CourseAnnouncements/:courseName"
+            component={CourseAnnouncements}
+          />
+          <Route path="/CourseFiles/:courseName" component={CourseFiles} />
+          <Route path="/CourseGrades/:courseName" component={CourseGrades} />
+          <Route
+            path="/CourseAssignments/:courseName/:assignmentName"
+            component={Assignment}
+          />
+          <Route
+            path="/CourseAssignments/:courseName"
+            component={CourseAssignments}
+          />
           <Route component={NotFound404Page} />
         </Switch>
       </Grid>

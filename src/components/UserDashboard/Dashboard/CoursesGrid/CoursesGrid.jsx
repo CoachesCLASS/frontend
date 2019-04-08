@@ -6,7 +6,6 @@ import Card from "@material-ui/core/Card";
 import CardActions from "@material-ui/core/CardActions";
 import CardContent from "@material-ui/core/CardContent";
 import CardHeader from "@material-ui/core/CardHeader";
-// import CardMedia from "@material-ui/core/CardMedia";
 import Typography from "@material-ui/core/Typography";
 import IconButton from "@material-ui/core/IconButton";
 import ShareIcon from "@material-ui/icons/Share";
@@ -17,7 +16,9 @@ import { Link as RouterLink } from "react-router-dom";
 
 function CoursesGrid(props) {
   var randomMC = require("random-material-color");
-  const CourseLink = props => <RouterLink to="/CourseHome" {...props} />;
+  const CourseLink = props => (
+    <RouterLink to="/CourseHome/{$courseName}" {...props} />
+  );
 
   return (
     <Grid container spacing={24}>
@@ -38,6 +39,7 @@ function CoursesGrid(props) {
               <Link
                 style={{ fontSize: "17px", color: "black" }}
                 component={CourseLink}
+                to="/CourseHome/Entrepreneurship 101"
               >
                 Entrepreneurship 101
               </Link>
@@ -76,6 +78,7 @@ function CoursesGrid(props) {
               <Link
                 style={{ fontSize: "17px", color: "black" }}
                 component={CourseLink}
+                to="/CourseHome/Leadership 101"
               >
                 Leadership 101
               </Link>
@@ -114,6 +117,7 @@ function CoursesGrid(props) {
               <Link
                 style={{ fontSize: "17px", color: "black" }}
                 component={CourseLink}
+                to="/CourseHome/Communication Skills"
               >
                 Communication Skills
               </Link>
@@ -154,6 +158,7 @@ function CoursesGrid(props) {
               <Link
                 style={{ fontSize: "17px", color: "black" }}
                 component={CourseLink}
+                to="/CourseHome/Technical Skills"
               >
                 Technical Skills
               </Link>
@@ -192,6 +197,7 @@ function CoursesGrid(props) {
               <Link
                 style={{ fontSize: "17px", color: "black" }}
                 component={CourseLink}
+                to="/CourseHome/Management 101"
               >
                 Management 101
               </Link>
