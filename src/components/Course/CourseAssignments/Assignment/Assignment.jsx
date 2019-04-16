@@ -4,7 +4,7 @@ import "./assignment.scss";
 import Typography from "@material-ui/core/Typography/Typography";
 import Paper from "@material-ui/core/Paper";
 import { NavLink } from "react-router-dom";
-import PDFRenderer from "../../../PDFRenderer/PDFRenderer";
+import ContentRenderer from "../../../ContentRenderer/ContentRenderer";
 
 function Assignment(props) {
   return (
@@ -38,8 +38,8 @@ function Assignment(props) {
         </Grid>
         <Grid className="assignmentContainer" spacing={2}>
         <Paper>
-            <PDFRenderer></PDFRenderer>
-          </Paper>
+          <ContentRenderer></ContentRenderer>
+        </Paper>
         </Grid>
       </div>
     </>
