@@ -1,7 +1,6 @@
 import React from "react";
 import { Grid } from "@material-ui/core";
 import "./courseHome.scss";
-import SimpleAppBar from "../../SimpleAppBar/SimpleAppBar";
 import Typography from "@material-ui/core/Typography/Typography";
 import Button from "@material-ui/core/Button/Button";
 import Avatar from "../../UserSettings/Avatar/Avatar";
@@ -24,7 +23,6 @@ function CourseHome(props) {
   );
   return (
     <>
-      <SimpleAppBar title="Coaches C.L.A.S.S." value={2} />
       <div className="wrapper">
         <Grid container alignItems="center" className="courseDetails">
           <Avatar />

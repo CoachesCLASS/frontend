@@ -54,7 +54,7 @@ function SignIn(props) {
       <CssBaseline />
       <Paper className={classes.paper}>
         <Avatar className={classes.avatar}>
-          <img id="dtImage" class="desktop-logo" src={Logo} alt="Coaches Class"/>
+          <img id="dtImage" className="desktop-logo" src={Logo} alt="Coaches Class"/>
         </Avatar>
         <Typography component="h1" variant="h5">
           Sign in
@@ -72,7 +72,7 @@ function SignIn(props) {
             control={<Checkbox value="remember" color="primary" />}
             label="Remember me"
           />
-          <Button
+          {/* <Button
             type="submit"
             fullWidth
             variant="contained"
@@ -80,7 +80,8 @@ function SignIn(props) {
             className={classes.submit}
           >
             Sign in
-          </Button>
+          </Button> */}
+          <p><RedirectButton path="/UserDashboard" className="buttonSpacing">Sign In</RedirectButton></p>
           <p><RedirectButton path="/reset" className="buttonSpacing">Reset Password</RedirectButton></p>
           <p><RedirectButton path="/register" className="buttonSpacing">Register</RedirectButton></p>
           <p><RedirectButton path="/" className="buttonSpacing">Home</RedirectButton></p>
