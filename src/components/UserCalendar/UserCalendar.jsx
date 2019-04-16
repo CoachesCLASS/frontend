@@ -1,8 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import { Grid } from "@material-ui/core";
 import "./userCalendar.scss";
-import { useState } from "react";
-import SimpleAppBar from "../SimpleAppBar/SimpleAppBar";
 import CalendarControlPanel from "./CalendarControlPanel/CalendarControlPanel";
 import Calendar from "react-calendar/dist/entry.nostyle";
 import CalendarEventList from "./CalendarEventList/CalendarEventList";
@@ -11,7 +9,6 @@ function UserCalendar(props) {
 
   return (
     <>
-      <SimpleAppBar title="Coaches C.L.A.S.S." value={1} />
       <Grid container xs={12} className="contentContainer">
         <Grid item xs={9}>
           <Grid

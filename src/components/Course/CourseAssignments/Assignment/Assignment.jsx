@@ -1,20 +1,14 @@
 import React from "react";
 import { Grid } from "@material-ui/core";
 import "./assignment.scss";
-import SimpleAppBar from "../../../SimpleAppBar/SimpleAppBar";
 import Typography from "@material-ui/core/Typography/Typography";
-import Avatar from "../../../UserSettings/Avatar/Avatar";
 import Paper from "@material-ui/core/Paper";
 import { NavLink } from "react-router-dom";
 import ContentRenderer from "../../../ContentRenderer/ContentRenderer";
 
-// import AssignmentList from "../AssignmentList/AssignmentList";
-// import { defaultProps } from "recompose";
-
 function Assignment(props) {
   return (
     <>
-      <SimpleAppBar title="Coaches C.L.A.S.S." value={2} />
       <div className="wrapper">
         <Grid
           container
@@ -27,7 +21,7 @@ function Assignment(props) {
           </NavLink>
         </Grid>
 
-        <Grid class="assignmentContainer" spacing={2}>
+        <Grid className="assignmentContainer" spacing={2}>
           <Paper className="listContainer">
             <p id="assignmentInfo">{props.match.params.assignmentName} <span id="date">Due 2/3/19</span></p>
             <hr className="line" />
@@ -42,7 +36,7 @@ function Assignment(props) {
             Suspendisse euismod libero quis risus luctus, eu varius ex sodales. Maecenas gravida nibh at diam aliquet, ac venenatis lorem fermentum. Donec sed rutrum neque. Aenean ut enim non erat dignissim dignissim eleifend sed libero. Phasellus vel lectus id ante condimentum molestie eget id arcu. Praesent a justo ut justo venenatis sollicitudin ac maximus felis. Aenean fringilla viverra urna, et eleifend risus pretium at. Nulla eleifend turpis vitae laoreet facilisis. Fusce tristique augue odio, quis tempus lectus consequat sed. Maecenas vestibulum sit amet nisl vitae gravida. Duis auctor sapien pulvinar metus congue, at consectetur nisl suscipit. Cras in porta purus, at mollis mi. Morbi luctus, nulla vitae feugiat mattis, leo augue hendrerit ligula, id rutrum erat ante et sem. Praesent lacinia sem justo, id finibus tellus iaculis vel.</p>
           </Paper>
         </Grid>
-        <Grid class="assignmentContainer" spacing={2}>
+        <Grid className="assignmentContainer" spacing={2}>
         <Paper>
           <ContentRenderer></ContentRenderer>
         </Paper>
