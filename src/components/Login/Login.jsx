@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import Avatar from '@material-ui/core/Avatar';
 import Button from '@material-ui/core/Button';
@@ -13,6 +13,7 @@ import Typography from '@material-ui/core/Typography';
 import withStyles from '@material-ui/core/styles/withStyles';
 import Logo from '../../assets/CoachesCLASS_small.jpeg'
 import RedirectButton from '../RedirectButton/RedirectButton';
+import users from '../../LoginService/users.json';
 
 const styles = theme => ({
   main: {
@@ -48,6 +49,33 @@ const styles = theme => ({
 
 function SignIn(props) {
   const { classes } = props;
+  const [email, setEmail] = useState("")
+  const [password, setPassword] = useState("")
+  
+  function submit()
+  {
+    console.log(email, password)
+
+     for(var u = 0; u < users.length; u++)
+     {
+       console.log(users[u].email, users[u].password)
+        if(email === users[u].email && password === users[u].password) 
+        {
+          console.log(true)
+          return { newPath: "/UserDashboard" }
+        }
+     }
+     console.log(false)
+     return { newPath: "/login" }
+     
+  }
+  
+  const onEmailChange = event => {
+    setEmail(event.target.value)
+  }
+  const onPasswordChange = event => {
+    setPassword(event.target.value)
+  }
 
   return (
     <main className={classes.main}>
@@ -62,25 +90,23 @@ function SignIn(props) {
         <form className={classes.form}>
           <FormControl margin="normal" required fullWidth>
             <InputLabel htmlFor="email">Email Address</InputLabel>
-            <Input id="email" name="email" autoComplete="email" autoFocus />
+            <Input id="email" name="email" autoComplete="email" autoFocus value={email} onChange={onEmailChange}/>
           </FormControl>
           <FormControl margin="normal" required fullWidth>
             <InputLabel htmlFor="password">Password</InputLabel>
-            <Input name="password" type="password" id="password" autoComplete="current-password" />
+            <Input name="password" type="password" id="password" autoComplete="current-password" value={password} onChange={onPasswordChange}/>
           </FormControl>
           <FormControlLabel
             control={<Checkbox value="remember" color="primary" />}
             label="Remember me"
           />
-          <Button
-            type="submit"
-            fullWidth
-            variant="contained"
-            color="primary"
-            className={classes.submit}
+          <RedirectButton
+            className="buttonSpacing"
+            onClick={submit}
           >
             Sign in
-          </Button>
+          </RedirectButton>
+          <p></p>
           <p><RedirectButton path="/reset" className="buttonSpacing">Reset Password</RedirectButton></p>
           <p><RedirectButton path="/register" className="buttonSpacing">Register</RedirectButton></p>
           <p><RedirectButton path="/" className="buttonSpacing">Home</RedirectButton></p>

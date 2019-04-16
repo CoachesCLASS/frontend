@@ -1,0 +1,27 @@
+[
+    {
+        "email": "Chris@smu.edu",
+        "password": "password1"
+    },
+    {
+        "email": "Katie@smu.edu",
+        "password": "password2"
+    },
+    {
+        "email": "Kellen@smu.edu",
+        "password": "password3"
+    },
+    {
+        "email": "Johnathan@smu.edu",
+        "password": "password4"
+    },
+    {
+        "email": "Natalie@smu.edu",
+        "password": "password5"
+    },
+    {
+        "email": "Bert@coachesclass.org",
+        "password": "SMU"
+    }
+
+]

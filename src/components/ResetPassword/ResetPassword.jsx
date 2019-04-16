@@ -73,6 +73,7 @@ function ResetPassword(props) {
           >
             Reset Password
           </Button>
+          <p></p>
           <p><RedirectButton path="/login" className="buttonSpacing">Login</RedirectButton></p>
           <p><RedirectButton path="/" className="buttonSpacing">Home</RedirectButton></p>
         </form>
