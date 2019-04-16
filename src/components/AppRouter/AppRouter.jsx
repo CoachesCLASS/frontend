@@ -17,6 +17,7 @@ import CourseFiles from "../Course/CourseFiles/CourseFiles";
 import CourseGrades from "../Course/CourseGrades/CourseGrades";
 import CourseAssignments from "../Course/CourseAssignments/CourseAssignments";
 import Assignment from "../Course/CourseAssignments/Assignment/Assignment";
+import FileView from "../Course/CourseFiles/FileView";
 
 function AppRouter(props) {
   return (
@@ -33,6 +34,7 @@ function AppRouter(props) {
           <Route path="/CourseHome/:courseName" component={CourseHome} />
           <Route path="/MyCourses" component={MyCourses} />
           <Route path="/UserCalendar" component={UserCalendar} />
+          <Route path="/CourseFiles/:courseName/FileView" component={FileView} />
           <Route
             path="/CourseAnnouncements/:courseName"
             component={CourseAnnouncements}

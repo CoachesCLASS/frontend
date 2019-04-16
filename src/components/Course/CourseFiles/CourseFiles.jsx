@@ -57,13 +57,18 @@ function CourseFiles(props) {
                   <SaveAltIcon />
                 </IconButton>
                 <div style={{ padding: "4px" }}>
-                  <Typography
-                    variant="body2"
-                    component="h3"
-                    style={{ margin: "auto" }}
+                  <NavLink
+                    to={"/CourseFiles/" + props.match.params.courseName +"/FileView"}
+                    className="navLink"
                   >
-                    Powerpoint 1
-                  </Typography>
+                    <Typography
+                      variant="body2"
+                      component="h3"
+                      style={{ margin: "auto" }}
+                    >
+                      Powerpoint 1
+                    </Typography>
+                  </NavLink>
                 </div>
               </Grid>
             </li>
@@ -78,13 +83,18 @@ function CourseFiles(props) {
                   <SaveAltIcon />
                 </IconButton>
                 <div>
-                  <Typography
-                    variant="body2"
-                    component="h3"
-                    style={{ margin: "auto" }}
+                  <NavLink
+                    to={"/CourseFiles/" + props.match.params.courseName +"/FileView"}
+                    className="navLink"
                   >
-                    Powerpoint 2
-                  </Typography>
+                    <Typography
+                      variant="body2"
+                      component="h3"
+                      style={{ margin: "auto" }}
+                    >
+                      Powerpoint 2
+                    </Typography>
+                  </NavLink>
                 </div>
               </Grid>
             </li>
