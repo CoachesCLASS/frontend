@@ -1,7 +1,6 @@
 import React from "react";
 import { Grid } from "@material-ui/core";
 import "./courseFiles.scss";
-import SimpleAppBar from "../../SimpleAppBar/SimpleAppBar";
 import Typography from "@material-ui/core/Typography/Typography";
 import Avatar from "../../UserSettings/Avatar/Avatar";
 import Paper from "@material-ui/core/Paper";
@@ -12,7 +11,6 @@ import IconButton from "@material-ui/core/IconButton";
 function CourseFiles(props) {
   return (
     <>
-      <SimpleAppBar title="Coaches C.L.A.S.S." value={2} />
       <div className="wrapper">
         <Grid container alignItems="center" className="courseDetails">
           <Avatar />

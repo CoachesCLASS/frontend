@@ -54,7 +54,7 @@ function ResetPassword(props) {
       <CssBaseline />
       <Paper className={classes.paper}>
         <Avatar className={classes.avatar}>
-          <img id="dtImage" class="desktop-logo" src={Logo} alt="Coaches Class"/>
+          <img id="dtImage" className="desktop-logo" src={Logo} alt="Coaches Class"/>
         </Avatar>
         <Typography component="h1" variant="h5">
           Reset Password

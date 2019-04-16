@@ -3,7 +3,7 @@ import "./calendarControlPanel.scss";
 import Typography from "@material-ui/core/Typography/Typography";
 import Paper from "@material-ui/core/Paper/Paper";
 import Checkbox from "@material-ui/core/Checkbox";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import FormGroup from "@material-ui/core/FormGroup";
 import FormControlLabel from "@material-ui/core/FormControlLabel";
 import CheckBoxOutlineBlankIcon from "@material-ui/icons/CheckBoxOutlineBlank";
@@ -16,9 +16,6 @@ function CalendarControlPanel(props) {
   const [checked3, setChecked3] = useState(false);
   const [checked4, setChecked4] = useState(false);
 
-  useEffect(event => {
-    console.log(checked1, checked2, checked3, checked4);
-  });
   return (
     <>
       <Paper elevation={1} className="toDo">
@@ -26,7 +23,7 @@ function CalendarControlPanel(props) {
           <Typography variant="h6" className="comingUpTitle">
             Show Coursework
           </Typography>
-          <hr class="mt-0" width="90%" />
+          <hr className="mt-0" width="90%" />
 
           <FormGroup column className="checkboxColumn">
             <FormControlLabel
@@ -97,7 +94,7 @@ function CalendarControlPanel(props) {
           <Typography variant="h6" className="comingUpTitle">
             Undated Events
           </Typography>
-          <hr class="mt-0" width="90%" />
+          <hr className="mt-0" width="90%" />
           <div className="comingUpList">
             <Typography
               type="h4"
