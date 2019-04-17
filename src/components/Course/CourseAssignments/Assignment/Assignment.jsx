@@ -4,7 +4,9 @@ import "./assignment.scss";
 import Typography from "@material-ui/core/Typography/Typography";
 import Paper from "@material-ui/core/Paper";
 import { NavLink } from "react-router-dom";
-import ContentRenderer from "../../../ContentRenderer/ContentRenderer";
+import { FilePicker } from 'react-file-picker'
+
+import HiddenContent from "../../../ContentRenderer/HiddenContent";
 
 function Assignment(props) {
   return (
@@ -23,10 +25,14 @@ function Assignment(props) {
 
         <Grid className="assignmentContainer" spacing={2}>
           <Paper className="listContainer">
-            <p id="assignmentInfo">{props.match.params.assignmentName} 
-              <Button  id="submitButton" variant="contained" size="large" color="primary" >
-                Submit Assignment
+            <p id="assignmentInfo">{props.match.params.assignmentName}
+
+              <input id="button-file" multiple type="file" style={{display: "none"}}/> 
+              <label htmlFor="button-file" id="submitButton"> 
+              <Button raised component="span" variant="contained" size="large" color="primary"> 
+                Submit Assignment 
               </Button> 
+              </label> 
             </p>
             <hr className="line" />
             <p><span id="date"><span id="emphasize">Due</span> Thursday by 11:59pm</span><span id="points"><span id="emphasize">Points</span> 10</span><span id="submitting"><span id="emphasize">Submitting</span> a PDF file</span></p>
@@ -52,11 +58,9 @@ function Assignment(props) {
             Suspendisse euismod libero quis risus luctus, eu varius ex sodales. Maecenas gravida nibh at diam aliquet, ac venenatis lorem fermentum. Donec sed rutrum neque. Aenean ut enim non erat dignissim dignissim eleifend sed libero. Phasellus vel lectus id ante condimentum molestie eget id arcu. Praesent a justo ut justo venenatis sollicitudin ac maximus felis. Aenean fringilla viverra urna, et eleifend risus pretium at. Nulla eleifend turpis vitae laoreet facilisis. Fusce tristique augue odio, quis tempus lectus consequat sed. Maecenas vestibulum sit amet nisl vitae gravida. Duis auctor sapien pulvinar metus congue, at consectetur nisl suscipit. Cras in porta purus, at mollis mi. Morbi luctus, nulla vitae feugiat mattis, leo augue hendrerit ligula, id rutrum erat ante et sem. Praesent lacinia sem justo, id finibus tellus iaculis vel.</p> */}
           </Paper>
         </Grid>
-        {/* <Grid className="assignmentContainer" spacing={2}>
-        <Paper>
-            <PDFRenderer></PDFRenderer>
-          </Paper>
-        </Grid> */}
+        <Grid className="assignmentContainer" spacing={2}>
+            <HiddenContent></HiddenContent>
+        </Grid>
       </div>
     </>
   );
