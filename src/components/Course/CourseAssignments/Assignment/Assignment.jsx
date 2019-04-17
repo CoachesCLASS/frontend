@@ -4,13 +4,19 @@ import "./assignment.scss";
 import Typography from "@material-ui/core/Typography/Typography";
 import Paper from "@material-ui/core/Paper";
 import { NavLink } from "react-router-dom";
-import { FilePicker } from 'react-file-picker'
-
 import HiddenContent from "../../../ContentRenderer/HiddenContent";
+
+var accept = ".pdf";
+
+function handleChange(selectorFiles: FileList){
+  alert("File " + selectorFiles[0]["name"] + " Submitted!");
+  console.log(selectorFiles);    
+}
 
 function Assignment(props) {
   return (
     <>
+      
       <div className="wrapper">
         <Grid
           container
@@ -26,12 +32,11 @@ function Assignment(props) {
         <Grid className="assignmentContainer" spacing={2}>
           <Paper className="listContainer">
             <p id="assignmentInfo">{props.match.params.assignmentName}
-
-              <input id="button-file" multiple type="file" style={{display: "none"}}/> 
+              <input id="button-file" type="file" accept={accept} style={{display: "none"}} onChange={ (e) => handleChange(e.target.files) }/> 
               <label htmlFor="button-file" id="submitButton"> 
-              <Button raised component="span" variant="contained" size="large" color="primary"> 
-                Submit Assignment 
-              </Button> 
+                <Button raised component="span" variant="contained" size="large" color="primary"> 
+                  Submit Assignment
+                </Button> 
               </label> 
             </p>
             <hr className="line" />
