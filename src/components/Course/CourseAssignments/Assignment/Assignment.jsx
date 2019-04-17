@@ -4,9 +4,16 @@ import "./assignment.scss";
 import Typography from "@material-ui/core/Typography/Typography";
 import Paper from "@material-ui/core/Paper";
 import { NavLink } from "react-router-dom";
-import ContentRenderer from "../../../ContentRenderer/ContentRenderer";
 import { Home } from "@material-ui/icons";
 import { renderComponent } from "recompose";
+import HiddenContent from "../../../ContentRenderer/HiddenContent";
+
+var accept = ".pdf";
+
+function handleChange(selectorFiles: FileList){
+  alert("File " + selectorFiles[0]["name"] + " Submitted!");
+  console.log(selectorFiles);    
+}
 
 function Assignment(props) {
 
@@ -21,6 +28,7 @@ function Assignment(props) {
 function Homework1(props) {
   return (
     <>
+      
       <div className="wrapper">
         <Grid
           container
@@ -35,10 +43,13 @@ function Homework1(props) {
 
         <Grid className="assignmentContainer" spacing={2}>
           <Paper className="listContainer">
-            <p id="assignmentInfo">{props.match.params.assignmentName} 
-              <Button  id="submitButton" variant="contained" size="large" color="primary" >
-                Submit Assignment
-              </Button> 
+            <p id="assignmentInfo">{props.match.params.assignmentName}
+              <input id="button-file" type="file" accept={accept} style={{display: "none"}} onChange={ (e) => handleChange(e.target.files) }/> 
+              <label htmlFor="button-file" id="submitButton"> 
+                <Button raised component="span" variant="contained" size="large" color="primary"> 
+                  Submit Assignment
+                </Button> 
+              </label> 
             </p>
             <hr className="line" />
             <p><span id="date"><span id="emphasize">Due</span> Thursday by 11:59pm</span><span id="points"><span id="emphasize">Points</span> 10</span><span id="submitting"><span id="emphasize">Submitting</span> a PDF file</span></p>
@@ -95,6 +106,9 @@ function ProjectProposal(props) {
             </p>
         
         </Paper>
+        </Grid>
+        <Grid className="assignmentContainer" spacing={2}>
+            <HiddenContent></HiddenContent>
         </Grid>
       </div>
     </>
