@@ -48,9 +48,10 @@
         {
           "id": 1,
           "title": "Introduction",
-          "body": "Hi class! Welcome to Entrepreneurship 101! My name is Bert Robinson and I will be your instructor this semester.",
+          "body": "Hi class! Welcome to Creative Problem Solving! My name is Bert Robinson and I will be your instructor this semester.",
           "postId": 1,
-          "postDate": "Mon Jan 28 2019"
+          "postDate": "Mon Jan 28 2019",
+          "class": "Creative Problem Solving"
         }
       ]
     },
@@ -104,12 +105,13 @@
           "title": "Introduction",
           "body": "Hi class! Welcome to Communication Skills! My name is Bert Robinson and I will be your instructor this semester.",
           "postId": 1,
-          "postDate": "Mon Jan 28 2019"
+          "postDate": "Mon Jan 28 2019",
+          "class": "Negotiation Skills"
         }
       ]
     },
     {
-      "title": "Technical Skills",
+      "title": "Critical Thinking",
       "assignments": [
         {
           "id": 1,
@@ -117,7 +119,7 @@
           "dueDate": "Thu Apr 18 2019",
           "points": 10,
           "type": "Homework",
-          "class": "Technical Skills"
+          "class": "Critical Thinking"
         },
         {
           "id": 2,
@@ -125,7 +127,7 @@
           "dueDate": "Sat May 01 2019",
           "points": 50,
           "type": "Quiz",
-          "class": "Technical Skills"
+          "class": "Critical Thinking"
         },
         {
           "id": 3,
@@ -133,15 +135,15 @@
           "dueDate": "Sat May 18 2019",
           "points": 100,
           "type": "Test",
-          "class": "Technical Skills"
+          "class": "Critical Thinking"
         },
         {
           "id": 4,
-          "title": "Software Engineering Principles Quiz",
+          "title": "Deduction vs. Induction Discussion",
           "dueDate": "Wed Apr 24 2019",
           "points": 50,
           "type": "Quiz",
-          "class": "Technical Skills"
+          "class": "Critical Thinking"
         },
         {
           "id": 5,
@@ -149,17 +151,127 @@
           "dueDate": "Sun Apr 28 2019",
           "points": 30,
           "type": "Homework",
-          "class": "Technical Skills"
+          "class": "Critical Thinking"
         }
       ],
       "announcements": [
         {
           "id": 1,
           "title": "Introduction",
-          "body": "Hi class! Welcome to the Coaches Class Technical Skills course! My name is Bert Robinson and I will be your instructor this semester.",
+          "body": "Hi class! Welcome to the Coaches Class Critical Thinking course! My name is Bert Robinson and I will be your instructor this semester.",
           "postId": 1,
           "postDate": "Mon Jan 28 2019",
-          "class": "Technical Skills"
+          "class": "Critical Thinking"
+        }
+      ]
+    },
+    {
+      "title": "Emotional Intelligence",
+      "assignments": [
+        {
+          "id": 1,
+          "title": "Pre-Assignment",
+          "dueDate": "Thu Apr 18 2019",
+          "points": 10,
+          "type": "Homework",
+          "class": "Emotional Intelligence"
+        },
+        {
+          "id": 2,
+          "title": "Quiz Questions",
+          "dueDate": "Sat May 01 2019",
+          "points": 50,
+          "type": "Quiz",
+          "class": "Emotional Intelligence"
+        },
+        {
+          "id": 3,
+          "title": "Test Questions",
+          "dueDate": "Sat May 18 2019",
+          "points": 100,
+          "type": "Test",
+          "class": "Emotional Intelligence"
+        },
+        {
+          "id": 4,
+          "title": "Emotional Awareness Activity",
+          "dueDate": "Wed Apr 24 2019",
+          "points": 50,
+          "type": "Homework",
+          "class": "Emotional Intelligence"
+        },
+        {
+          "id": 5,
+          "title": "Learning Journal",
+          "dueDate": "Sun Apr 28 2019",
+          "points": 30,
+          "type": "Homework",
+          "class": "Emotional Intelligence"
+        }
+      ],
+      "announcements": [
+        {
+          "id": 1,
+          "title": "Introduction",
+          "body": "Hi class! Welcome to the Coaches Class Critical Thinking course! My name is Bert Robinson and I will be your instructor this semester.",
+          "postId": 1,
+          "postDate": "Mon Jan 28 2019",
+          "class": "Critical Thinking"
+        }
+      ]
+    },
+    {
+      "title": "Measuring Results From Training",
+      "assignments": [
+        {
+          "id": 1,
+          "title": "Pre-Assignment",
+          "dueDate": "Thu Apr 18 2019",
+          "points": 10,
+          "type": "Homework",
+          "class": "Measuring Results From Training"
+        },
+        {
+          "id": 2,
+          "title": "Quiz Questions",
+          "dueDate": "Sat May 01 2019",
+          "points": 50,
+          "type": "Quiz",
+          "class": "Measuring Results From Training"
+        },
+        {
+          "id": 3,
+          "title": "Test Questions",
+          "dueDate": "Sat May 18 2019",
+          "points": 100,
+          "type": "Test",
+          "class": "Measuring Results From Training"
+        },
+        {
+          "id": 4,
+          "title": "Deduction vs. Induction Discussion",
+          "dueDate": "Wed Apr 24 2019",
+          "points": 50,
+          "type": "Quiz",
+          "class": "Measuring Results From Training"
+        },
+        {
+          "id": 5,
+          "title": "Learning Journal",
+          "dueDate": "Sun Apr 28 2019",
+          "points": 30,
+          "type": "Homework",
+          "class": "Measuring Results From Training"
+        }
+      ],
+      "announcements": [
+        {
+          "id": 1,
+          "title": "Introduction",
+          "body": "Hi class! Welcome to the Coaches Measuring Results From Training course! My name is Bert Robinson and I will be your instructor this semester.",
+          "postId": 1,
+          "postDate": "Mon Jan 28 2019",
+          "class": "Measuring Results From Training"
         }
       ]
     }

@@ -1,9 +1,12 @@
-.comingUpTitle {
+ .comingUpTitle {
   //   padding: 0.1rem 0rem 0.1rem 0.1rem;
   padding: 0.5rem 0rem 0.2rem 0.8rem;
   font-size: 18px !important;
 }
-
+.classTitle {
+  line-height: 1rem !important;
+  letter-spacing: .04em !important;
+}
 .toDo {
   width: 270px;
   height: auto;
