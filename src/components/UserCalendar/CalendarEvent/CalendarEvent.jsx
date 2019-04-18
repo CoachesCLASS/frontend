@@ -16,12 +16,14 @@ function CalendarEvent(props) {
         <Grid item>
           <Grid container direction="row">
             <Grid item style={{ padding: "4px" }}>
-              {props.type === "assignment" && <AssignmentIcon />}
-              {props.type === "assessment" && <AssessmentIcon />}
-              {props.type === "discussion" && <CommentIcon />}
+              {props.type === "Homework" && <AssignmentIcon />}
+              {props.type === "Test" && <AssessmentIcon />}
+              {props.type === "Quiz" && <AssessmentIcon />}
+              {props.type === "Project" && <AssignmentIcon />}
+              {props.type === "Discussion" && <CommentIcon />}
             </Grid>
             <Grid item>
-              <Typography variant="overline">{props.class}</Typography>
+              <Typography variant="overline">{props.className}</Typography>
             </Grid>
           </Grid>
         </Grid>
