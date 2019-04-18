@@ -70,6 +70,7 @@ function AppRouter(props) {
             <Route path="/CourseHome/:courseName" component={CourseHome} />
             <Route path="/MyCourses" component={MyCourses} />
             <Route path="/UserCalendar" component={UserCalendar} />
+            <Route path="/CourseFiles/:courseName/FileView" component={FileView} />
             <Route
               path="/CourseAnnouncements/:courseName"
               component={CourseAnnouncements}
