@@ -1,11 +1,56 @@
-import React from "react";
-import { Grid } from "@material-ui/core";
+import React, { useState } from "react";
+import { Grid, TextField, Button } from "@material-ui/core";
 import "./courseAnnouncements.scss";
 import Typography from "@material-ui/core/Typography/Typography";
 import Avatar from "../../UserSettings/Avatar/Avatar";
 import Paper from "@material-ui/core/Paper";
 import { NavLink } from "react-router-dom";
+import { makeStyles } from "@material-ui/styles"
+import { connect } from "react-redux";
+
+const useStyles = makeStyles(theme => ({
+  margin: {
+    position: 'absolute',
+    bottom: theme.spacing.unit * 2,
+    right: theme.spacing.unit * 2,
+  },
+  extendedIcon: {
+    marginRight: theme.spacing.unit,
+  },
+}))
+
+const mapStateToProps = (state) => {
+  return {
+    instructor: state.instructor.isInstructor,
+  }
+}
+
 function CourseAnnouncements(props) {
+  const classes = useStyles()
+  const [announcements, setAnnouncements] = useState([
+    {
+      title: "Test tomorrow",
+      body: "Don't forget!",
+    },
+  ])
+  const [values, setValues] = useState({
+    title: '',
+    body: '',
+  });
+
+  const addAnnouncement = () => {
+    setAnnouncements([
+      ...announcements,
+      values
+    ])
+
+    setValues({title: '', body: ''})
+  }
+
+  const handleChange = name => event => {
+    setValues({ ...values, [name]: event.target.value });
+  };
+
   return (
     <>
       <div className="wrapper">
@@ -41,34 +86,49 @@ function CourseAnnouncements(props) {
           </NavLink>
         </Grid>
         <Grid container direction="column" spacing={2}>
-          <Grid item>
-            <Paper className="courseAnnouncement" elevation={1}>
-              <Typography variant="h5" component="h3">
-                Test tomorrow
-              </Typography>
-              <Typography component="p" style={{ color: "grey" }}>
-                2/21/19
-              </Typography>
-              <Typography component="p">
-                Paper can be used to build surface or other elements for your
-                application.
-              </Typography>
-            </Paper>
-          </Grid>
-          <Grid item style={{ marginTop: "1rem" }}>
-            <Paper className="courseAnnouncement" elevation={1}>
-              <Typography variant="h5" component="h3">
-                Group project coming up!!
-              </Typography>
-              <Typography component="p" style={{ color: "grey" }}>
-                2/21/19
-              </Typography>
-              <Typography component="p">
-                Paper can be used to build surface or other elements for your
-                application.
-              </Typography>
-            </Paper>
-          </Grid>
+          {
+            announcements.map(item => (
+              <Grid item key={item.body}>
+                <Paper className="courseAnnouncement" elevation={1}>
+                  <Typography variant="h5" component="h3">
+                    {item.title}
+                  </Typography>
+                  <Typography component="p">
+                    {item.body}
+                  </Typography>
+                </Paper>
+              </Grid>
+            ))
+          }
+          {
+            !props.instructor && (
+              <Grid item>
+                <Paper className="courseAnnouncement" elevation={1}>
+                  <TextField
+                    fullWidth
+                    label="Title"
+                    className={classes.textField}
+                    value={values.title}
+                    onChange={handleChange('title')}
+                    margin="normal"
+                    variant="outlined"
+                  />
+                  <TextField
+                    fullWidth
+                    label="Body"
+                    className={classes.textField}
+                    value={values.body}
+                    onChange={handleChange('body')}
+                    margin="normal"
+                    variant="outlined"
+                  />
+                  <Button variant="contained" color="primary" className={classes.button} onClick={addAnnouncement}>
+                    Add Announcement
+                  </Button>
+                </Paper>
+              </Grid>
+            )
+          }
         </Grid>
       </div>
     </>
@@ -76,4 +136,4 @@ function CourseAnnouncements(props) {
 }
 // alignItems="center"
 
-export default CourseAnnouncements;
+export default connect(mapStateToProps)(CourseAnnouncements);

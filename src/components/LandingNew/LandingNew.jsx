@@ -26,7 +26,7 @@ function LandingNew(props) {
       <Grid item xs={4} className={classes.mainContent}>
         <h1>Welcome to Coaches C.L.A.S.S.</h1>
         <img src={Logo} alt="Coaches Class" width={300} className={classes.ccLogo}/>
-        <RedirectButton path="/login">Get Started2</RedirectButton>
+        <RedirectButton path="/login">Get Started</RedirectButton>
       </Grid>
     </Grid>
   )

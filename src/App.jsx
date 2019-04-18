@@ -5,6 +5,8 @@ import { CssBaseline, createMuiTheme } from "@material-ui/core";
 import { BrowserRouter as Router } from "react-router-dom";
 import { red, blue, white } from "@material-ui/core/colors";
 import { pdfjs } from 'react-pdf';
+import { Provider } from 'react-redux';
+import store from './store/store';
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
 const theme = {
@@ -27,12 +29,14 @@ const theme = {
 
 function App() {
   return (
-    <ThemeProvider theme={createMuiTheme(theme)}>
-      <Router>
-        <AppRouter />
-      </Router>
-      <CssBaseline />
-    </ThemeProvider>
+    <Provider store={store}>
+      <ThemeProvider theme={createMuiTheme(theme)}>
+        <Router>
+          <AppRouter />
+        </Router>
+        <CssBaseline />
+      </ThemeProvider>
+    </Provider>
   );
 }
 
