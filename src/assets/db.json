@@ -1,0 +1,147 @@
+{
+  "courses": [{
+      "Creative Problem Solving": {
+        "assignments": [{
+            "id": 1,
+            "title": "Pre-Assignment",
+            "due date": "\"2019-04-18T23:59:59.782Z\"",
+            "points": 10,
+            "course name": "Creative Problem Solving"
+          },
+          {
+            "id": 2,
+            "title": "Quiz Questions",
+            "due date": "\"2019-05-01T23:59:59.782Z\"",
+            "points": 50,
+            "course name": "Creative Problem Solving"
+          },
+          {
+            "id": 3,
+            "title": "Test Questions",
+            "due date": "\"2019-05-18T23:59:59.782Z\"",
+            "points": 100,
+            "course name": "Creative Problem Solving"
+          },
+          {
+            "id": 4,
+            "title": "Evaluation Plan",
+            "due date": "\"2019-04-24T23:59:59.782Z\"",
+            "points": 30,
+            "course name": "Creative Problem Solving"
+          },
+          {
+            "id": 5,
+            "title": "Learning Journal",
+            "due date": "\"2019-04-28T23:59:59.782Z\"",
+            "points": 30,
+            "course name": "Creative Problem Solving"
+          }
+        ],
+        "announcements": [{
+          "id": 1,
+          "title": "Introduction",
+          "body": "Hi class! Welcome to Entrepreneurship 101! My name is Bert Robinson and I will be your instructor this semester.",
+          "postId": 1,
+          "postDate": "\"2019-01-28T23:59:59.782Z\"",
+          "course name": "Creative Problem Solving"
+        }]
+      }
+    },
+    {
+      "Negotiation Skills": {
+        "assignments": [{
+            "id": 1,
+            "title": "Pre-Assignment",
+            "due date": "\"2019-04-18T23:59:59.782Z\"",
+            "points": 10,
+            "course name": "Negotiation Skills"
+          },
+          {
+            "id": 2,
+            "title": "Quiz Questions",
+            "due date": "\"2019-05-01T23:59:59.782Z\"",
+            "points": 50,
+            "course name": "Negotiation Skills"
+          },
+          {
+            "id": 3,
+            "title": "Test Questions",
+            "due date": "\"2019-05-18T23:59:59.782Z\"",
+            "points": 100,
+            "course name": "Negotiation Skills"
+          },
+          {
+            "id": 4,
+            "title": "Communication Management Plan",
+            "due date": "\"2019-04-24T23:59:59.782Z\"",
+            "points": 30,
+            "course name": "Negotiation Skills"
+          },
+          {
+            "id": 5,
+            "title": "Learning Journal",
+            "due date": "\"2019-04-28T23:59:59.782Z\"",
+            "points": 30,
+            "course name": "Negotiation Skills"
+          }
+        ],
+        "announcements": [{
+          "id": 1,
+          "title": "Introduction",
+          "body": "Hi class! Welcome to Communication Skills! My name is Bert Robinson and I will be your instructor this semester.",
+          "postId": 1,
+          "postDate": "\"2019-01-28T23:59:59.782Z\"",
+          "course name": "Negotiation Skills"
+        }]
+      }
+    },
+    {
+      "Technical Skills": {
+        "assignments": [{
+            "id": 1,
+            "title": "Pre-Assignment",
+            "due date": "\"2019-04-18T23:59:59.782Z\"",
+            "points": 10,
+            "course name": "Critical Thinking"
+          },
+          {
+            "id": 2,
+            "title": "Quiz Questions",
+            "due date": "\"2019-05-01T23:59:59.782Z\"",
+            "points": 50,
+            "course name": "Critical Thinking"
+          },
+          {
+            "id": 3,
+            "title": "Test Questions",
+            "due date": "\"2019-05-18T23:59:59.782Z\"",
+            "points": 100,
+            "course name": "Critical Thinking"
+          },
+          {
+            "id": 4,
+            "title": "Software Engineering Principles Quiz",
+            "due date": "\"2019-04-24T23:59:59.782Z\"",
+            "points": 50,
+            "course name": "Critical Thinking"
+          },
+          {
+            "id": 5,
+            "title": "Learning Journal",
+            "due date": "\"2019-04-28T23:59:59.782Z\"",
+            "points": 30,
+            "course name": "Critical Thinking"
+          }
+        ],
+        "announcements": [{
+          "id": 1,
+          "title": "Introduction",
+          "body": "Hi class! Welcome to the Coaches Class Technical Skills course! My name is Bert Robinson and I will be your instructor this semester.",
+          "postId": 1,
+          "postDate": "\"2019-01-28T23:59:59.782Z\"",
+          "course name": "Critical Thinking "
+        }]
+      }
+    }
+  ]
+}

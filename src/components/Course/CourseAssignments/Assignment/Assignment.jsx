@@ -4,6 +4,7 @@ import "./assignment.scss";
 import Typography from "@material-ui/core/Typography/Typography";
 import Paper from "@material-ui/core/Paper";
 import { NavLink } from "react-router-dom";
+import ContentRenderer from "../../../ContentRenderer/ContentRenderer";
 import { Home } from "@material-ui/icons";
 import { renderComponent } from "recompose";
 import HiddenContent from "../../../ContentRenderer/HiddenContent";
@@ -108,6 +109,9 @@ function ProjectProposal(props) {
         </Paper>
         </Grid>
         <Grid className="assignmentContainer" spacing={2}>
+        <Paper>
+          <ContentRenderer></ContentRenderer>
+        </Paper>
             <HiddenContent></HiddenContent>
         </Grid>
       </div>

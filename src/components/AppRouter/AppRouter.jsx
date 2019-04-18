@@ -18,7 +18,6 @@ import CourseGrades from "../Course/CourseGrades/CourseGrades";
 import CourseAssignments from "../Course/CourseAssignments/CourseAssignments";
 import Assignment from "../Course/CourseAssignments/Assignment/Assignment";
 import FileView from "../Course/CourseFiles/FileView";
-
 import SimpleAppBar from "../SimpleAppBar/SimpleAppBar";
 import { makeStyles } from '@material-ui/styles'
 import LandingNew from "../LandingNew/LandingNew";
