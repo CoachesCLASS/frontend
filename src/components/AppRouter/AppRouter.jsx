@@ -19,39 +19,46 @@ import CourseAssignments from "../Course/CourseAssignments/CourseAssignments";
 import Assignment from "../Course/CourseAssignments/Assignment/Assignment";
 import FileView from "../Course/CourseFiles/FileView";
 import SimpleAppBar from "../SimpleAppBar/SimpleAppBar";
-import { makeStyles } from '@material-ui/styles'
+import { makeStyles } from "@material-ui/styles";
 import LandingNew from "../LandingNew/LandingNew";
 import LandingAppBar from "../LandingNew/LandingAppBar";
 
 const useStyles = makeStyles(theme => ({
   containerSpacing: {
     padding: theme.spacing.unit,
-    [theme.breakpoints.down('xs')]: {
-      paddingTop: '72px',
+    [theme.breakpoints.down("xs")]: {
+      paddingTop: "72px"
     },
-    [theme.breakpoints.up('sm')]: {
-      paddingTop: '80px',
-    },
-  },
+    [theme.breakpoints.up("sm")]: {
+      paddingTop: "80px"
+    }
+  }
 }));
 
 function AppRouter(props) {
-  const classes = useStyles()
+  const classes = useStyles();
   return (
     <>
-      {
-        props.location.pathname === "/" ? (
-          <LandingAppBar/>
-        ) : ["/old", "/reset", "/login", "/register"].includes(props.location.pathname) ? (
-          <></>
-        ): (
-          <SimpleAppBar/>      
-        )
-      }
+      {props.location.pathname === "/" ? (
+        <LandingAppBar />
+      ) : ["/old", "/reset", "/login", "/register"].includes(
+          props.location.pathname
+        ) ? (
+        <></>
+      ) : (
+        <SimpleAppBar />
+      )}
       <Grid container justify="center" className={classes.containerSpacing}>
         <Grid item xs={12}>
           <Switch>
-            <Redirect exact from="/UserSettings" to={{ pathname: "/UserSettings/account", state: props.location.state }}/>
+            <Redirect
+              exact
+              from="/UserSettings"
+              to={{
+                pathname: "/UserSettings/account",
+                state: props.location.state
+              }}
+            />
             <Route path="/" exact component={LandingNew} />
             <Route path="/old" exact component={Landing} />
             <Route path="/UserSettings" component={UserSettings} />
