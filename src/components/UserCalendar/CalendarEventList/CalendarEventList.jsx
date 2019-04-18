@@ -6,6 +6,13 @@ import Typography from "@material-ui/core/Typography/Typography";
 import CalendarEvent from "../CalendarEvent/CalendarEvent";
 import Paper from "@material-ui/core/Paper/Paper";
 function CalendarEventList(props) {
+  var courseStates = {};
+  courseStates["Creative Problem Solving"] = props.checked1;
+  courseStates["Critical Thinking"] = props.checked2;
+  courseStates["Negotiation Skills"] = props.checked3;
+  courseStates["Measuring Results From Training"] = props.checked4;
+  courseStates["Emotional Intelligence"] = props.checked5;
+
   var calendarEvents = [];
   //   const [date, setDate] = useState(new Date());
   console.log("testing");
@@ -20,7 +27,13 @@ function CalendarEventList(props) {
       var obj = assignments[j];
       var dueDate = obj.dueDate;
       if (obj.dueDate == props.date) {
-        if (!props.courseName || props.courseName == obj.class) {
+        if (props.courseName && props.courseName == obj.class) {
+          console.log("Assignment: " + obj.title);
+          console.log("Due Date: " + dueDate);
+          console.log("Calendar Date: " + props.date);
+          calendarEvents.push(obj);
+        }
+        if (!props.courseName &&  courseStates[obj.class] == true) {
           console.log("Assignment: " + obj.title);
           console.log("Due Date: " + dueDate);
           console.log("Calendar Date: " + props.date);

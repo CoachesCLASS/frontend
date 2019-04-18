@@ -11,10 +11,7 @@ import CheckBoxIcon from "@material-ui/icons/CheckBox";
 import blue from "@material-ui/core/colors/blue";
 
 function CalendarControlPanel(props) {
-  const [checked1, setChecked1] = useState(true);
-  const [checked2, setChecked2] = useState(false);
-  const [checked3, setChecked3] = useState(false);
-  const [checked4, setChecked4] = useState(false);
+
 
   return (
     <>
@@ -29,8 +26,8 @@ function CalendarControlPanel(props) {
             <FormControlLabel
               control={
                 <Checkbox
-                  checked={checked1}
-                  onChange={() => setChecked1(!checked1)}
+                  checked={props.checked1}
+                  onChange={() => props.setChecked1(!props.checked1)}
                   style={{ color: blue[500] }}
                   value="checked1"
                   icon={<CheckBoxOutlineBlankIcon fontSize="small" />}
@@ -38,45 +35,45 @@ function CalendarControlPanel(props) {
                 />
               }
               label={
-                <Typography variant="overline">Entrepreneurship 101</Typography>
+                <Typography variant="overline" className="classTitle">Creative Problem Solving</Typography>
               }
               style={{ padding: "0px", height: "50px" }}
             />
             <FormControlLabel
               control={
                 <Checkbox
-                  checked={checked2}
+                  checked={props.checked2}
                   style={{ color: blue[500] }}
-                  onChange={() => setChecked2(!checked2)}
+                  onChange={() => props.setChecked2(!props.checked2)}
                   value="checked2"
                   icon={<CheckBoxOutlineBlankIcon fontSize="small" />}
                   checkedIcon={<CheckBoxIcon fontSize="small" />}
                 />
               }
               label={
-                <Typography variant="overline">Communication Skills</Typography>
+                <Typography variant="overline" className="classTitle">Critical Thinking</Typography>
               }
               style={{ padding: "0px", height: "50px" }}
             />
             <FormControlLabel
               control={
                 <Checkbox
-                  checked={checked3}
+                  checked={props.checked3}
                   style={{ color: blue[500] }}
-                  onChange={() => setChecked3(!checked3)}
+                  onChange={() => props.setChecked3(!props.checked3)}
                   value="checked3"
                   icon={<CheckBoxOutlineBlankIcon fontSize="small" />}
                   checkedIcon={<CheckBoxIcon fontSize="small" />}
                 />
               }
-              label={<Typography variant="overline">Leadership 101</Typography>}
+              label={<Typography variant="overline" className="classTitle">Negotiation</Typography>}
               style={{ padding: "0px", height: "50px" }}
             />
             <FormControlLabel
               control={
                 <Checkbox
-                  checked={checked4}
-                  onChange={() => setChecked4(!checked4)}
+                  checked={props.checked4}
+                  onChange={() => props.setChecked4(!props.checked4)}
                   style={{ color: blue[500] }}
                   value="checked4"
                   icon={<CheckBoxOutlineBlankIcon fontSize="small" />}
@@ -84,7 +81,23 @@ function CalendarControlPanel(props) {
                 />
               }
               label={
-                <Typography variant="overline">Technical Skills</Typography>
+                <Typography variant="overline" className="classTitle">Measuring Results From Training</Typography>
+              }
+              style={{ padding: "0px", height: "50px" }}
+            />
+            <FormControlLabel
+              control={
+                <Checkbox
+                  checked={props.checked5}
+                  onChange={() => props.setChecked5(!props.checked5)}
+                  style={{ color: blue[500] }}
+                  value="checked5"
+                  icon={<CheckBoxOutlineBlankIcon fontSize="small" />}
+                  checkedIcon={<CheckBoxIcon fontSize="small" />}
+                />
+              }
+              label={
+                <Typography variant="overline" className="classTitle">Emotional Intelligence</Typography>
               }
               style={{ padding: "0px", height: "50px" }}
             />
