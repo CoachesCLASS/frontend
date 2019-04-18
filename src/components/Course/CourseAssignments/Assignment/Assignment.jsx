@@ -4,13 +4,10 @@ import "./assignment.scss";
 import Typography from "@material-ui/core/Typography/Typography";
 import Paper from "@material-ui/core/Paper";
 import { NavLink } from "react-router-dom";
-<<<<<<< HEAD
 import ContentRenderer from "../../../ContentRenderer/ContentRenderer";
 
 // import AssignmentList from "../AssignmentList/AssignmentList";
 // import { defaultProps } from "recompose";
-=======
->>>>>>> 7b422f5bc03063a4aa5d0b47d9e3d16e84efb205
 
 function Assignment(props) {
   return (

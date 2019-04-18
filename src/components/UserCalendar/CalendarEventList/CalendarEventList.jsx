@@ -7,7 +7,11 @@ import CalendarEvent from "../CalendarEvent/CalendarEvent";
 import Paper from "@material-ui/core/Paper/Paper";
 function CalendarEventList(props) {
   //   const [date, setDate] = useState(new Date());
-
+  var data = require("../../../assets/db.json"); // forward slashes will depend on the file location
+  for (var i = 0; i < data.length; i++) {
+    var obj = data[i];
+    console.log("Course: " + obj + "\n");
+  }
   return (
     <>
       <Typography variant="h6" className="eventListTitle">

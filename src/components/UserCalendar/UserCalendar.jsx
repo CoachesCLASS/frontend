@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Grid } from "@material-ui/core";
 import "./userCalendar.scss";
 import CalendarControlPanel from "./CalendarControlPanel/CalendarControlPanel";
-import Calendar from "react-calendar/dist/entry.nostyle";
+import Calendar from "react-calendar";
 import CalendarEventList from "./CalendarEventList/CalendarEventList";
 function UserCalendar(props) {
   const [date, setDate] = useState(new Date());
@@ -15,11 +15,11 @@ function UserCalendar(props) {
             container
             direction="column"
             alignItems="center"
-            className="calendarContainer"
+            className="leftContainer"
           >
-            <Grid item>
+            <Grid item class="userCalendarContainer">
               <Calendar
-                className="calendar"
+                className="userCalendar"
                 onChange={date => setDate(date)}
                 value={date}
               />
