@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import Avatar from '@material-ui/core/Avatar';
-import Button from '@material-ui/core/Button';
+import { Switch } from '@material-ui/core';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import FormControl from '@material-ui/core/FormControl';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
@@ -10,11 +10,13 @@ import Input from '@material-ui/core/Input';
 import InputLabel from '@material-ui/core/InputLabel';
 import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
-import withStyles from '@material-ui/core/styles/withStyles';
+import { makeStyles } from '@material-ui/styles';
 import Logo from '../../assets/CoachesCLASS_small.jpeg'
 import RedirectButton from '../RedirectButton/RedirectButton';
+import { SET_INSTRUCTOR } from '../../store/actionTypes';
+import { connect } from 'react-redux';
 
-const styles = theme => ({
+const useStyles = makeStyles(theme => ({
   main: {
     width: 'auto',
     display: 'block', // Fix IE 11 issue.
@@ -44,10 +46,32 @@ const styles = theme => ({
   submit: {
     marginTop: theme.spacing.unit * 3,
   },
-});
+}));
+
+const mapStateToProps = (state) => {
+  return {
+    instructor: state.instructor.isInstructor,
+  }
+}
+
+const mapDispatchToProps = (dispatch) => {
+  return {
+    setIsInstructor: (isInstructor) => {
+      dispatch({
+        type: SET_INSTRUCTOR,
+        isInstructor,
+      })
+    },
+  }
+}
+
 
 function SignIn(props) {
-  const { classes } = props;
+  const classes = useStyles();
+
+  const handleChange = event => {
+    props.setIsInstructor(event.target.checked)
+  }
 
   return (
     <main className={classes.main}>
@@ -72,15 +96,12 @@ function SignIn(props) {
             control={<Checkbox value="remember" color="primary" />}
             label="Remember me"
           />
-          {/* <Button
-            type="submit"
-            fullWidth
-            variant="contained"
-            color="primary"
-            className={classes.submit}
-          >
-            Sign in
-          </Button> */}
+          <FormControlLabel
+            control={
+              <Switch checked={props.instructor} onChange={handleChange} />
+            }
+            label="Instructor"
+          />
           <p><RedirectButton path="/UserDashboard" className="buttonSpacing">Sign In</RedirectButton></p>
           <p><RedirectButton path="/reset" className="buttonSpacing">Reset Password</RedirectButton></p>
           <p><RedirectButton path="/register" className="buttonSpacing">Register</RedirectButton></p>
@@ -95,4 +116,4 @@ SignIn.propTypes = {
   classes: PropTypes.object.isRequired,
 };
 
-export default withStyles(styles)(SignIn);
+export default connect(mapStateToProps, mapDispatchToProps)(SignIn);

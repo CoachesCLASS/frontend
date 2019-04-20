@@ -3,10 +3,11 @@ import { Grid } from "@material-ui/core";
 import "./courseAssignments.scss";
 import Typography from "@material-ui/core/Typography/Typography";
 import Avatar from "../../UserSettings/Avatar/Avatar";
-import Paper from "@material-ui/core/Paper";
 import { NavLink } from "react-router-dom";
 import AssignmentList from "./AssignmentList/AssignmentList";
+
 function CourseAssignments(props) {
+
   return (
     <>
       <div className="wrapper">
