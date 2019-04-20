@@ -29,9 +29,10 @@ const navTabs = [
 ];
 
 function SimpleAppBar(props) {
-  const { pathname } = props.location
-  const secondSlashIdx = pathname.indexOf("/", 1) > 0 ? pathname.indexOf("/", 1) : pathname.length
-  const val = pathname.substr(0, secondSlashIdx)
+  const { pathname } = props.location;
+  const secondSlashIdx =
+    pathname.indexOf("/", 1) > 0 ? pathname.indexOf("/", 1) : pathname.length;
+  const val = pathname.substr(0, secondSlashIdx);
 
   return (
     <AppBar position="fixed" color="primary">
@@ -53,7 +54,7 @@ function SimpleAppBar(props) {
           </Toolbar>
         </Grid>
         <Grid item xs={6} className="pb-2">
-          <Tabs value={val} indicatorColor="secondary" textColor="secondary">
+          <Tabs value={val} indicatorColor="secondary" color="secondary">
             {navTabs.map(tab => (
               <NavLink
                 to={tab.path}

@@ -1,0 +1,41 @@
+<html>
+<head>
+
+<script language="JavaScript"><!--
+
+function prePrint() {
+  window.status = 'Preparing to print, please wait...';
+
+  if (document.all)
+    document.all('statusLabel').innerHTML = '<font face="Verdana, Arial, Helvetica, sans-serif" size="1">Please wait...<\/font>';
+  else if (document.layers) {
+    document.layers['statusLabel'].document.open();
+    document.layers['statusLabel'].document.writeln('<font face="Verdana, Arial, Helvetica, sans-serif" size="1">Please wait...<\/font>');
+    document.layers['statusLabel'].document.close();
+  }
+}
+
+function pageLoaded() {
+  window.status = 'Done.';
+
+  if (document.all) {
+    document.all('statusLabel').innerHTML = '<font face="Verdana, Arial, Helvetica, sans-serif" size="1">Done. <a href="javascript:parent.window.close();">Click here<\/a> to close this window.<\/font>';
+    document.all('progressBarImage').style.visibility = 'hidden';
+  } else if (document.layers) {
+    document.layers['statusLabel'].document.open();
+    document.layers['statusLabel'].document.writeln('<font face="Verdana, Arial, Helvetica, sans-serif" size="1">Done. <a href="javascript:parent.window.close();">Click here<\/a> to close this window.<\/font>');
+    document.layers['statusLabel'].document.close();
+    document.layers['progressBarImage'].visibility = 'hidden';
+  }
+}
+
+//--></script>
+
+</head>
+<body bgcolor="#CCCCCC" onLoad="prePrint()">
+
+<div id="statusLabel" style="position:absolute; width:200px; height:10px; z-index:1; left: 54px; top: 42px"></div>
+<div id="progressBarImage" style="position:absolute; width:200px; height:20px; z-index:2; left: 54px; top: 56px"><img src="../images/progressbar.gif" width="140" height="13" alt="Progress Animation" name="Progress"></div>
+
+</body>
+</html>

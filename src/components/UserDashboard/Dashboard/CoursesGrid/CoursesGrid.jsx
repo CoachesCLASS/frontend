@@ -117,9 +117,9 @@ function CoursesGrid(props) {
               <Link
                 style={{ fontSize: "17px", color: "black" }}
                 component={CourseLink}
-                to="/CourseHome/Communication Skills"
+                to="/CourseHome/Creative Problem Solving"
               >
-                Communication Skills
+                Creative Problem Solving
               </Link>
               <Typography
                 component="p"
@@ -158,9 +158,9 @@ function CoursesGrid(props) {
               <Link
                 style={{ fontSize: "17px", color: "black" }}
                 component={CourseLink}
-                to="/CourseHome/Technical Skills"
+                to="/CourseHome/Negotiation Skills"
               >
-                Technical Skills
+                Negotiation Skills
               </Link>
               <Typography
                 component="p"
@@ -197,9 +197,9 @@ function CoursesGrid(props) {
               <Link
                 style={{ fontSize: "17px", color: "black" }}
                 component={CourseLink}
-                to="/CourseHome/Management 101"
+                to="/CourseHome/Technical Skills"
               >
-                Management 101
+                TechnicalSkills
               </Link>
               <Typography
                 component="p"

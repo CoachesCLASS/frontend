@@ -4,7 +4,7 @@ import "./courseHome.scss";
 import Typography from "@material-ui/core/Typography/Typography";
 import Button from "@material-ui/core/Button/Button";
 import Avatar from "../../UserSettings/Avatar/Avatar";
-import CourseCalendar from "../../Calendar/Calendar";
+import CourseCalendar from "../CourseCalendar/CourseCalendar";
 // import { Link } from "react-router-dom";
 import { Link as RouterLink } from "react-router-dom";
 
@@ -110,7 +110,7 @@ function CourseHome(props) {
             </Button>
           </div>
         </Grid>
-        <CourseCalendar />
+        <CourseCalendar courseName={props.match.params.courseName} />
       </div>
     </>
   );

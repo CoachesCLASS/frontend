@@ -43,7 +43,7 @@ function AssignmentList(props) {
                 className="navLink"
               >
                 <Typography variant="body2" color="inherit">
-                  Homework#1
+                  Homework #1
                 </Typography>
                 </NavLink>
               </Grid>
@@ -53,7 +53,7 @@ function AssignmentList(props) {
                 className="navLink"
               >
                 <Typography variant="body2" color="inherit">
-                  2/12/19
+                  4/25/19
                 </Typography>
                 </NavLink>
               </Grid>
@@ -90,7 +90,7 @@ function AssignmentList(props) {
                 className="navLink"
               >
                 <Typography variant="body2" color="inherit">
-                  2/17/19
+                  5/2/19
                 </Typography>
                 </NavLink>
               </Grid>

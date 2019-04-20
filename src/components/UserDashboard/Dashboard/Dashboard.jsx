@@ -15,7 +15,7 @@ function Dashboard(props) {
 
   return (
     <>
-      <Grid container xs={12} className="contentContainer">
+      <Grid container className="contentContainer">
         <Grid item xs={9}>
           <CoursesGrid />
         </Grid>
