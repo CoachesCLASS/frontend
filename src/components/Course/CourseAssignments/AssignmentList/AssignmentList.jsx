@@ -5,6 +5,27 @@ import Paper from "@material-ui/core/Paper/Paper";
 import Typography from "@material-ui/core/Typography/Typography";
 import { NavLink } from "react-router-dom";
 function AssignmentList(props) {
+
+  var assignments = [];
+  var date = new Date();
+  
+  var data = require("../../../../assets/db.json"); // forward slashes will depend on the file location
+  for (var i = 0; i < data.courses.length; i++){
+    if (data.courses[i].title === props.courseName){
+      var courseAssignments = data.courses[i].assignments;
+      for (var j = 0; j < courseAssignments.length; j++) {
+        var obj = courseAssignments[j];
+        var dueDate = new Date(obj.dueDate);
+        if (props.title==="Upcoming" && (date.getTime() <= dueDate.getTime()) ) {
+          assignments.push(obj);
+        }
+        if (props.title==="Past" && (date.getTime() > dueDate.getTime()) ) {
+          assignments.push(obj);
+        }
+      }
+    }
+  }
+
   return (
     <>
       <Paper className="listContainer">
@@ -34,80 +55,37 @@ function AssignmentList(props) {
               </Grid>
             </Grid>
           </li>
-          <li>
-            <Grid container xs={12} className="courseEntry">
-            
-              <Grid item xs={4}>
-              <NavLink
-                to={"/CourseAssignments/" + props.courseName + "/Homework 1"}
-                className="navLink"
-              >
-                <Typography variant="body2" color="inherit">
-                  Homework #1
-                </Typography>
-                </NavLink>
-              </Grid>
-              <Grid item xs={4}>
-              <NavLink
-                to={"/CourseAssignments/" + props.courseName + "/Homework 1"}
-                className="navLink"
-              >
-                <Typography variant="body2" color="inherit">
-                  4/25/19
-                </Typography>
-                </NavLink>
-              </Grid>
-              <Grid item xs={4}>
-              <NavLink
-                to={"/CourseAssignments/" + props.courseName + "/Homework 1"}
-                className="navLink"
-              >
-                {props.title === "Past" && (
-                  <Typography variant="body2" color="inherit">
-                    10/10
-                  </Typography>
-                )}
-                </NavLink>
-              </Grid>
+            {assignments.map(assignment => (
+              <li>
+                <Grid container xs={12} className="courseEntry">
+                  <Grid item xs={4}>
+                  <NavLink
+                    to={"/CourseAssignments/" + props.courseName + "/" + assignment.title}
+                    className="navLink"
+                  >
+                    <Typography variant="body2" color="inherit">
+                      {assignment.title}
+                    </Typography>
+                  </NavLink>
+                  </Grid>
+                  <Grid item xs={4}>
+                    <Typography variant="body2" color="inherit">
+                      {assignment.dueDate.substring(0,15)}
+                    </Typography>
+                  </Grid>
+                  <Grid item xs={4}>
+                    {props.title === "Past" && (
+                      <Typography variant="body2" color="inherit">
+                        {assignment.points}
+                      </Typography>
+                    )}
+                  </Grid>
+                </Grid>
+              </li>
+            )
+            )}
 
-            </Grid>
-          </li>
-          <li>
-            <Grid container xs={12} className="courseEntry">
-              <Grid item xs={4}>
-              <NavLink
-                to={"/CourseAssignments/" + props.courseName + "/Project Proposal"}
-                className="navLink"
-              >
-                <Typography variant="body2" color="inherit">
-                  Project Proposal
-                </Typography>
-              </NavLink>
-              </Grid>
-              <Grid item xs={4}>
-              <NavLink
-                to={"/CourseAssignments/" + props.courseName + "/Project Proposal"}
-                className="navLink"
-              >
-                <Typography variant="body2" color="inherit">
-                  5/2/19
-                </Typography>
-                </NavLink>
-              </Grid>
-              <Grid item xs={4}>
-              <NavLink
-                to={"/CourseAssignments/" + props.courseName + "/Project Proposal"}
-                className="navLink"
-              >
-                {props.title === "Past" && (
-                  <Typography variant="body2" color="inherit">
-                    10/10
-                  </Typography>
-                )}
-                </NavLink>
-              </Grid>
-            </Grid>
-          </li>
+
         </ul>
       </Paper>
     </>
