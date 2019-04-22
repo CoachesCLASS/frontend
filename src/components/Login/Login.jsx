@@ -13,7 +13,7 @@ import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/styles';
 import Logo from '../../assets/CoachesCLASS_small.jpeg'
 import RedirectButton from '../RedirectButton/RedirectButton';
-import users from '../../LoginService/users.json';
+import users from '../../assets/users.json';
 import { SET_INSTRUCTOR } from '../../store/actionTypes';
 import { connect } from 'react-redux';
 
