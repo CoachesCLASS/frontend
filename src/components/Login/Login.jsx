@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import Avatar from '@material-ui/core/Avatar';
-import Button from '@material-ui/core/Button';
+import { Switch } from '@material-ui/core';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import FormControl from '@material-ui/core/FormControl';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
@@ -10,12 +10,14 @@ import Input from '@material-ui/core/Input';
 import InputLabel from '@material-ui/core/InputLabel';
 import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
-import withStyles from '@material-ui/core/styles/withStyles';
+import { makeStyles } from '@material-ui/styles';
 import Logo from '../../assets/CoachesCLASS_small.jpeg'
 import RedirectButton from '../RedirectButton/RedirectButton';
 import users from '../../LoginService/users.json';
+import { SET_INSTRUCTOR } from '../../store/actionTypes';
+import { connect } from 'react-redux';
 
-const styles = theme => ({
+const useStyles = makeStyles(theme => ({
   main: {
     width: 'auto',
     display: 'block', // Fix IE 11 issue.
@@ -45,10 +47,28 @@ const styles = theme => ({
   submit: {
     marginTop: theme.spacing.unit * 3,
   },
-});
+}));
+
+const mapStateToProps = (state) => {
+  return {
+    instructor: state.instructor.isInstructor,
+  }
+}
+
+const mapDispatchToProps = (dispatch) => {
+  return {
+    setIsInstructor: (isInstructor) => {
+      dispatch({
+        type: SET_INSTRUCTOR,
+        isInstructor,
+      })
+    },
+  }
+}
+
 
 function SignIn(props) {
-  const { classes } = props;
+  const classes = useStyles();
   const [email, setEmail] = useState("")
   const [password, setPassword] = useState("")
   
@@ -73,8 +93,13 @@ function SignIn(props) {
   const onEmailChange = event => {
     setEmail(event.target.value)
   }
+  
   const onPasswordChange = event => {
     setPassword(event.target.value)
+  }
+  
+  const handleChange = event => {
+    props.setIsInstructor(event.target.checked)
   }
 
   return (
@@ -82,7 +107,7 @@ function SignIn(props) {
       <CssBaseline />
       <Paper className={classes.paper}>
         <Avatar className={classes.avatar}>
-          <img id="dtImage" class="desktop-logo" src={Logo} alt="Coaches Class"/>
+          <img id="dtImage" className="desktop-logo" src={Logo} alt="Coaches Class"/>
         </Avatar>
         <Typography component="h1" variant="h5">
           Sign in
@@ -100,13 +125,13 @@ function SignIn(props) {
             control={<Checkbox value="remember" color="primary" />}
             label="Remember me"
           />
-          <RedirectButton
-            className="buttonSpacing"
-            onClick={submit}
-          >
-            Sign in
-          </RedirectButton>
-          <p></p>
+          <FormControlLabel
+            control={
+              <Switch checked={props.instructor} onChange={handleChange} />
+            }
+            label="Instructor"
+          />
+          <p><RedirectButton className="buttonSpacing" onClick={submit}>Sign in</RedirectButton></p>
           <p><RedirectButton path="/reset" className="buttonSpacing">Reset Password</RedirectButton></p>
           <p><RedirectButton path="/register" className="buttonSpacing">Register</RedirectButton></p>
           <p><RedirectButton path="/" className="buttonSpacing">Home</RedirectButton></p>
@@ -120,4 +145,4 @@ SignIn.propTypes = {
   classes: PropTypes.object.isRequired,
 };
 
-export default withStyles(styles)(SignIn);
+export default connect(mapStateToProps, mapDispatchToProps)(SignIn);

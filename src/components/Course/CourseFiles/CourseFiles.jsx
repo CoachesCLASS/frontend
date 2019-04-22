@@ -1,7 +1,6 @@
 import React from "react";
 import { Grid } from "@material-ui/core";
 import "./courseFiles.scss";
-import SimpleAppBar from "../../SimpleAppBar/SimpleAppBar";
 import Typography from "@material-ui/core/Typography/Typography";
 import Avatar from "../../UserSettings/Avatar/Avatar";
 import Paper from "@material-ui/core/Paper";
@@ -12,7 +11,6 @@ import IconButton from "@material-ui/core/IconButton";
 function CourseFiles(props) {
   return (
     <>
-      <SimpleAppBar title="Coaches C.L.A.S.S." value={2} />
       <div className="wrapper">
         <Grid container alignItems="center" className="courseDetails">
           <Avatar />
@@ -57,13 +55,18 @@ function CourseFiles(props) {
                   <SaveAltIcon />
                 </IconButton>
                 <div style={{ padding: "4px" }}>
-                  <Typography
-                    variant="body2"
-                    component="h3"
-                    style={{ margin: "auto" }}
+                  <NavLink
+                    to={"/CourseFiles/" + props.match.params.courseName +"/FileView"}
+                    className="navLink"
                   >
-                    Powerpoint 1
-                  </Typography>
+                    <Typography
+                      variant="body2"
+                      component="h3"
+                      style={{ margin: "auto" }}
+                    >
+                      Powerpoint 1
+                    </Typography>
+                  </NavLink>
                 </div>
               </Grid>
             </li>
@@ -78,13 +81,18 @@ function CourseFiles(props) {
                   <SaveAltIcon />
                 </IconButton>
                 <div>
-                  <Typography
-                    variant="body2"
-                    component="h3"
-                    style={{ margin: "auto" }}
+                  <NavLink
+                    to={"/CourseFiles/" + props.match.params.courseName +"/FileView"}
+                    className="navLink"
                   >
-                    Powerpoint 2
-                  </Typography>
+                    <Typography
+                      variant="body2"
+                      component="h3"
+                      style={{ margin: "auto" }}
+                    >
+                      Powerpoint 2
+                    </Typography>
+                  </NavLink>
                 </div>
               </Grid>
             </li>

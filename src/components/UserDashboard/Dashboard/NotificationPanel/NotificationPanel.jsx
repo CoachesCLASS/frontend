@@ -17,7 +17,7 @@ function NotificationPanel(props) {
         <Typography variant="h6" className="comingUpTitle">
           Coming Up
         </Typography>
-        <hr class="mt-0" width="90%" />
+        <hr className="mt-0" width="90%" />
         <div className="comingUpList">
           <List>
             <ListItem>
@@ -54,7 +54,7 @@ function NotificationPanel(props) {
         <Typography variant="h6" className="comingUpTitle">
           Recent Feedback
         </Typography>
-        <hr class="mt-0" width="90%" />
+        <hr className="mt-0" width="90%" />
         <div className="comingUpList">
           <List>
             <ListItem>

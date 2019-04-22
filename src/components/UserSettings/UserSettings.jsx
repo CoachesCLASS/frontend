@@ -1,7 +1,6 @@
 import React from "react";
 import { Grid } from "@material-ui/core";
 import "./userSettings.scss";
-import SimpleAppBar from "../SimpleAppBar/SimpleAppBar";
 import Avatar from "./Avatar/Avatar";
 import ListItemComposition from "./MenuList/MenuList";
 import Link from "@material-ui/core/Link";
@@ -14,18 +13,13 @@ import SubscriptionSettings from "./SettingsPages/SubscriptionSettings";
 function UserSettings(props) {
   return (
     <>
-      <SimpleAppBar title="Coaches C.L.A.S.S." value={0} />
       <Grid
         container
         direction="row"
         spacing={0}
         style={{ height: "100%" }}
       >
-        <Grid
-          item
-          xs={3}
-          style={{ border: "1px solid grey", height: "100%", width: "100%" }}
-        >
+        <Grid item xs={3}>
           <Grid container className="mainImg" justify="center">
             <Avatar title="Natalie Ryan" initial="N" />
             <Grid item>
@@ -54,11 +48,7 @@ function UserSettings(props) {
           </Grid>
         </Grid>
 
-        <Grid
-          item
-          xs={9}
-          style={{ border: "1px solid grey" }}
-        >
+        <Grid item xs={9}>
           <Switch>
             <Route path="/UserSettings/account" component={AccountSettings}/>
             <Route path="/UserSettings/password" component={PasswordSettings}/>

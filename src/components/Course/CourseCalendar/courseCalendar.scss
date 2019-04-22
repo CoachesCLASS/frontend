@@ -1,0 +1,68 @@
+.courseCalendar {
+  width: 400px !important;
+  height: 400px !important;
+  margin: 0px auto;
+}
+.courseCalendarContainer {
+  padding-top: 50px;
+  width: 100%;
+  margin: 0px auto;
+  justify-content: center;
+  align-self: start;
+}
+.leftItem {
+  width: 40%;
+}
+.courseCalendarContainer .calendarEventList {
+  padding: 20px;
+  width: 600px;
+}
+.courseCalendar .react-calendar__navigation {
+  height: 60px !important;
+  background-color: #424242 !important;
+  color: white !important;
+  margin-bottom: 10px;
+}
+.courseCalendar .react-calendar__navigation__label {
+  color: white !important;
+}
+.courseCalendar .react-calendar__navigation__label:hover {
+  background-color: #2196f3 !important;
+}
+.courseCalendar .react-calendar__month-view__weekdays {
+  height: 45px !important;
+  font-size: 20px !important;
+  text-decoration: underline !important;
+}
+.courseCalendar .react-calendar__month-view__days {
+  height: 275px !important;
+}
+.courseCalendar .react-calendar__month-view {
+  height: 275px !important;
+}
+.courseCalendar .react-calendar__navigation__prev-button {
+  color: white !important;
+}
+.courseCalendar .react-calendar__navigation__prev2-button {
+  color: white !important;
+}
+.courseCalendar .react-calendar__navigation__next-button {
+  color: white !important;
+}
+.courseCalendar .react-calendar__navigation__next2-button {
+  color: white !important;
+}
+
+.courseCalendar .react-calendar__month-view__days__day--neighboringMonth {
+  color: grey !important;
+}
+.courseCalendar .react-calendar__month-view__days__day--weekend {
+  color: red !important;
+}
+.courseCalendar .react-calendar__month-view__days__day {
+  font-size: 16px !important;
+  color: black !important;
+}
+.courseCalendar .react-calendar__tile--active {
+  background-color: #2196f3 !important;
+}
