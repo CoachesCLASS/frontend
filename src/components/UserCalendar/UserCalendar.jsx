@@ -32,7 +32,7 @@ function UserCalendar(props) {
               />
             </Grid>
             <Grid item className="calendarEventList">
-              <CalendarEventList date={date.toString().substring(0, 15)} checked1={checked1} checked2={checked2} checked3={checked3} checked4={checked4} checked5={checked5}/>
+              <CalendarEventList date={date.toDateString()} checked1={checked1} checked2={checked2} checked3={checked3} checked4={checked4} checked5={checked5}/>
             </Grid>
           </Grid>
         </Grid>

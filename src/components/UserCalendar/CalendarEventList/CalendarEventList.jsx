@@ -14,35 +14,24 @@ function CalendarEventList(props) {
   courseStates["Emotional Intelligence"] = props.checked5;
 
   var calendarEvents = [];
-  //   const [date, setDate] = useState(new Date());
-  console.log("testing");
+  var date = new Date(props.date);
   var data = require("../../../assets/db.json"); // forward slashes will depend on the file location
-  console.log(data.courses);
+
   for (var i = 0; i < data.courses.length; i++) {
     var title = data.courses[i].title;
     var assignments = data.courses[i].assignments;
-    var announcements = data.courses[i].announcements;
-    console.log("Course: " + title);
     for (var j = 0; j < assignments.length; j++) {
       var obj = assignments[j];
-      var dueDate = obj.dueDate;
-      if (obj.dueDate == props.date) {
-        if (props.courseName && props.courseName == obj.class) {
-          console.log("Assignment: " + obj.title);
-          console.log("Due Date: " + dueDate);
-          console.log("Calendar Date: " + props.date);
+      var dueDate = new Date(obj.dueDate);
+      if (dueDate.getTime() === date.getTime()) {
+        if (props.courseName && props.courseName === obj.class) {
           calendarEvents.push(obj);
         }
-        if (!props.courseName &&  courseStates[obj.class] == true) {
-          console.log("Assignment: " + obj.title);
-          console.log("Due Date: " + dueDate);
-          console.log("Calendar Date: " + props.date);
+        if (!props.courseName &&  courseStates[obj.class] === true) {
           calendarEvents.push(obj);
         }
       }
-      // if (obj.dueDate)
     }
-    console.log(calendarEvents);
   }
   return (
     <>

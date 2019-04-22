@@ -6,7 +6,7 @@
         {
           "id": 1,
           "title": "Pre-Assignment",
-          "dueDate": "Thu Apr 18 2019",
+          "dueDate": "April 18, 2019 23:59:59",
           "points": 10,
           "type": "Homework",
           "class": "Creative Problem Solving"
@@ -14,7 +14,7 @@
         {
           "id": 2,
           "title": "Quiz Questions",
-          "dueDate": "Sat May 01 2019",
+          "dueDate": "May 1, 2019 23:59:59",
           "points": 50,
           "type": "Quiz",
           "class": "Creative Problem Solving"
@@ -22,7 +22,7 @@
         {
           "id": 3,
           "title": "Test Questions",
-          "dueDate": "Sat May 18 2019",
+          "dueDate": "May 18, 2019 23:59:59",
           "points": 100,
           "type": "Test",
           "class": "Creative Problem Solving"
@@ -30,7 +30,7 @@
         {
           "id": 4,
           "title": "Evaluation Plan",
-          "dueDate": "Wed Apr 24 2019",
+          "dueDate": "April 24, 2019 23:59:59",
           "points": 30,
           "type": "Project",
           "class": "Creative Problem Solving"
@@ -38,7 +38,7 @@
         {
           "id": 5,
           "title": "Learning Journal",
-          "dueDate": "Sun Apr 28 2019",
+          "dueDate": "April 28, 2019 23:59:59",
           "points": 30,
           "type": "Homework",
           "class": "Creative Problem Solving"
@@ -50,7 +50,7 @@
           "title": "Introduction",
           "body": "Hi class! Welcome to Creative Problem Solving! My name is Bert Robinson and I will be your instructor this semester.",
           "postId": 1,
-          "postDate": "Mon Jan 28 2019",
+          "postDate": "January 28, 2019 23:59:59",
           "class": "Creative Problem Solving"
         }
       ]
@@ -61,7 +61,7 @@
         {
           "id": 1,
           "title": "Pre-Assignment",
-          "dueDate": "Thu Apr 18 2019",
+          "dueDate": "April 18, 2019 23:59:59",
           "points": 10,
           "type": "Homework",
           "class": "Negotiation Skills"
@@ -69,7 +69,7 @@
         {
           "id": 2,
           "title": "Quiz Questions",
-          "dueDate": "Sat May 01 2019",
+          "dueDate": "May 1, 2019 23:59:59",
           "points": 50,
           "type": "Quiz",
           "class": "Negotiation Skills"
@@ -77,7 +77,7 @@
         {
           "id": 3,
           "title": "Test Questions",
-          "dueDate": "Sat May 18 2019",
+          "dueDate": "May 18, 2019 23:59:59",
           "points": 100,
           "type": "Test",
           "class": "Negotiation Skills"
@@ -85,7 +85,7 @@
         {
           "id": 4,
           "title": "Communication Management Plan",
-          "dueDate": "Wed Apr 24 2019",
+          "dueDate": "April 24, 2019 23:59:59",
           "points": 30,
           "type": "Project",
           "class": "Negotiation Skills"
@@ -93,7 +93,7 @@
         {
           "id": 5,
           "title": "Learning Journal",
-          "dueDate": "Sun Apr 28 2019",
+          "dueDate": "April 28, 2019 23:59:59",
           "points": 30,
           "type": "Homework",
           "class": "Negotiation Skills"
@@ -105,7 +105,7 @@
           "title": "Introduction",
           "body": "Hi class! Welcome to Communication Skills! My name is Bert Robinson and I will be your instructor this semester.",
           "postId": 1,
-          "postDate": "Mon Jan 28 2019",
+          "postDate": "January 28, 2019 23:59:59",
           "class": "Negotiation Skills"
         }
       ]
@@ -116,7 +116,7 @@
         {
           "id": 1,
           "title": "Pre-Assignment",
-          "dueDate": "Thu Apr 18 2019",
+          "dueDate": "April 18, 2019 23:59:59",
           "points": 10,
           "type": "Homework",
           "class": "Critical Thinking"
@@ -124,7 +124,7 @@
         {
           "id": 2,
           "title": "Quiz Questions",
-          "dueDate": "Sat May 01 2019",
+          "dueDate": "May 1, 2019 23:59:59",
           "points": 50,
           "type": "Quiz",
           "class": "Critical Thinking"
@@ -132,7 +132,7 @@
         {
           "id": 3,
           "title": "Test Questions",
-          "dueDate": "Sat May 18 2019",
+          "dueDate": "May 18, 2019 23:59:59",
           "points": 100,
           "type": "Test",
           "class": "Critical Thinking"
@@ -140,7 +140,7 @@
         {
           "id": 4,
           "title": "Deduction vs. Induction Discussion",
-          "dueDate": "Wed Apr 24 2019",
+          "dueDate": "April 24, 2019 23:59:59",
           "points": 50,
           "type": "Quiz",
           "class": "Critical Thinking"
@@ -148,7 +148,7 @@
         {
           "id": 5,
           "title": "Learning Journal",
-          "dueDate": "Sun Apr 28 2019",
+          "dueDate": "April 28, 2019 23:59:59",
           "points": 30,
           "type": "Homework",
           "class": "Critical Thinking"
@@ -160,7 +160,7 @@
           "title": "Introduction",
           "body": "Hi class! Welcome to the Coaches Class Critical Thinking course! My name is Bert Robinson and I will be your instructor this semester.",
           "postId": 1,
-          "postDate": "Mon Jan 28 2019",
+          "postDate": "January 28, 2019 23:59:59",
           "class": "Critical Thinking"
         }
       ]
@@ -171,7 +171,7 @@
         {
           "id": 1,
           "title": "Pre-Assignment",
-          "dueDate": "Thu Apr 18 2019",
+          "dueDate": "April 18, 2019 23:59:59",
           "points": 10,
           "type": "Homework",
           "class": "Emotional Intelligence"
@@ -179,7 +179,7 @@
         {
           "id": 2,
           "title": "Quiz Questions",
-          "dueDate": "Sat May 01 2019",
+          "dueDate": "May 1, 2019 23:59:59",
           "points": 50,
           "type": "Quiz",
           "class": "Emotional Intelligence"
@@ -187,7 +187,7 @@
         {
           "id": 3,
           "title": "Test Questions",
-          "dueDate": "Sat May 18 2019",
+          "dueDate": "May 18, 2019 23:59:59",
           "points": 100,
           "type": "Test",
           "class": "Emotional Intelligence"
@@ -195,7 +195,7 @@
         {
           "id": 4,
           "title": "Emotional Awareness Activity",
-          "dueDate": "Wed Apr 24 2019",
+          "dueDate": "April 24, 2019 23:59:59",
           "points": 50,
           "type": "Homework",
           "class": "Emotional Intelligence"
@@ -203,7 +203,7 @@
         {
           "id": 5,
           "title": "Learning Journal",
-          "dueDate": "Sun Apr 28 2019",
+          "dueDate": "April 28, 2019 23:59:59",
           "points": 30,
           "type": "Homework",
           "class": "Emotional Intelligence"
@@ -215,7 +215,7 @@
           "title": "Introduction",
           "body": "Hi class! Welcome to the Coaches Class Critical Thinking course! My name is Bert Robinson and I will be your instructor this semester.",
           "postId": 1,
-          "postDate": "Mon Jan 28 2019",
+          "postDate": "January 28, 2019 23:59:59",
           "class": "Critical Thinking"
         }
       ]
@@ -226,7 +226,7 @@
         {
           "id": 1,
           "title": "Pre-Assignment",
-          "dueDate": "Thu Apr 18 2019",
+          "dueDate": "April 18, 2019 23:59:59",
           "points": 10,
           "type": "Homework",
           "class": "Measuring Results From Training"
@@ -234,7 +234,7 @@
         {
           "id": 2,
           "title": "Quiz Questions",
-          "dueDate": "Sat May 01 2019",
+          "dueDate": "May 1, 2019 23:59:59",
           "points": 50,
           "type": "Quiz",
           "class": "Measuring Results From Training"
@@ -242,7 +242,7 @@
         {
           "id": 3,
           "title": "Test Questions",
-          "dueDate": "Sat May 18 2019",
+          "dueDate": "May 18, 2019 23:59:59",
           "points": 100,
           "type": "Test",
           "class": "Measuring Results From Training"
@@ -250,7 +250,7 @@
         {
           "id": 4,
           "title": "Deduction vs. Induction Discussion",
-          "dueDate": "Wed Apr 24 2019",
+          "dueDate": "April 24, 2019 23:59:59",
           "points": 50,
           "type": "Quiz",
           "class": "Measuring Results From Training"
@@ -258,7 +258,7 @@
         {
           "id": 5,
           "title": "Learning Journal",
-          "dueDate": "Sun Apr 28 2019",
+          "dueDate": "April 28, 2019 23:59:59",
           "points": 30,
           "type": "Homework",
           "class": "Measuring Results From Training"
@@ -270,7 +270,7 @@
           "title": "Introduction",
           "body": "Hi class! Welcome to the Coaches Measuring Results From Training course! My name is Bert Robinson and I will be your instructor this semester.",
           "postId": 1,
-          "postDate": "Mon Jan 28 2019",
+          "postDate": "January 28, 2019 23:59:59",
           "class": "Measuring Results From Training"
         }
       ]
