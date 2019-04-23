@@ -4,12 +4,19 @@ import "./courseGrades.scss";
 import Typography from "@material-ui/core/Typography/Typography";
 import Avatar from "../../UserSettings/Avatar/Avatar";
 import { NavLink } from "react-router-dom";
+import {connect} from 'react-redux';
 
+const mapStateToProps = (state) => {
+  return {
+    courses: state.allCourses.courses,
+    userId: state.userId.id,
+  }
+}
 function CourseGrades(props) {
   var grades = [];
   var data = require("../../../assets/grades.json");
   for (var i = 0; i < data.length; i++){
-    if (data[i].user == props.match.params.userId){
+    if (data[i].user == props.userId){
       var courses = data[i].courses;
       for (var j = 0; j < courses.length; j++){
         var course = courses[j];
@@ -43,7 +50,7 @@ function CourseGrades(props) {
           className="courseTabs"
         >
           <NavLink
-            to={"/CourseHome/" + props.match.params.courseName + "/" + props.match.params.userId}
+            to={"/CourseHome/" + props.match.params.courseName}
             className="navLink"
           >
             <Typography className="navtab">Home > </Typography>
@@ -87,7 +94,7 @@ function CourseGrades(props) {
                 <Grid container direction="row" spacing={4}>
                   <Grid item xs={4} >
                     <NavLink
-                      to={"/CourseAssignments/" + props.match.params.courseName + "/" + props.match.params.userId + "/" + grade.assignment}
+                      to={"/CourseAssignments/" + props.match.params.courseName + "/" + grade.assignment}
                       className="navLink"
                     >
                       <Typography variant="caption" style={{ color: "grey" }}>
@@ -122,4 +129,4 @@ function CourseGrades(props) {
 }
 // alignItems="center"
 
-export default CourseGrades;
+export default connect(mapStateToProps)(CourseGrades);

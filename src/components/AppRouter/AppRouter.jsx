@@ -37,6 +37,7 @@ const useStyles = makeStyles(theme => ({
 
 function AppRouter(props) {
   const classes = useStyles();
+  
   return (
     <>
       {props.location.pathname === "/" ? (
@@ -65,24 +66,24 @@ function AppRouter(props) {
             <Route path="/login" component={Login} />
             <Route path="/register" component={Register} />
             <Route path="/reset" component={ResetPassword} />
-            <Route path="/courses/:userId" component={CoursesDashboard} />
+            <Route path="/courses" component={CoursesDashboard} />
             <Route path="/UserDashboard" component={Dashboard} />
-            <Route path="/CourseHome/:courseName/:userId" component={CourseHome} />
-            <Route path="/MyCourses/:userId" component={MyCourses} />
-            <Route path="/UserCalendar/:userId" component={UserCalendar} />
-            <Route path="/CourseFiles/:courseName/:userId/FileView" component={FileView} />
+            <Route path="/CourseHome/:courseName" component={CourseHome} />
+            <Route path="/MyCourses" component={MyCourses} />
+            <Route path="/UserCalendar" component={UserCalendar} />
+            <Route path="/CourseFiles/:courseName/FileView" component={FileView} />
             <Route
-              path="/CourseAnnouncements/:courseName/:userId"
+              path="/CourseAnnouncements/:courseName"
               component={CourseAnnouncements}
             />
-            <Route path="/CourseFiles/:courseName/:userId" component={CourseFiles} />
-            <Route path="/CourseGrades/:courseName/:userId" component={CourseGrades} />
+            <Route path="/CourseFiles/:courseName" component={CourseFiles} />
+            <Route path="/CourseGrades/:courseName" component={CourseGrades} />
             <Route
-              path="/CourseAssignments/:courseName/:userId/:assignmentName"
+              path="/CourseAssignments/:courseName/:assignmentName"
               component={Assignment}
             />
             <Route
-              path="/CourseAssignments/:courseName/:userId"
+              path="/CourseAssignments/:courseName"
               component={CourseAssignments}
             />
             <Route component={NotFound404Page} />

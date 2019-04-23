@@ -4,6 +4,14 @@ import "./assignmentList.scss";
 import Paper from "@material-ui/core/Paper/Paper";
 import Typography from "@material-ui/core/Typography/Typography";
 import { NavLink } from "react-router-dom";
+import {connect} from 'react-redux';
+
+const mapStateToProps = (state) => {
+  return {
+    courses: state.allCourses.courses,
+    userId: state.userId.id,
+  }
+}
 function AssignmentList(props) {
 
   var assignments = [];
@@ -60,7 +68,7 @@ function AssignmentList(props) {
                 <Grid container xs={12} className="courseEntry">
                   <Grid item xs={4}>
                   <NavLink
-                    to={"/CourseAssignments/" + props.courseName + "/" + props.userId + "/" +  assignment.title}
+                    to={"/CourseAssignments/" + props.courseName + "/" +  assignment.title}
                     className="navLink"
                   >
                     <Typography variant="body2" color="inherit">
@@ -92,4 +100,4 @@ function AssignmentList(props) {
   );
 }
 
-export default AssignmentList;
+export default connect(mapStateToProps)(AssignmentList);

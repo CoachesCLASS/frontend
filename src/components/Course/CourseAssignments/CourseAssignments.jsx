@@ -5,7 +5,14 @@ import Typography from "@material-ui/core/Typography/Typography";
 import Avatar from "../../UserSettings/Avatar/Avatar";
 import { NavLink } from "react-router-dom";
 import AssignmentList from "./AssignmentList/AssignmentList";
+import {connect} from 'react-redux';
 
+const mapStateToProps = (state) => {
+  return {
+    courses: state.allCourses.courses,
+    userId: state.userId.id,
+  }
+}
 function CourseAssignments(props) {
 
   return (
@@ -29,7 +36,7 @@ function CourseAssignments(props) {
           className="courseTabs"
         >
           <NavLink
-            to={"/CourseHome/" + props.match.params.courseName + "/" + props.match.params.userId}
+            to={"/CourseHome/" + props.match.params.courseName}
             className="navLink"
           >
             <Typography className="navtab">Home > </Typography>
@@ -48,10 +55,10 @@ function CourseAssignments(props) {
           className="assignmentContainer"
         >
           <Grid item>
-            <AssignmentList title="Upcoming" courseName = {props.match.params.courseName} userId = { props.match.params.userId} />
+            <AssignmentList title="Upcoming" courseName = {props.match.params.courseName} />
           </Grid>
           <Grid item>
-            <AssignmentList title="Past" courseName = {props.match.params.courseName} userId = { props.match.params.userId} />
+            <AssignmentList title="Past" courseName = {props.match.params.courseName}  />
           </Grid>
         </Grid>
       </div>
@@ -59,4 +66,4 @@ function CourseAssignments(props) {
   );
 }
 
-export default CourseAssignments;
+export default connect(mapStateToProps)(CourseAssignments);

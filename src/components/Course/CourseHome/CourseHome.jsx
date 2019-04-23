@@ -10,16 +10,16 @@ import { Link as RouterLink } from "react-router-dom";
 
 function CourseHome(props) {
   const CourseAnnouncementsLink = props => (
-    <RouterLink to="/CourseAnnouncements/{$courseName}/{$userId}" {...props} />
+    <RouterLink to="/CourseAnnouncements/{$courseName}" {...props} />
   );
   const CourseAssignmentsLink = props => (
-    <RouterLink to="/CourseAnnouncements/{$courseName}/{$userId}" {...props} />
+    <RouterLink to="/CourseAnnouncements/{$courseName}" {...props} />
   );
   const CourseGradesLink = props => (
-    <RouterLink to="/CourseGrades/{$courseName}/{$userId}" {...props} />
+    <RouterLink to="/CourseGrades/{$courseName}" {...props} />
   );
   const CourseFilesLink = props => (
-    <RouterLink to="/CourseFiles/{$courseName}/{$userId}" {...props} />
+    <RouterLink to="/CourseFiles/{$courseName}" {...props} />
   );
   return (
     <>
@@ -45,7 +45,7 @@ function CourseHome(props) {
             <Button
               className="courseTab"
               component={CourseAnnouncementsLink}
-              to={"/CourseAnnouncements/" + props.match.params.courseName + "/" + props.match.params.userId}
+              to={"/CourseAnnouncements/" + props.match.params.courseName }
             >
               <Typography
                 component="p"
@@ -60,7 +60,7 @@ function CourseHome(props) {
             <Button
               className="courseTab"
               component={CourseAssignmentsLink}
-              to={"/CourseAssignments/" + props.match.params.courseName + "/" + props.match.params.userId}
+              to={"/CourseAssignments/" + props.match.params.courseName }
               value="assignments"
             >
               <Typography
@@ -83,7 +83,7 @@ function CourseHome(props) {
             <Button
               className="courseTab"
               component={CourseGradesLink}
-              to={"/CourseGrades/" + props.match.params.courseName + "/" + props.match.params.userId}
+              to={"/CourseGrades/" + props.match.params.courseName }
             >
               <Typography
                 component="p"
@@ -98,7 +98,7 @@ function CourseHome(props) {
             <Button
               className="courseTab"
               component={CourseFilesLink}
-              to={"/CourseFiles/" + props.match.params.courseName + "/" + props.match.params.userId}
+              to={"/CourseFiles/" + props.match.params.courseName}
             >
               <Typography
                 component="p"

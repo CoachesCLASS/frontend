@@ -4,25 +4,61 @@ import "./userCalendar.scss";
 import CalendarControlPanel from "./CalendarControlPanel/CalendarControlPanel";
 import Calendar from "react-calendar";
 import CalendarEventList from "./CalendarEventList/CalendarEventList";
+import { SET_CHECKED_COURSES, SET_COURSES } from '../../store/actionTypes';
+import {connect} from 'react-redux';
 
+const mapStateToProps = (state) => {
+  return {
+    courses: state.allCourses.courses,
+    userId: state.userId.id,
+  }
+}
+
+const mapDispatchToProps = (dispatch) => {
+  return {
+    setCheckedCourses: (checked) => {
+      dispatch({
+        type: SET_CHECKED_COURSES,
+        checked,
+      })
+    },
+    setCourses: (courses) => {
+      dispatch({
+        type: SET_COURSES,
+        courses,
+      })
+    },
+  }
+}
 
 
 function UserCalendar(props) {
+  
   const [date, setDate] = useState(new Date());
-  const [checked1, setChecked1] = useState(false);
-  const [checked2, setChecked2] = useState(false);
-  const [checked3, setChecked3] = useState(false);
-  const [checked4, setChecked4] = useState(false);
-  const [checked5, setChecked5] = useState(false);
-
   var userData = require("../../assets/users.json");
+  var courses;
   for (var i = 0; i < userData.length; i++) {
     if( userData[i].id === props.userId){
-      var courses = userData.courses;
+      courses = userData[i].courses;
     }
   }
-  // for (var j = 0; j < courses.length; j++){
-  // }
+  props.setCourses(courses);
+  let coursesDefault = {}
+  courses.forEach((course, index) => {
+    coursesDefault = {
+      ...coursesDefault,
+      [course]: false
+    }
+  })
+  const [checkedCourses, setCheckedCourses] = useState(coursesDefault)
+
+  const handleCourseChecked = (course) => (event) => {
+    setCheckedCourses({
+      ...checkedCourses,
+      [course]: event.target.checked
+    })
+  }
+
   return (
     <>
       <Grid container xs={12} className="contentContainer">
@@ -41,15 +77,15 @@ function UserCalendar(props) {
               />
             </Grid>
             <Grid item className="calendarEventList">
-              <CalendarEventList date={date.toDateString()} checked1={checked1} checked2={checked2} checked3={checked3} checked4={checked4} checked5={checked5} userId={props.match.params.userId}/>
+              <CalendarEventList date={date.toDateString()} checkedCourses={checkedCourses} userId={props.match.params.userId}/>
             </Grid>
           </Grid>
         </Grid>
         <Grid item xs={3}>
-          <CalendarControlPanel checked1={checked1} checked2={checked2} checked3={checked3} checked4={checked4} setChecked1={setChecked1} setChecked2={setChecked2} setChecked3={setChecked3} setChecked4={setChecked4} setChecked5={setChecked5} userId={props.match.params.userId}/>
+          <CalendarControlPanel checkedCourses={checkedCourses} onCourseChecked={handleCourseChecked} courses={props.courses}/>
         </Grid>
       </Grid>
     </>
   );
 }
-export default UserCalendar;
+export default connect(mapStateToProps, mapDispatchToProps)(UserCalendar);

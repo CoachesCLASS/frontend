@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Grid } from "@material-ui/core";
 import "./dashboard.scss";
 import CoursesGrid from "./CoursesGrid/CoursesGrid";
@@ -11,7 +11,6 @@ const mapStateToProps = (state) => {
     userId: state.userId.id,
   }
 }
-
 function Dashboard(props) {
   return (
     <>

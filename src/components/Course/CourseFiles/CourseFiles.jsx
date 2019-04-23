@@ -30,7 +30,7 @@ function CourseFiles(props) {
           className="courseTabs"
         >
           <NavLink
-            to={"/CourseHome/" + props.match.params.courseName + "/" +  props.match.params.userId}
+            to={"/CourseHome/" + props.match.params.courseName}
             className="navLink"
           >
             <Typography className="navtab">Home > </Typography>
@@ -56,7 +56,7 @@ function CourseFiles(props) {
                 </IconButton>
                 <div style={{ padding: "4px" }}>
                   <NavLink
-                    to={"/CourseFiles/" + props.match.params.courseName + "/" + props.match.params.userId + "/FileView"}
+                    to={"/CourseFiles/" + props.match.params.courseName +  "/FileView"}
                     className="navLink"
                   >
                     <Typography
@@ -82,7 +82,7 @@ function CourseFiles(props) {
                 </IconButton>
                 <div>
                   <NavLink
-                    to={"/CourseFiles/" + props.match.params.courseName + "/" + props.match.params.userId + "/FileView"}
+                    to={"/CourseFiles/" + props.match.params.courseName + "/FileView"}
                     className="navLink"
                   >
                     <Typography

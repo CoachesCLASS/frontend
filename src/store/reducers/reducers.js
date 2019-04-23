@@ -5,10 +5,31 @@ import {
 import {
   SET_ID,
 } from '../actionTypes';
+import { 
+  SET_COURSES
+} from '../actionTypes';
 
 const instructorDefaultState = {
   isInstructor: false,
 }
+const coursesState = {
+  courses: [],
+}
+const idDefaultState = {
+  id: 2,
+}
+
+const allCourses = (state = coursesState, action) => {
+  switch(action.type) {
+       case SET_COURSES: return  {
+            ...state,
+            courses: action.courses,
+        }
+        default: {
+           return state;
+        }
+  }
+ }
 
 const instructor = (state = instructorDefaultState, action) => {
   switch (action.type) {
@@ -21,9 +42,7 @@ const instructor = (state = instructorDefaultState, action) => {
       return state;
   }
 }
-const idDefaultState = {
-  id: 0,
-}
+
 const userId = (state = idDefaultState, action) => {
   switch (action.type) {
     case SET_ID: 
@@ -38,6 +57,7 @@ const userId = (state = idDefaultState, action) => {
 const reducer = combineReducers({
   instructor,
   userId,
+  allCourses,
 })
 
 export default reducer;

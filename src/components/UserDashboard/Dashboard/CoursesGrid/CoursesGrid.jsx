@@ -20,7 +20,7 @@ function courseHomeLink(courseName, userId) {
 function CoursesGrid(props) {
   var randomMC = require("random-material-color");
   const CourseLink = props => (
-    <RouterLink to="/CourseHome/{$courseName}/{$userId}/" {...props} />
+    <RouterLink to="/CourseHome/{$courseName}" {...props} />
   );
   var courses = [];
   var data = require("../../../../assets/users.json"); // forward slashes will depend on the file location
@@ -52,7 +52,7 @@ function CoursesGrid(props) {
                   <Link
                     style={{ fontSize: "17px", color: "black" }}
                     component={CourseLink}
-                    to={courseHomeLink(course, props.userId)}
+                    to={courseHomeLink(course)}
                   >
                     {course}
                   </Link>
