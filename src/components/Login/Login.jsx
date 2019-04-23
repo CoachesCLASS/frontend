@@ -14,7 +14,7 @@ import { makeStyles } from '@material-ui/styles';
 import Logo from '../../assets/CoachesCLASS_small.jpeg'
 import RedirectButton from '../RedirectButton/RedirectButton';
 import users from '../../assets/users.json';
-import { SET_INSTRUCTOR } from '../../store/actionTypes';
+import { SET_INSTRUCTOR, SET_ID } from '../../store/actionTypes';
 import { connect } from 'react-redux';
 
 const useStyles = makeStyles(theme => ({
@@ -52,6 +52,7 @@ const useStyles = makeStyles(theme => ({
 const mapStateToProps = (state) => {
   return {
     instructor: state.instructor.isInstructor,
+    id: state.userId.id,
   }
 }
 
@@ -61,6 +62,12 @@ const mapDispatchToProps = (dispatch) => {
       dispatch({
         type: SET_INSTRUCTOR,
         isInstructor,
+      })
+    },
+    setId: (id) => {
+      dispatch({
+        type: SET_ID,
+        id,
       })
     },
   }
@@ -82,7 +89,8 @@ function SignIn(props) {
         if(email === users[u].email && password === users[u].password) 
         {
           console.log(true)
-          return { newPath: "/UserDashboard" }
+          props.setId(users[u].id)
+          return { newPath: "/UserDashboard"}
         }
      }
      console.log(false)

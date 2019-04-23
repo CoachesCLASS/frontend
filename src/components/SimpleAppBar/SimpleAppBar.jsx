@@ -8,6 +8,7 @@ import Tab from "@material-ui/core/Tab";
 import Grid from "@material-ui/core/Grid/Grid";
 import { NavLink, withRouter } from "react-router-dom";
 import logo from "../../assets/CC Logo.png";
+import {connect} from 'react-redux';
 
 const navTabs = [
   {
@@ -27,6 +28,7 @@ const navTabs = [
     path: "/UserCalendar"
   }
 ];
+
 
 function SimpleAppBar(props) {
   const { pathname } = props.location;

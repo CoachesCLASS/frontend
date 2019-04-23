@@ -37,6 +37,7 @@ const useStyles = makeStyles(theme => ({
 
 function AppRouter(props) {
   const classes = useStyles();
+  
   return (
     <>
       {props.location.pathname === "/" ? (
@@ -46,7 +47,7 @@ function AppRouter(props) {
         ) ? (
         <></>
       ) : (
-        <SimpleAppBar />
+        <SimpleAppBar/>
       )}
       <Grid container justify="center" className={classes.containerSpacing}>
         <Grid item xs={12}>

@@ -1,27 +1,45 @@
 [
     {
         "email": "Chris@smu.edu",
-        "password": "password1"
+        "password": "password1",
+        "id": 1,
+        "admin": false,
+        "courses": ["Emotional Intelligence", "Measuring Results From Training"]
     },
     {
         "email": "Katie@smu.edu",
-        "password": "password2"
+        "password": "password2",
+        "id": 2,
+        "admin": false,
+        "courses": ["Critical Thinking", "Creative Problem Solving", "Emotional Intelligence", "Measuring Results From Training", "Negotiation Skills"]
     },
     {
         "email": "Kellen@smu.edu",
-        "password": "password3"
+        "password": "password3",
+        "id": 3,
+        "admin": false,
+        "courses": ["Negotiation Skills", "Creative Problem Solving"]
     },
     {
         "email": "Johnathan@smu.edu",
-        "password": "password4"
+        "password": "password4",
+        "id": 4,
+        "admin": false,
+        "courses": ["Negotiation Skills"]
     },
     {
         "email": "Natalie@smu.edu",
-        "password": "password5"
+        "password": "password5",        
+        "id": 5,
+        "admin": false,
+        "courses": ["Emotional Intelligence", "Measuring Results From Training", "Negotiation Skills"]
     },
     {
         "email": "Bert@coachesclass.org",
-        "password": "SMU"
+        "password": "SMU",
+        "id": 6,
+        "admin": true,
+        "courses": []
     }
 
 ]

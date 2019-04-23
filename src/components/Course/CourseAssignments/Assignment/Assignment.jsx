@@ -8,8 +8,16 @@ import ContentRenderer from "../../../ContentRenderer/ContentRenderer";
 import { Home } from "@material-ui/icons";
 import { renderComponent } from "recompose";
 import HiddenContent from "../../../ContentRenderer/HiddenContent";
+import {connect} from 'react-redux';
 
 var accept = ".pdf";
+
+const mapStateToProps = (state) => {
+  return {
+    courses: state.allCourses.courses,
+    userId: state.userId.id,
+  }
+}
 
 function handleChange(selectorFiles: FileList){
   alert("File " + selectorFiles[0]["name"] + " Submitted!");
@@ -121,7 +129,7 @@ function ProjectProposal(props) {
 
 
 
-export default Assignment; 
+export default connect(mapStateToProps)(Assignment); 
 export {
   Homework1,
   ProjectProposal

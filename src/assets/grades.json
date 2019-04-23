@@ -1,0 +1,487 @@
+[
+    {
+    "user": 1,
+    "courses": [
+        {
+            "title": "Emotional Intelligence",
+            "grades": [
+                {
+                    "assignment": "Pre-Assignment", 
+                    "score": 10,
+                    "outOf": 10,
+                    "comment": "Nice work. Keep this up Chris!"
+                }, 
+                {
+                    "assignment": "Quiz Questions", 
+                    "score": 45,
+                    "outOf": 50,
+                    "comment": "-2.5 on question 3. -2.5 on question 4."
+
+                }, 
+                {
+                    "assignment": "Test Questions", 
+                    "score": 94,
+                    "outOf": 100,
+                    "comment": "-2 on question 13. -2 on question 25. -2 on question 46."
+                }, 
+                {
+                    "assignment": "Emotional Awareness Activity", 
+                    "score": 50,
+                    "outOf": 50,
+                    "comment": "Nice."
+                }, 
+                {
+                    "assignment": "Learning Journal", 
+                    "score":28,
+                    "outOf": 30,
+                    "comment": "Last entry is incomplete but nice work."
+                }
+            ]
+        },
+        {
+            "title": "Measuring Results From Training",
+            "grades": [
+                {
+                    "assignment": "Pre-Assignment", 
+                    "score": 9,                    
+                    "outOf": 10,
+                    "comment": "Good job Chris."
+                }, 
+                {
+                    "assignment": "Quiz Questions", 
+                    "score": 49,
+                    "outOf": 50,
+                    "comment": "Excellent. -1 on question 4."
+                }, 
+                {
+                    "assignment": "Test Questions", 
+                    "score": 89,
+                    "outOf": 100,
+                    "comment": "-2 on question 2. -2 on question 5. -2 on question 12. -2 on question 44. -2 on question 49."
+                }, 
+                {
+                    "assignment": "Evaluation Plan", 
+                    "score": 45,
+                    "outOf": 50,
+                    "comment": "Good job on this assignment Chris!"
+                }, 
+                {
+                    "assignment": "Learning Journal", 
+                    "score": 30,
+                    "outOf": 30,
+                    "comment": "Great job!"
+                }
+            ]
+        }
+    ]
+},
+{
+    "user": 2,
+    "courses": [
+        {
+            "title": "Critical Thinking",
+            "grades": [
+                    {
+                        "assignment": "Pre-Assignment", 
+                        "score": 10, 
+                        "outOf": 10,
+                        "comment": "Good job on assignment 1 Katie!"
+                    }, 
+                    {
+                        "assignment": "Quiz Questions",
+                        "score": 44,
+                        "outOf": 50,
+                        "comment": "Good work. -4 on question 1. -2 on question 7."
+                    }, 
+                    {
+                        "assignment": "Test Questions", 
+                        "score": 94,
+                        "outOf": 100,
+                        "comment": "Good job! -2 on question 7. -2 on question 23. -2 on question 48."
+                    }, 
+                    {
+                        "assignment": "Deduction vs. Induction Discussion", 
+                        "score": 50,
+                        "outOf": 50,
+                        "comment": "Interesting take on this!"
+                    }, 
+                    {
+                        "assignment": "Learning Journal", 
+                        "score": 30,
+                        "outOf": 30,
+                        "comment": "Can tell you put thought into this - well done."
+                    }
+            ]
+        },
+        {
+            "title": "Creative Problem Solving", 
+            "grades": [
+                    {
+                        "assignment": "Pre-Assignment", 
+                        "score": 10, 
+                        "outOf": 10,
+                        "comment": "Nice work on assignment 1 Katie!"
+                    }, 
+                    {
+                        "assignment": "Quiz Questions", 
+                        "score": 44,
+                        "outOf": 50,
+                        "comment": "Nice job. -5 on question 2. -1 on question 5."
+                    }, 
+                    {
+                        "assignment": "Test Questions", 
+                        "score": 86,
+                        "outOf": 100,
+                        "comment": "-2 on question 2. -2 on question 5. -2 on question 12. -2 on question 24. -2 on question 36. -2 on question 37. -2 on question 42."
+                    }, 
+                    {
+                        "assignment": "Evaluation Plan", 
+                        "score": 28,
+                        "outOf": 30,
+                        "comment": "Good job on this assignment but missing some details."
+                    }, 
+                    {
+                        "assignment": "Learning Journal", 
+                        "score": 30,
+                        "outOf": 30,
+                        "comment": "Good work!"
+                    }
+            ]
+        },
+        {
+            "title": "Emotional Intelligence",
+            "grades": [
+                    {
+                        "assignment": "Pre-Assignment", 
+                        "score": 10, 
+                        "outOf": 10,
+                        "comment": "Well done"
+                    }, 
+                    {
+                        "assignment": "Quiz Questions", 
+                        "score": 47,
+                        "outOf": 50,
+                        "comment": "Good job. -3 on question 1."
+                    }, 
+                    {
+                        "assignment": "Test Questions", 
+                        "score": 98,
+                        "outOf": 100,
+                        "comment": "Excellent job on the test. -2 on question 7."
+                    }, 
+                    {
+                        "assignment": "Emotional Awareness Activity", 
+                        "score": 50,
+                        "outOf": 50,
+                        "comment": "Nice work Katie!"
+                    }, 
+                    {
+                        "assignment": "Learning Journal", 
+                        "score":28,
+                        "outOf": 30,
+                        "comment": "Second entry was incomplete."
+                    }
+            ]
+        },
+        {
+            "title": "Measuring Results From Training",
+            "grades": [
+                    {
+                        "assignment": "Pre-Assignment", 
+                        "score": 10, 
+                        "outOf": 10,
+                        "comment": "Great work!"
+                    }, 
+                    {
+                        "assignment": "Quiz Questions", 
+                        "score": 44,
+                        "outOf": 50,
+                        "comment": "Nice work! -3 on question 3. -3 on question 6."
+                    }, 
+                    {
+                        "assignment": "Test Questions", 
+                        "score": 98,
+                        "outOf": 100,
+                        "comment": "Good job on test one. -2 on question 30."
+                    }, 
+                    {
+                        "assignment": "Evaluation Plan", 
+                        "score": 48,
+                        "outOf": 50,
+                        "comment": "Very impressive work."
+                    }, 
+                    {
+                        "assignment": "Learning Journal", 
+                        "score": 30,
+                        "outOf": 30,
+                        "comment": "Enjoyed reading this!"
+                    }
+            ]
+        },
+        {
+            "title": "Negotiation Skills", 
+            "grades": [
+                    {
+                        "assignment": "Pre-Assignment", 
+                        "score": 10, 
+                        "outOf": 10,
+                        "comment": "Good job. Keep it up!"
+                    }, 
+                    {
+                        "assignment": "Quiz Questions", 
+                        "score": 47,
+                        "outOf": 50,
+                        "comment": "Nice work! -3 on question 3."
+                    }, 
+                    {
+                        "assignment": "Test Questions", 
+                        "score": 92,
+                        "outOf": 100,
+                        "comment": "Good job on test one. -2 on question 22. -2 on question 30. -2 on question 35. -2 on question 48."
+                    }, 
+                    {
+                        "assignment": "Communication Management Plan", 
+                        "score": 42,
+                        "outOf": 50,
+                        "comment": "Good work but missig field for communication vehicle and stakeholder role."
+                    }, 
+                    {
+                        "assignment": "Learning Journal", 
+                        "score": 30,
+                        "outOf": 30,
+                        "comment": "Excellent"
+                    }
+            ]
+        }
+    ]        
+},
+{
+    "user": 3,
+    "courses": [
+        {
+            "title": "Creative Problem Solving", 
+            "grades": [
+                    {
+                        "assignment": "Pre-Assignment", 
+                        "score": 0, 
+                        "outOf": 10,
+                        "comment": "Student did not submit"
+                    }, 
+                    {
+                        "assignment": "Quiz Questions", 
+                        "score": 0, 
+                        "outOf": 50,
+                        "comment": "Student missed every single question"
+                    }, 
+                    {
+                        "assignment": "Test Questions", 
+                        "score": 6, 
+                        "outOf": 100,
+                        "comment": "What happened here Kellen?"
+                    }, 
+                    {
+                        "assignment": "Evaluation Plan", 
+                        "score": 8, 
+                        "outOf": 30,
+                        "comment": "Incomplete."
+                    }, 
+                    {
+                        "assignment": "Learning Journal", 
+                        "score": 30, 
+                        "outOf": 30,
+                        "comment": "Well done!"
+                    }
+            ]
+        },
+        {
+            "title": "Negotiation Skills", 
+            "grades": [
+                    {
+                        "assignment": "Pre-Assignment", 
+                        "score": 10, 
+                        "outOf": 10,
+                        "comment": "Good job on assignment #1 Kellen"
+                    }, 
+                    {
+                        "assignment": "Quiz Questions", 
+                        "score": 46, 
+                        "outOf": 50,
+                        "comment": "-2 on question 4. -2 on question 7."
+                    }, 
+                    {
+                        "assignment": "Test Questions", 
+                        "score": 94, 
+                        "outOf": 100,
+                        "comment": "-2 on question 15. -2 on question 28. -2 on question 31."
+                    },
+                    {
+                        "assignment": "Communication Management Plan", 
+                        "score": 45,
+                        "outOf": 50,
+                        "comment": "Nice work Kellen. Lacked some detail in part 2."
+                    }, 
+                    {
+                        "assignment": "Learning Journal", 
+                        "score": 30,
+                        "outOf": 30,
+                        "comment": "Enjoyed reading about what you took away from the lesson plans!"
+                    }
+            ]
+        }
+    ]        
+},
+{
+    "user": 4,
+    "courses": [
+        {
+            "title": "Negotiation Skills", 
+            "grades": [
+                    {
+                        "assignment": "Pre-Assignment", 
+                        "score": 10,
+                        "outOf": 10,
+                        "comment": "Nice job."
+                    }, 
+                    {
+                        "assignment": "Quiz Questions", 
+                        "score": 48,
+                        "outOf": 50,
+                        "comment": "Well done. -2 on question 7."
+                    }, 
+                    {
+                        "assignment": "Test Questions", 
+                        "score": 98,
+                        "outOf": 100,
+                        "comment": "Excellent work Johnathan! -2 on question 42."
+
+                    }, 
+                    {
+                        "assignment": "Communication Management Plan", 
+                        "score": 45,
+                        "outOf": 50,
+                        "comment": "Good work but missing a field for the stakeholder role"
+                    }, 
+                    {
+                        "assignment": "Learning Journal", 
+                        "score": 30,
+                        "outOf": 30,
+                        "comment": "Nice reflection."
+                    }
+            ]
+        }
+    ]        
+},
+{
+    "user": 5,
+    "courses": [
+        {
+            "title": "Emotional Intelligence", 
+            "grades": [
+                    {
+                        "assignment": "Pre-Assignment", 
+                        "score": 10,
+                        "outOf": 10,
+                        "comment": "Nice work Natalie."
+
+                    }, 
+                    {
+                        "assignment": "Quiz Questions", 
+                        "score": 41,
+                        "outOf": 50,
+                        "comment": "Good job on quiz one. -5 on question 3. -2 on question 4. -2 on question 9."
+
+                    }, 
+                    {
+                        "assignment": "Test Questions", 
+                        "score": 92,
+                        "outOf": 100,
+                        "comment": "-2 on question 2. -2 on question 14. -2 on question 19. -2 on question 35."
+
+                    }, 
+                    {
+                        "assignment": "Emotional Awareness Activity",
+                        "score": 49,
+                        "outOf": 50,
+                        "comment": "Excellent work Natalie!!"
+                    }, 
+                    {
+                        "assignment": "Learning Journal", 
+                        "score":21,
+                        "outOf": 30,
+                        "comment": "Missing 2 journal entries"
+                    }
+            ]
+        },
+        {
+            "title": "Measuring Results From Training", 
+            "grades": [
+                    {
+                        "assignment": "Pre-Assignment", 
+                        "score": 10,
+                        "outOf": 10,
+                        "comment": "Well done!"
+                    }, 
+                    {
+                        "assignment": "Quiz Questions", 
+                        "score": 34,
+                        "outOf": 50,
+                        "comment": "-5 on question 1. -5 on question 4. -5 on question 7. -1 on question 8."
+                    }, 
+                    {
+                        "assignment": "Test Questions", 
+                        "score": 98,
+                        "outOf": 100,
+                        "comment": "Wow! Nice job Natalie. -2 on question 13."
+                    }, 
+                    {
+                        "assignment": "Evaluation Plan", 
+                        "score": 49,
+                        "outOf": 50,
+                        "comment": "-1 for late submission."
+                    }, 
+                    {
+                        "assignment": "Learning Journal", 
+                        "score": 30,
+                        "outOf": 30,
+                        "comment": "Thorough reflection. Well done."
+                    }
+            ]
+        },
+        {
+            "title": "Negotiation Skills", 
+            "grades": [
+                    {
+                        "assignment": "Pre-Assignment", 
+                        "score": 10,
+                        "outOf": 10,
+                        "comment": "Good job Natalie!"
+                    }, 
+                    {
+                        "assignment": "Quiz Questions", 
+                        "score": 44,
+                        "outOf": 50,
+                        "comment": "Nice work. -3 on question 6. -3 on question 9."
+                    }, 
+                    {
+                        "assignment": "Test Questions", 
+                        "score": 94,
+                        "outOf": 100,
+                        "comment": "Great job! -2 on question 1. -2 on question 17. -2 on question 34."
+                    }, 
+                    {
+                        "assignment": "Communication Management Plan", 
+                        "score": 49,
+                        "outOf": 50,
+                        "comment": "Very impressed with this assignment Natalie. Keep it up."
+                    }, 
+                    {
+                        "assignment": "Learning Journal", 
+                        "score": 30,
+                        "outOf": 30,
+                        "comment": "Can tell you put in effort - well done."
+                    }
+            ]
+        }
+    ]        
+}
+]

@@ -56,7 +56,7 @@ function CourseFiles(props) {
                 </IconButton>
                 <div style={{ padding: "4px" }}>
                   <NavLink
-                    to={"/CourseFiles/" + props.match.params.courseName +"/FileView"}
+                    to={"/CourseFiles/" + props.match.params.courseName +  "/FileView"}
                     className="navLink"
                   >
                     <Typography
@@ -82,7 +82,7 @@ function CourseFiles(props) {
                 </IconButton>
                 <div>
                   <NavLink
-                    to={"/CourseFiles/" + props.match.params.courseName +"/FileView"}
+                    to={"/CourseFiles/" + props.match.params.courseName + "/FileView"}
                     className="navLink"
                   >
                     <Typography

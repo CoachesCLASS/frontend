@@ -45,7 +45,7 @@ function CourseHome(props) {
             <Button
               className="courseTab"
               component={CourseAnnouncementsLink}
-              to={"/CourseAnnouncements/" + props.match.params.courseName}
+              to={"/CourseAnnouncements/" + props.match.params.courseName }
             >
               <Typography
                 component="p"
@@ -60,7 +60,7 @@ function CourseHome(props) {
             <Button
               className="courseTab"
               component={CourseAssignmentsLink}
-              to={"/CourseAssignments/" + props.match.params.courseName}
+              to={"/CourseAssignments/" + props.match.params.courseName }
               value="assignments"
             >
               <Typography
@@ -83,7 +83,7 @@ function CourseHome(props) {
             <Button
               className="courseTab"
               component={CourseGradesLink}
-              to={"/CourseGrades/" + props.match.params.courseName}
+              to={"/CourseGrades/" + props.match.params.courseName }
             >
               <Typography
                 component="p"
@@ -110,7 +110,7 @@ function CourseHome(props) {
             </Button>
           </div>
         </Grid>
-        <CourseCalendar courseName={props.match.params.courseName} />
+        <CourseCalendar courseName={props.match.params.courseName} userId={props.match.params.userId}/>
       </div>
     </>
   );

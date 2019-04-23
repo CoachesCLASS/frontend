@@ -26,6 +26,7 @@ function CourseCalendar(props) {
           <CalendarEventList
             date={date.toString().substring(0, 15)}
             courseName={props.courseName}
+            userId={props.userId}
           />
         </Grid>
       </Grid>
