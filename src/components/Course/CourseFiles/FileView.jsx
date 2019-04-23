@@ -17,7 +17,7 @@ function FileView(props) {
                 container
             >
                 <NavLink
-                    to={"/CourseFiles/" + props.match.params.courseName}
+                    to={"/CourseFiles/" + props.match.params.courseName + "/" + props.match.params.userId}
                     className="navLink"
                 >
                     <Typography className="navtab">Back</Typography>

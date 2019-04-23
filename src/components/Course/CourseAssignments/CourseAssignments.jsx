@@ -29,7 +29,7 @@ function CourseAssignments(props) {
           className="courseTabs"
         >
           <NavLink
-            to={"/CourseHome/" + props.match.params.courseName}
+            to={"/CourseHome/" + props.match.params.courseName + "/" + props.match.params.userId}
             className="navLink"
           >
             <Typography className="navtab">Home > </Typography>
@@ -48,10 +48,10 @@ function CourseAssignments(props) {
           className="assignmentContainer"
         >
           <Grid item>
-            <AssignmentList title="Upcoming" courseName = {props.match.params.courseName}/>
+            <AssignmentList title="Upcoming" courseName = {props.match.params.courseName} userId = { props.match.params.userId} />
           </Grid>
           <Grid item>
-            <AssignmentList title="Past" courseName = {props.match.params.courseName}/>
+            <AssignmentList title="Past" courseName = {props.match.params.courseName} userId = { props.match.params.userId} />
           </Grid>
         </Grid>
       </div>

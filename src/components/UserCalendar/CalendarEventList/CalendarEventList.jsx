@@ -16,10 +16,18 @@ function CalendarEventList(props) {
   var calendarEvents = [];
   var date = new Date(props.date);
   var data = require("../../../assets/db.json"); // forward slashes will depend on the file location
-
-  for (var i = 0; i < data.courses.length; i++) {
-    var title = data.courses[i].title;
-    var assignments = data.courses[i].assignments;
+  var courses = data.courses;
+  if(!props.courseName){
+    var userData = require("../../../assets/users.json");
+    for (var i = 0; i < userData.length; i++) {
+      if( userData[i].id === props.userId){
+        courses = userData.courses;
+      }
+    }
+  }
+  for (var i = 0; i < courses.length; i++) {
+    var title = courses[i].title;
+    var assignments = courses[i].assignments;
     for (var j = 0; j < assignments.length; j++) {
       var obj = assignments[j];
       var dueDate = new Date(obj.dueDate);

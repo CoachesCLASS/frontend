@@ -6,7 +6,8 @@
         {
           "id": 1,
           "title": "Pre-Assignment",
-          "dueDate": "April 18, 2019 23:59:59",
+          "description": "This is pre-work for the course Negotiation Skills. Please see the attached file.",
+          "dueDate": "April 18, 2019 00:00:00",
           "points": 10,
           "type": "Homework",
           "class": "Creative Problem Solving"
@@ -14,7 +15,8 @@
         {
           "id": 2,
           "title": "Quiz Questions",
-          "dueDate": "May 1, 2019 23:59:59",
+          "description": "Please complete the quiz questions listed in the attached file. This will be worth 50 points.",
+          "dueDate": "May 1, 2019 00:00:00",
           "points": 50,
           "type": "Quiz",
           "class": "Creative Problem Solving"
@@ -22,7 +24,8 @@
         {
           "id": 3,
           "title": "Test Questions",
-          "dueDate": "May 18, 2019 23:59:59",
+          "description": "Please answer the test questions listed in the attached file. This will be worth 100 points of your final grade.",
+          "dueDate": "May 18, 2019 00:00:00",
           "points": 100,
           "type": "Test",
           "class": "Creative Problem Solving"
@@ -30,7 +33,8 @@
         {
           "id": 4,
           "title": "Evaluation Plan",
-          "dueDate": "April 24, 2019 23:59:59",
+          "description": "For this assignment, you will be composing a plan for how you plan to evaluate potential challenges throughout the lifecycle of your project. Use a hypothetical business idea as the project.",
+          "dueDate": "April 24, 2019 00:00:00",
           "points": 30,
           "type": "Project",
           "class": "Creative Problem Solving"
@@ -38,7 +42,8 @@
         {
           "id": 5,
           "title": "Learning Journal",
-          "dueDate": "April 28, 2019 23:59:59",
+          "description": "This should contain 10 entries, each about a paragraph long, about something new you learned from an assignment or lecture.",
+          "dueDate": "April 28, 2019 00:00:00",
           "points": 30,
           "type": "Homework",
           "class": "Creative Problem Solving"
@@ -50,7 +55,7 @@
           "title": "Introduction",
           "body": "Hi class! Welcome to Creative Problem Solving! My name is Bert Robinson and I will be your instructor this semester.",
           "postId": 1,
-          "postDate": "January 28, 2019 23:59:59",
+          "postDate": "January 28, 2019 00:00:00",
           "class": "Creative Problem Solving"
         }
       ]
@@ -61,7 +66,8 @@
         {
           "id": 1,
           "title": "Pre-Assignment",
-          "dueDate": "April 18, 2019 23:59:59",
+          "description": "This is pre-work for the course Negotiation Skills. Please see the attached file.",
+          "dueDate": "April 18, 2019 00:00:00",
           "points": 10,
           "type": "Homework",
           "class": "Negotiation Skills"
@@ -69,7 +75,8 @@
         {
           "id": 2,
           "title": "Quiz Questions",
-          "dueDate": "May 1, 2019 23:59:59",
+          "description": "Please complete the quiz questions listed in the attached file. This will be worth 50 points.",
+          "dueDate": "May 1, 2019 00:00:00",
           "points": 50,
           "type": "Quiz",
           "class": "Negotiation Skills"
@@ -77,7 +84,8 @@
         {
           "id": 3,
           "title": "Test Questions",
-          "dueDate": "May 18, 2019 23:59:59",
+          "description": "Please answer the test questions listed in the attached file. This will be worth 100 points of your final grade.",
+          "dueDate": "May 18, 2019 00:00:00",
           "points": 100,
           "type": "Test",
           "class": "Negotiation Skills"
@@ -85,7 +93,8 @@
         {
           "id": 4,
           "title": "Communication Management Plan",
-          "dueDate": "April 24, 2019 23:59:59",
+          "description": "Please create a hypothetical communication management plan for a business idea of your choosing. You should explain the vehicles of transportation you plan to use, the stakeholders with whom you must communicate, and the importance of communication in your project.",
+          "dueDate": "April 24, 2019 00:00:00",
           "points": 30,
           "type": "Project",
           "class": "Negotiation Skills"
@@ -93,7 +102,8 @@
         {
           "id": 5,
           "title": "Learning Journal",
-          "dueDate": "April 28, 2019 23:59:59",
+          "description": "This should contain 10 entries, each about a paragraph long, about something new you learned from an assignment or lecture.",
+          "dueDate": "April 28, 2019 00:00:00",
           "points": 30,
           "type": "Homework",
           "class": "Negotiation Skills"
@@ -105,7 +115,7 @@
           "title": "Introduction",
           "body": "Hi class! Welcome to Communication Skills! My name is Bert Robinson and I will be your instructor this semester.",
           "postId": 1,
-          "postDate": "January 28, 2019 23:59:59",
+          "postDate": "January 28, 2019 00:00:00",
           "class": "Negotiation Skills"
         }
       ]
@@ -116,7 +126,8 @@
         {
           "id": 1,
           "title": "Pre-Assignment",
-          "dueDate": "April 18, 2019 23:59:59",
+          "description": "This is pre-work for the course Negotiation Skills. Please see the attached file.",
+          "dueDate": "April 18, 2019 00:00:00",
           "points": 10,
           "type": "Homework",
           "class": "Critical Thinking"
@@ -124,7 +135,8 @@
         {
           "id": 2,
           "title": "Quiz Questions",
-          "dueDate": "May 1, 2019 23:59:59",
+          "description": "Please complete the quiz questions listed in the attached file. This will be worth 50 points.",
+          "dueDate": "May 1, 2019 00:00:00",
           "points": 50,
           "type": "Quiz",
           "class": "Critical Thinking"
@@ -132,7 +144,8 @@
         {
           "id": 3,
           "title": "Test Questions",
-          "dueDate": "May 18, 2019 23:59:59",
+          "description": "Please answer the test questions listed in the attached file. This will be worth 100 points of your final grade.",
+          "dueDate": "May 18, 2019 00:00:00",
           "points": 100,
           "type": "Test",
           "class": "Critical Thinking"
@@ -140,7 +153,8 @@
         {
           "id": 4,
           "title": "Deduction vs. Induction Discussion",
-          "dueDate": "April 24, 2019 23:59:59",
+          "description": "Discuss the difference between deduction and induction. In what situations should you employ deduction? And induction?",
+          "dueDate": "April 24, 2019 00:00:00",
           "points": 50,
           "type": "Quiz",
           "class": "Critical Thinking"
@@ -148,7 +162,8 @@
         {
           "id": 5,
           "title": "Learning Journal",
-          "dueDate": "April 28, 2019 23:59:59",
+          "description": "This should contain 10 entries, each about a paragraph long, about something new you learned from an assignment or lecture.",
+          "dueDate": "April 28, 2019 00:00:00",
           "points": 30,
           "type": "Homework",
           "class": "Critical Thinking"
@@ -160,7 +175,7 @@
           "title": "Introduction",
           "body": "Hi class! Welcome to the Coaches Class Critical Thinking course! My name is Bert Robinson and I will be your instructor this semester.",
           "postId": 1,
-          "postDate": "January 28, 2019 23:59:59",
+          "postDate": "January 28, 2019 00:00:00",
           "class": "Critical Thinking"
         }
       ]
@@ -171,7 +186,8 @@
         {
           "id": 1,
           "title": "Pre-Assignment",
-          "dueDate": "April 18, 2019 23:59:59",
+          "description": "This is pre-work for the course Negotiation Skills. Please see the attached file.",
+          "dueDate": "April 18, 2019 00:00:00",
           "points": 10,
           "type": "Homework",
           "class": "Emotional Intelligence"
@@ -179,7 +195,8 @@
         {
           "id": 2,
           "title": "Quiz Questions",
-          "dueDate": "May 1, 2019 23:59:59",
+          "description": "Please complete the quiz questions listed in the attached file. This will be worth 50 points.",
+          "dueDate": "May 1, 2019 00:00:00",
           "points": 50,
           "type": "Quiz",
           "class": "Emotional Intelligence"
@@ -187,7 +204,8 @@
         {
           "id": 3,
           "title": "Test Questions",
-          "dueDate": "May 18, 2019 23:59:59",
+          "description": "Please answer the test questions listed in the attached file. This will be worth 100 points of your final grade.",
+          "dueDate": "May 18, 2019 00:00:00",
           "points": 100,
           "type": "Test",
           "class": "Emotional Intelligence"
@@ -195,7 +213,8 @@
         {
           "id": 4,
           "title": "Emotional Awareness Activity",
-          "dueDate": "April 24, 2019 23:59:59",
+          "description": "Please submit answers to the temperament questionnaire found at the following link: https://www.skillsconverged.com/FreeTrainingMaterials/tabid/258/articleType/ArticleView/articleId/1160/categoryId/132/Emotional-Intelligence-Exercise-Temperament-Analysis.aspx",
+          "dueDate": "April 24, 2019 00:00:00",
           "points": 50,
           "type": "Homework",
           "class": "Emotional Intelligence"
@@ -203,7 +222,8 @@
         {
           "id": 5,
           "title": "Learning Journal",
-          "dueDate": "April 28, 2019 23:59:59",
+          "description": "This should contain 10 entries, each about a paragraph long, about something new you learned from an assignment or lecture.",
+          "dueDate": "April 28, 2019 00:00:00",
           "points": 30,
           "type": "Homework",
           "class": "Emotional Intelligence"
@@ -215,7 +235,7 @@
           "title": "Introduction",
           "body": "Hi class! Welcome to the Coaches Class Critical Thinking course! My name is Bert Robinson and I will be your instructor this semester.",
           "postId": 1,
-          "postDate": "January 28, 2019 23:59:59",
+          "postDate": "January 28, 2019 00:00:00",
           "class": "Critical Thinking"
         }
       ]
@@ -226,7 +246,8 @@
         {
           "id": 1,
           "title": "Pre-Assignment",
-          "dueDate": "April 18, 2019 23:59:59",
+          "description": "This is pre-work for the course Negotiation Skills. Please see the attached file.",
+          "dueDate": "April 18, 2019 00:00:00",
           "points": 10,
           "type": "Homework",
           "class": "Measuring Results From Training"
@@ -234,7 +255,8 @@
         {
           "id": 2,
           "title": "Quiz Questions",
-          "dueDate": "May 1, 2019 23:59:59",
+          "description": "Please complete the quiz questions listed in the attached file. This will be worth 50 points.",
+          "dueDate": "May 1, 2019 00:00:00",
           "points": 50,
           "type": "Quiz",
           "class": "Measuring Results From Training"
@@ -242,15 +264,17 @@
         {
           "id": 3,
           "title": "Test Questions",
-          "dueDate": "May 18, 2019 23:59:59",
+          "description": "Please answer the test questions listed in the attached file. This will be worth 100 points of your final grade.",
+          "dueDate": "May 18, 2019 00:00:00",
           "points": 100,
           "type": "Test",
           "class": "Measuring Results From Training"
         },
         {
           "id": 4,
-          "title": "Deduction vs. Induction Discussion",
-          "dueDate": "April 24, 2019 23:59:59",
+          "title": "Evaluation Plan",
+          "description": "For this assignment, you will be composing a plan for how you plan to evaluate progress throughout the lifecycle of your project. Use a hypothetical business idea as the project.",
+          "dueDate": "April 24, 2019 00:00:00",
           "points": 50,
           "type": "Quiz",
           "class": "Measuring Results From Training"
@@ -258,7 +282,8 @@
         {
           "id": 5,
           "title": "Learning Journal",
-          "dueDate": "April 28, 2019 23:59:59",
+          "description": "This should contain 10 entries, each about a paragraph long, about something new you learned from an assignment or lecture.",
+          "dueDate": "April 28, 2019 00:00:00",
           "points": 30,
           "type": "Homework",
           "class": "Measuring Results From Training"
@@ -270,7 +295,7 @@
           "title": "Introduction",
           "body": "Hi class! Welcome to the Coaches Measuring Results From Training course! My name is Bert Robinson and I will be your instructor this semester.",
           "postId": 1,
-          "postDate": "January 28, 2019 23:59:59",
+          "postDate": "January 28, 2019 00:00:00",
           "class": "Measuring Results From Training"
         }
       ]

@@ -11,6 +11,12 @@ import CheckBoxIcon from "@material-ui/icons/CheckBox";
 import blue from "@material-ui/core/colors/blue";
 
 function CalendarControlPanel(props) {
+  var userData = require("../../../assets/users.json");
+  for (var i = 0; i < userData.length; i++) {
+    if( userData[i].id === props.userId){
+      var courses = userData.courses;
+    }
+  }
 
 
   return (

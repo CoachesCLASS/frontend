@@ -6,6 +6,22 @@ import Avatar from "../../UserSettings/Avatar/Avatar";
 import { NavLink } from "react-router-dom";
 
 function CourseGrades(props) {
+  var grades = [];
+  var data = require("../../../assets/grades.json");
+  for (var i = 0; i < data.length; i++){
+    if (data[i].user == props.match.params.userId){
+      var courses = data[i].courses;
+      for (var j = 0; j < courses.length; j++){
+        var course = courses[j];
+        if (course.title === props.match.params.courseName){
+          var courseGrades = course.grades;
+          for (var k = 0; k < courseGrades.length; k++){
+            grades.push(courseGrades[k]);
+          }
+        }
+      }
+    }
+  }
   return (
     <>
       <div className="wrapper">
@@ -27,7 +43,7 @@ function CourseGrades(props) {
           className="courseTabs"
         >
           <NavLink
-            to={"/CourseHome/" + props.match.params.courseName}
+            to={"/CourseHome/" + props.match.params.courseName + "/" + props.match.params.userId}
             className="navLink"
           >
             <Typography className="navtab">Home > </Typography>
@@ -41,56 +57,64 @@ function CourseGrades(props) {
         </Grid>
 
         <div className="scrollable">
-          <Grid container direction="column" className="scrollable">
+          <Grid container direction="column" className="scrollable" wrap="wrap">
             <Grid item style={{ height: "46px" }}>
-              <Grid container direction="row" xs={12}>
-                <Grid item xs="4">
+              <Grid container direction="row">
+                <Grid item xs={4}>
                   <Typography variant="subtitle2" style={{ color: "black" }}>
                     Title
                   </Typography>
                 </Grid>
-                <Grid item xs="4">
-                  <Typography variant="subtitle2" style={{ color: "black" }}>
-                    Due Date
-                  </Typography>
-                </Grid>
-                <Grid item xs="2">
+                <Grid item xs={2}>
                   <Typography variant="subtitle2" style={{ color: "black" }}>
                     Score
                   </Typography>
                 </Grid>
-                <Grid item xs="2">
+                <Grid item xs={2}>
                   <Typography variant="subtitle2" style={{ color: "black" }}>
                     Out of
                   </Typography>
                 </Grid>
-              </Grid>
-            </Grid>
-            <Grid item style={{ marginTop: "0rem", height: "46px" }}>
-              <Grid container direction="row" xs={12}>
-                <Grid item xs="6">
-                  <NavLink
-                  to={"/CourseAssignments/" + props.match.params.courseName + "/Homework #1"}
-                  className="navLink"
-                  >
-                  <Typography variant="p" style={{ color: "grey" }}>
-                    Homework #1
-                  </Typography>
-                  </NavLink>
-                </Grid>
-                <Grid item xs="3">
-                  <Typography variant="p" style={{ color: "grey" }}>
-                    10
-                  </Typography>
-                </Grid>
-                <Grid item xs="3">
-                  <Typography variant="p" style={{ color: "grey" }}>
-                    10
+                <Grid item xs={4}>
+                  <Typography variant="subtitle2" style={{ color: "black" }}>
+                    Comment
                   </Typography>
                 </Grid>
               </Grid>
             </Grid>
+          {grades.map(grade => (
+              <Grid item style={{ marginTop: "0rem", height: "96px" }} key={grade.assignment}>
+                <Grid container direction="row" spacing={4}>
+                  <Grid item xs={4} >
+                    <NavLink
+                      to={"/CourseAssignments/" + props.match.params.courseName + "/" + props.match.params.userId + "/" + grade.assignment}
+                      className="navLink"
+                    >
+                      <Typography variant="caption" style={{ color: "grey" }}>
+                          {grade.assignment}
+                      </Typography>
+                    </NavLink>
+                  </Grid>
+                  <Grid item xs={2} >
+                    <Typography variant="caption" style={{ color: "grey" }}>
+                            {grade.score}
+                    </Typography>
+                  </Grid>
+                  <Grid item xs={2} >
+                    <Typography variant="caption" style={{ color: "grey" }}>
+                            {grade.outOf}
+                    </Typography>
+                  </Grid>
+                  <Grid item xs={4} wrap="wrap" >
+                    <Typography variant="caption" style={{ color: "grey" }}>
+                      {grade.comment}
+                    </Typography>
+                  </Grid>
+                </Grid>
+              </Grid>
+          ))}
           </Grid>
+
         </div>
       </div>
     </>

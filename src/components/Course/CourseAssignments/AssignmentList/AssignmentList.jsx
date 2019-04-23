@@ -60,7 +60,7 @@ function AssignmentList(props) {
                 <Grid container xs={12} className="courseEntry">
                   <Grid item xs={4}>
                   <NavLink
-                    to={"/CourseAssignments/" + props.courseName + "/" + assignment.title}
+                    to={"/CourseAssignments/" + props.courseName + "/" + props.userId + "/" +  assignment.title}
                     className="navLink"
                   >
                     <Typography variant="body2" color="inherit">

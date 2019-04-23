@@ -8,21 +8,21 @@ import {connect} from 'react-redux'
 const mapStateToProps = (state) => {
   return {
     instructor: state.instructor.isInstructor,
+    userId: state.userId.id,
   }
 }
 
 function Dashboard(props) {
-
   return (
     <>
       <Grid container className="contentContainer">
         <Grid item xs={9}>
-          <CoursesGrid />
+          <CoursesGrid userId={props.userId}/>
         </Grid>
         {
           !props.instructor && (
             <Grid item xs={3}>
-              <NotificationPanel />
+              <NotificationPanel userId={props.userId}/>
             </Grid>
           )
         }

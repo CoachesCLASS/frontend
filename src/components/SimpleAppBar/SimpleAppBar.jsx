@@ -12,19 +12,19 @@ import logo from "../../assets/CC Logo.png";
 const navTabs = [
   {
     label: "Settings",
-    path: "/UserSettings"
+    path: "/UserSettings/{$userId}"
   },
   {
     label: "Dashboard",
-    path: "/UserDashboard"
+    path: "/UserDashboard/{$userId}"
   },
   {
     label: "Courses",
-    path: "/MyCourses"
+    path: "/MyCourses/{$userId}"
   },
   {
     label: "Calendar",
-    path: "/UserCalendar"
+    path: "/UserCalendar/{$userId}"
   }
 ];
 
