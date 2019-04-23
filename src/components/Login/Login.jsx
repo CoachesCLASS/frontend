@@ -90,6 +90,7 @@ function SignIn(props) {
         {
           console.log(true)
           props.setId(users[u].id)
+          props.setIsInstructor(users[u].admin)
           return { newPath: "/UserDashboard"}
         }
      }
@@ -107,7 +108,7 @@ function SignIn(props) {
   }
   
   const handleChange = event => {
-    props.setIsInstructor(event.target.checked)
+    // props.setIsInstructor(event.target.checked)
   }
 
   return (
