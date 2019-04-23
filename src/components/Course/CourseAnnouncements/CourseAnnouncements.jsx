@@ -7,6 +7,7 @@ import Paper from "@material-ui/core/Paper";
 import { NavLink } from "react-router-dom";
 import { makeStyles } from "@material-ui/styles"
 import { connect } from "react-redux";
+import courseData from "../../../assets/db.json"
 
 const useStyles = makeStyles(theme => ({
   margin: {
@@ -22,17 +23,15 @@ const useStyles = makeStyles(theme => ({
 const mapStateToProps = (state) => {
   return {
     instructor: state.instructor.isInstructor,
+    userId: state.userId.id,
   }
 }
 
 function CourseAnnouncements(props) {
   const classes = useStyles()
-  const [announcements, setAnnouncements] = useState([
-    {
-      title: "Test tomorrow",
-      body: "Don't forget!",
-    },
-  ])
+
+  const courseObject = courseData.courses.find(x => x.title === props.match.params.courseName)
+  const [announcements, setAnnouncements] = useState(courseObject.announcements)
   const [values, setValues] = useState({
     title: '',
     body: '',
@@ -101,7 +100,7 @@ function CourseAnnouncements(props) {
             ))
           }
           {
-            !props.instructor && (
+            props.instructor && (
               <Grid item>
                 <Paper className="courseAnnouncement" elevation={1}>
                   <TextField
@@ -134,6 +133,5 @@ function CourseAnnouncements(props) {
     </>
   );
 }
-// alignItems="center"
 
 export default connect(mapStateToProps)(CourseAnnouncements);
