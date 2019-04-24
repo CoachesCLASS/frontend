@@ -64,7 +64,7 @@ function CourseGrades(props) {
         </Grid>
 
         <div className="scrollable">
-          <Grid container direction="column" className="scrollable" wrap="wrap">
+          <Grid container direction="column" className="scrollable" >
             <Grid item style={{ height: "46px" }}>
               <Grid container direction="row">
                 <Grid item xs={4}>
@@ -90,7 +90,7 @@ function CourseGrades(props) {
               </Grid>
             </Grid>
           {grades.map(grade => (
-              <Grid item style={{ marginTop: "0rem", height: "96px" }} key={grade.assignment}>
+              <Grid item style={{ marginTop: "0rem", height: "auto", padding: "10px 0px" }} key={grade.assignment}>
                 <Grid container direction="row" spacing={4}>
                   <Grid item xs={4} >
                     <NavLink
@@ -112,7 +112,7 @@ function CourseGrades(props) {
                             {grade.outOf}
                     </Typography>
                   </Grid>
-                  <Grid item xs={4} wrap="wrap" >
+                  <Grid item xs={4}  >
                     <Typography variant="caption" style={{ color: "grey" }}>
                       {grade.comment}
                     </Typography>

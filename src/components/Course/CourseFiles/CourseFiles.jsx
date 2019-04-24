@@ -20,7 +20,7 @@ function CourseFiles(props) {
             </Typography>
           </Grid>
           <Grid container style={{ paddingBottom: 15 }} justify="center">
-            <Typography component="h6"> Bert Robinson</Typography>
+            <Typography component="h6">Bert Robinson</Typography>
           </Grid>
         </Grid>
         <Grid
@@ -65,32 +65,6 @@ function CourseFiles(props) {
                       style={{ margin: "auto" }}
                     >
                       Powerpoint 1
-                    </Typography>
-                  </NavLink>
-                </div>
-              </Grid>
-            </li>
-            <li>
-              <Grid container direction="row">
-                <IconButton
-                  style={{
-                    margin: "0px 5px 0px 0px",
-                    padding: "0px 3px 0px 3px"
-                  }}
-                >
-                  <SaveAltIcon />
-                </IconButton>
-                <div>
-                  <NavLink
-                    to={"/CourseFiles/" + props.match.params.courseName + "/FileView"}
-                    className="navLink"
-                  >
-                    <Typography
-                      variant="body2"
-                      component="h3"
-                      style={{ margin: "auto" }}
-                    >
-                      Powerpoint 2
                     </Typography>
                   </NavLink>
                 </div>

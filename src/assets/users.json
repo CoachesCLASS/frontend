@@ -1,6 +1,7 @@
 [
     {
         "email": "Chris@smu.edu",
+        "name": "Chris Assmussen",
         "password": "password1",
         "id": 1,
         "admin": false,
@@ -8,6 +9,7 @@
     },
     {
         "email": "Katie@smu.edu",
+        "name": "Katie Carr",
         "password": "password2",
         "id": 2,
         "admin": false,
@@ -15,6 +17,7 @@
     },
     {
         "email": "Kellen@smu.edu",
+        "name": "Kellen Schmidt",
         "password": "password3",
         "id": 3,
         "admin": false,
@@ -22,6 +25,7 @@
     },
     {
         "email": "Johnathan@smu.edu",
+        "name": "Johnathan Barr",
         "password": "password4",
         "id": 4,
         "admin": false,
@@ -29,6 +33,7 @@
     },
     {
         "email": "Natalie@smu.edu",
+        "name": "Natalie Noakes",
         "password": "password5",        
         "id": 5,
         "admin": false,
@@ -36,6 +41,7 @@
     },
     {
         "email": "Bert@coachesclass.org",
+        "name": "Bert Robinson",
         "password": "SMU",
         "id": 6,
         "admin": true,

@@ -4,14 +4,34 @@ import "./dashboard.scss";
 import CoursesGrid from "./CoursesGrid/CoursesGrid";
 import NotificationPanel from "./NotificationPanel/NotificationPanel";
 import {connect} from 'react-redux'
+import { SET_COURSES } from '../../../store/actionTypes';
 
 const mapStateToProps = (state) => {
   return {
     instructor: state.instructor.isInstructor,
     userId: state.userId.id,
+    courses: state.allCourses.courses,
+  }
+}
+const mapDispatchToProps = (dispatch) => {
+  return {
+    setCourses: (courses) => {
+      dispatch({
+        type: SET_COURSES,
+        courses,
+      })
+    },
   }
 }
 function Dashboard(props) {
+  var userData = require("../../../assets/users.json");
+  var courses;
+  for (var i = 0; i < userData.length; i++) {
+    if( userData[i].id === props.userId){
+      courses = userData[i].courses;
+    }
+  }
+  props.setCourses(courses);
   return (
     <>
       <Grid container className="contentContainer">
@@ -30,4 +50,4 @@ function Dashboard(props) {
   );
 }
 
-export default connect(mapStateToProps)(Dashboard);
+export default connect(mapStateToProps, mapDispatchToProps)(Dashboard);

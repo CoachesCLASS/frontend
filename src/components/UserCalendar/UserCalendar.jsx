@@ -4,7 +4,6 @@ import "./userCalendar.scss";
 import CalendarControlPanel from "./CalendarControlPanel/CalendarControlPanel";
 import Calendar from "react-calendar";
 import CalendarEventList from "./CalendarEventList/CalendarEventList";
-import { SET_CHECKED_COURSES, SET_COURSES } from '../../store/actionTypes';
 import {connect} from 'react-redux';
 
 const mapStateToProps = (state) => {
@@ -14,37 +13,12 @@ const mapStateToProps = (state) => {
   }
 }
 
-const mapDispatchToProps = (dispatch) => {
-  return {
-    setCheckedCourses: (checked) => {
-      dispatch({
-        type: SET_CHECKED_COURSES,
-        checked,
-      })
-    },
-    setCourses: (courses) => {
-      dispatch({
-        type: SET_COURSES,
-        courses,
-      })
-    },
-  }
-}
-
-
 function UserCalendar(props) {
   
   const [date, setDate] = useState(new Date());
-  var userData = require("../../assets/users.json");
-  var courses;
-  for (var i = 0; i < userData.length; i++) {
-    if( userData[i].id === props.userId){
-      courses = userData[i].courses;
-    }
-  }
-  props.setCourses(courses);
+
   let coursesDefault = {}
-  courses.forEach((course, index) => {
+  props.courses.forEach((course, index) => {
     coursesDefault = {
       ...coursesDefault,
       [course]: false
@@ -77,7 +51,7 @@ function UserCalendar(props) {
               />
             </Grid>
             <Grid item className="calendarEventList">
-              <CalendarEventList date={date.toDateString()} checkedCourses={checkedCourses} userId={props.match.params.userId}/>
+              <CalendarEventList date={date.toDateString()} checkedCourses={checkedCourses} userId={props.userId}/>
             </Grid>
           </Grid>
         </Grid>
@@ -88,4 +62,4 @@ function UserCalendar(props) {
     </>
   );
 }
-export default connect(mapStateToProps, mapDispatchToProps)(UserCalendar);
+export default connect(mapStateToProps)(UserCalendar);

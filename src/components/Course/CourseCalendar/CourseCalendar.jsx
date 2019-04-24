@@ -11,7 +11,7 @@ function CourseCalendar(props) {
       <Grid
         container
         direction="row"
-        alignItems="start"
+        alignItems="flex-start"
         spacing={40}
         className="courseCalendarContainer"
       >
