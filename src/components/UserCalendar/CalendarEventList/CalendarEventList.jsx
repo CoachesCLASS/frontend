@@ -1,7 +1,6 @@
 import React from "react";
 import { Grid } from "@material-ui/core";
 import "./calendarEventList.scss";
-// import { useState } from "react";
 import Typography from "@material-ui/core/Typography/Typography";
 import CalendarEvent from "../CalendarEvent/CalendarEvent";
 import Paper from "@material-ui/core/Paper/Paper";
