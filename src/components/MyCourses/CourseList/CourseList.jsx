@@ -3,7 +3,25 @@ import { Grid } from "@material-ui/core";
 import "./coursesList.scss";
 import Paper from "@material-ui/core/Paper/Paper";
 import Typography from "@material-ui/core/Typography/Typography";
+import {connect} from 'react-redux';
+
+const mapStateToProps = (state) => {
+  return {
+    userId: state.userId.id,
+    courses: state.allCourses.courses,
+  }
+}
 function CourseList(props) {
+  var data = require("../../../assets/db.json"); 
+  var courseObjects;
+  if (props.title === "Previous Courses"){
+    courseObjects = [];
+  }
+  else {
+    courseObjects = props.courses.map(course => {
+      return data.courses.find(x => x.title === course)
+    })
+  }
   return (
     <>
       <Paper className="listContainer">
@@ -21,7 +39,7 @@ function CourseList(props) {
               </Grid>
               <Grid item xs={4}>
                 <Typography variant="subtitle2" color="inherit">
-                  Taught By
+                  Instructor
                 </Typography>
               </Grid>
               <Grid item xs={4}>
@@ -32,42 +50,25 @@ function CourseList(props) {
             </Grid>
           </li>
           <li>
-            <Grid container xs={12} className="courseEntry">
-              <Grid item xs={4}>
-                <Typography variant="body2" color="inherit">
-                  Entrepreneurship 101
-                </Typography>
-              </Grid>
-              <Grid item xs={4}>
-                <Typography variant="body2" color="inherit">
-                  Bert Robinson
-                </Typography>
-              </Grid>
-              <Grid item xs={4}>
-                <Typography variant="body2" color="inherit">
-                  9/18/18 - 12/20/18
-                </Typography>
-              </Grid>
-            </Grid>
-          </li>
-          <li>
-            <Grid container xs={12} className="courseEntry">
-              <Grid item xs={4}>
-                <Typography variant="body2" color="inherit">
-                  Communications 101
-                </Typography>
-              </Grid>
-              <Grid item xs={4}>
-                <Typography variant="body2" color="inherit">
-                  Bert Robinson
-                </Typography>
-              </Grid>
-              <Grid item xs={4}>
-                <Typography variant="body2" color="inherit">
-                  9/18/18 - 12/20/18
-                </Typography>
-              </Grid>
-            </Grid>
+            {courseObjects.map(event=>(
+              <Grid container xs={12} className="courseEntry">
+                <Grid item xs={4}>
+                  <Typography variant="body2" color="inherit">
+                    {event.title}
+                  </Typography>
+                </Grid>
+                <Grid item xs={4}>
+                  <Typography variant="body2" color="inherit">
+                    {event.instructor}
+                  </Typography>
+                </Grid>
+                <Grid item xs={4}>
+                  <Typography variant="body2" color="inherit">
+                    {event.term}
+                  </Typography>
+                </Grid>
+              </Grid>  
+            ))}
           </li>
         </ul>
       </Paper>
@@ -75,4 +76,4 @@ function CourseList(props) {
   );
 }
 
-export default CourseList;
+export default connect(mapStateToProps)(CourseList);

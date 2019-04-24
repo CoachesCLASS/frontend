@@ -9,32 +9,41 @@
                     "assignment": "Pre-Assignment", 
                     "score": 10,
                     "outOf": 10,
-                    "comment": "Nice work. Keep this up Chris!"
+                    "dueDate": "April 18, 2019 00:00:00",
+                    "comment": "Nice work. Keep this up Chris!",
+                    "class": "Emotional Intelligence"
                 }, 
                 {
                     "assignment": "Quiz Questions", 
                     "score": 45,
                     "outOf": 50,
-                    "comment": "-2.5 on question 3. -2.5 on question 4."
-
+                    "dueDate": "April 23, 2019 00:00:00",
+                    "comment": "-2.5 on question 3. -2.5 on question 4.",
+                    "class": "Emotional Intelligence"
                 }, 
                 {
                     "assignment": "Test Questions", 
-                    "score": 94,
+                    "score": "-",
                     "outOf": 100,
-                    "comment": "-2 on question 13. -2 on question 25. -2 on question 46."
+                    "dueDate": "May 18, 2019 00:00:00",
+                    "comment": "",
+                    "class": "Emotional Intelligence"
                 }, 
                 {
                     "assignment": "Emotional Awareness Activity", 
                     "score": 50,
                     "outOf": 50,
-                    "comment": "Nice."
+                    "dueDate": "April 24, 2019 00:00:00",
+                    "comment": "Nice.",
+                    "class": "Emotional Intelligence"
                 }, 
                 {
                     "assignment": "Learning Journal", 
-                    "score":28,
+                    "score": "-",
                     "outOf": 30,
-                    "comment": "Last entry is incomplete but nice work."
+                    "dueDate": "April 28, 2019 00:00:00",
+                    "comment": "",
+                    "class": "Emotional Intelligence"
                 }
             ]
         },
@@ -45,31 +54,41 @@
                     "assignment": "Pre-Assignment", 
                     "score": 9,                    
                     "outOf": 10,
-                    "comment": "Good job Chris."
+                    "dueDate": "April 18, 2019 00:00:00",
+                    "comment": "Good job Chris.",
+                    "class": "Measuring Results From Training"
                 }, 
                 {
                     "assignment": "Quiz Questions", 
                     "score": 49,
                     "outOf": 50,
-                    "comment": "Excellent. -1 on question 4."
+                    "dueDate": "April 23, 2019 00:00:00",
+                    "comment": "Excellent. -1 on question 4.",
+                    "class": "Measuring Results From Training"
                 }, 
                 {
                     "assignment": "Test Questions", 
-                    "score": 89,
+                    "score": "-",
                     "outOf": 100,
-                    "comment": "-2 on question 2. -2 on question 5. -2 on question 12. -2 on question 44. -2 on question 49."
+                    "dueDate": "May 18, 2019 00:00:00",
+                    "comment": "",
+                    "class": "Measuring Results From Training"
                 }, 
                 {
                     "assignment": "Evaluation Plan", 
                     "score": 45,
                     "outOf": 50,
-                    "comment": "Good job on this assignment Chris!"
+                    "dueDate": "April 24, 2019 00:00:00",
+                    "comment": "Good job on this assignment Chris!",
+                    "class": "Measuring Results From Training"
                 }, 
                 {
                     "assignment": "Learning Journal", 
-                    "score": 30,
+                    "score": "-",
                     "outOf": 30,
-                    "comment": "Great job!"
+                    "dueDate": "April 28, 2019 00:00:00",
+                    "comment": "",
+                    "class": "Measuring Results From Training"
                 }
             ]
         }
@@ -85,31 +104,41 @@
                         "assignment": "Pre-Assignment", 
                         "score": 10, 
                         "outOf": 10,
-                        "comment": "Good job on assignment 1 Katie!"
+                        "dueDate": "April 18, 2019 00:00:00",
+                        "comment": "Good job on assignment 1 Katie!",
+                        "class": "Critical Thinking"
                     }, 
                     {
                         "assignment": "Quiz Questions",
                         "score": 44,
                         "outOf": 50,
-                        "comment": "Good work. -4 on question 1. -2 on question 7."
+                        "dueDate": "April 23, 2019 00:00:00",
+                        "comment": "Good work. -4 on question 1. -2 on question 7.",
+                        "class": "Critical Thinking"
                     }, 
                     {
                         "assignment": "Test Questions", 
-                        "score": 94,
+                        "score": "-",
                         "outOf": 100,
-                        "comment": "Good job! -2 on question 7. -2 on question 23. -2 on question 48."
+                        "dueDate": "May 18, 2019 00:00:00",
+                        "comment": "",
+                        "class": "Critical Thinking"
                     }, 
                     {
                         "assignment": "Deduction vs. Induction Discussion", 
                         "score": 50,
                         "outOf": 50,
-                        "comment": "Interesting take on this!"
+                        "dueDate": "April 24, 2019 00:00:00",
+                        "comment": "Interesting take on this!",
+                        "class": "Critical Thinking"
                     }, 
                     {
                         "assignment": "Learning Journal", 
-                        "score": 30,
+                        "score": "-",
                         "outOf": 30,
-                        "comment": "Can tell you put thought into this - well done."
+                        "dueDate": "April 28, 2019 00:00:00",
+                        "comment": "",
+                        "class": "Critical Thinking"
                     }
             ]
         },
@@ -120,31 +149,41 @@
                         "assignment": "Pre-Assignment", 
                         "score": 10, 
                         "outOf": 10,
-                        "comment": "Nice work on assignment 1 Katie!"
+                        "dueDate": "April 18, 2019 00:00:00",
+                        "comment": "Nice work on assignment 1 Katie!",
+                        "class": "Creative Problem Solving"
                     }, 
                     {
                         "assignment": "Quiz Questions", 
                         "score": 44,
                         "outOf": 50,
-                        "comment": "Nice job. -5 on question 2. -1 on question 5."
+                        "dueDate": "April 23, 2019 00:00:00",
+                        "comment": "Nice job. -5 on question 2. -1 on question 5.",
+                        "class": "Creative Problem Solving"
                     }, 
                     {
                         "assignment": "Test Questions", 
-                        "score": 86,
+                        "score": "-",
                         "outOf": 100,
-                        "comment": "-2 on question 2. -2 on question 5. -2 on question 12. -2 on question 24. -2 on question 36. -2 on question 37. -2 on question 42."
+                        "dueDate": "May 18, 2019 00:00:00",
+                        "comment": "",
+                        "class": "Creative Problem Solving"
                     }, 
                     {
                         "assignment": "Evaluation Plan", 
                         "score": 28,
                         "outOf": 30,
-                        "comment": "Good job on this assignment but missing some details."
+                        "dueDate": "April 24, 2019 00:00:00",
+                        "comment": "Good job on this assignment but missing some details.",
+                        "class": "Creative Problem Solving"
                     }, 
                     {
                         "assignment": "Learning Journal", 
-                        "score": 30,
+                        "score": "-",
                         "outOf": 30,
-                        "comment": "Good work!"
+                        "dueDate": "April 28, 2019 00:00:00",
+                        "comment": "",
+                        "class": "Creative Problem Solving"
                     }
             ]
         },
@@ -155,31 +194,41 @@
                         "assignment": "Pre-Assignment", 
                         "score": 10, 
                         "outOf": 10,
-                        "comment": "Well done"
+                        "dueDate": "April 18, 2019 00:00:00",
+                        "comment": "Well done",
+                        "class": "Emotional Intelligence"
                     }, 
                     {
                         "assignment": "Quiz Questions", 
                         "score": 47,
                         "outOf": 50,
-                        "comment": "Good job. -3 on question 1."
+                        "dueDate": "April 23, 2019 00:00:00",
+                        "comment": "Good job. -3 on question 1.",
+                        "class": "Emotional Intelligence"
                     }, 
                     {
                         "assignment": "Test Questions", 
-                        "score": 98,
+                        "score": "-",
                         "outOf": 100,
-                        "comment": "Excellent job on the test. -2 on question 7."
+                        "dueDate": "May 18, 2019 00:00:00",
+                        "comment": "",
+                        "class": "Emotional Intelligence"
                     }, 
                     {
                         "assignment": "Emotional Awareness Activity", 
                         "score": 50,
                         "outOf": 50,
-                        "comment": "Nice work Katie!"
+                        "dueDate": "April 24, 2019 00:00:00",
+                        "comment": "Nice work Katie!",
+                        "class": "Emotional Intelligence"
                     }, 
                     {
                         "assignment": "Learning Journal", 
-                        "score":28,
+                        "score": "-",
                         "outOf": 30,
-                        "comment": "Second entry was incomplete."
+                        "dueDate": "April 28, 2019 00:00:00",
+                        "comment": "",
+                        "class": "Emotional Intelligence"
                     }
             ]
         },
@@ -190,31 +239,41 @@
                         "assignment": "Pre-Assignment", 
                         "score": 10, 
                         "outOf": 10,
-                        "comment": "Great work!"
+                        "dueDate": "April 18, 2019 00:00:00",
+                        "comment": "Great work!",
+                        "class": "Measuring Results From Training"
                     }, 
                     {
                         "assignment": "Quiz Questions", 
                         "score": 44,
                         "outOf": 50,
-                        "comment": "Nice work! -3 on question 3. -3 on question 6."
+                        "dueDate": "April 23, 2019 00:00:00",
+                        "comment": "Nice work! -3 on question 3. -3 on question 6.",
+                        "class": "Measuring Results From Training"
                     }, 
                     {
                         "assignment": "Test Questions", 
-                        "score": 98,
+                        "score": "-",
                         "outOf": 100,
-                        "comment": "Good job on test one. -2 on question 30."
+                        "dueDate": "May 18, 2019 00:00:00",
+                        "comment": "",
+                        "class": "Measuring Results From Training"
                     }, 
                     {
                         "assignment": "Evaluation Plan", 
                         "score": 48,
                         "outOf": 50,
-                        "comment": "Very impressive work."
+                        "dueDate": "April 24, 2019 00:00:00",
+                        "comment": "Very impressive work.",
+                        "class": "Measuring Results From Training"
                     }, 
                     {
                         "assignment": "Learning Journal", 
-                        "score": 30,
+                        "score": "-",
                         "outOf": 30,
-                        "comment": "Enjoyed reading this!"
+                        "dueDate": "April 28, 2019 00:00:00",
+                        "comment": "",
+                        "class": "Measuring Results From Training"
                     }
             ]
         },
@@ -225,31 +284,41 @@
                         "assignment": "Pre-Assignment", 
                         "score": 10, 
                         "outOf": 10,
-                        "comment": "Good job. Keep it up!"
+                        "dueDate": "April 18, 2019 00:00:00",
+                        "comment": "Good job. Keep it up!",
+                        "class": "Negotiation Skills"
                     }, 
                     {
                         "assignment": "Quiz Questions", 
                         "score": 47,
                         "outOf": 50,
-                        "comment": "Nice work! -3 on question 3."
+                        "dueDate": "April 23, 2019 00:00:00",
+                        "comment": "Nice work! -3 on question 3.",
+                        "class": "Negotiation Skills"
                     }, 
                     {
                         "assignment": "Test Questions", 
-                        "score": 92,
+                        "score": "-",
                         "outOf": 100,
-                        "comment": "Good job on test one. -2 on question 22. -2 on question 30. -2 on question 35. -2 on question 48."
+                        "dueDate": "May 18, 2019 00:00:00",
+                        "comment": "",
+                        "class": "Negotiation Skills"
                     }, 
                     {
                         "assignment": "Communication Management Plan", 
                         "score": 42,
                         "outOf": 50,
-                        "comment": "Good work but missig field for communication vehicle and stakeholder role."
+                        "dueDate": "April 24, 2019 00:00:00",
+                        "comment": "Good work but missig field for communication vehicle and stakeholder role.",
+                        "class": "Negotiation Skills"
                     }, 
                     {
                         "assignment": "Learning Journal", 
-                        "score": 30,
+                        "score": "-",
                         "outOf": 30,
-                        "comment": "Excellent"
+                        "dueDate": "April 28, 2019 00:00:00",
+                        "comment": "",
+                        "class": "Negotiation Skills"
                     }
             ]
         }
@@ -265,31 +334,41 @@
                         "assignment": "Pre-Assignment", 
                         "score": 0, 
                         "outOf": 10,
-                        "comment": "Student did not submit"
+                        "dueDate": "April 18, 2019 00:00:00",
+                        "comment": "Student did not submit",
+                        "class": "Creative Problem Solving"
                     }, 
                     {
                         "assignment": "Quiz Questions", 
                         "score": 0, 
                         "outOf": 50,
-                        "comment": "Student missed every single question"
+                        "dueDate": "April 23, 2019 00:00:00",
+                        "comment": "Student missed every single question",
+                        "class": "Creative Problem Solving"
                     }, 
                     {
                         "assignment": "Test Questions", 
-                        "score": 6, 
+                        "score": "-", 
                         "outOf": 100,
-                        "comment": "What happened here Kellen?"
+                        "dueDate": "May 18, 2019 00:00:00",
+                        "comment": "",
+                        "class": "Creative Problem Solving"
                     }, 
                     {
                         "assignment": "Evaluation Plan", 
                         "score": 8, 
                         "outOf": 30,
-                        "comment": "Incomplete."
+                        "dueDate": "April 24, 2019 00:00:00",
+                        "comment": "What happened here Kellen?",
+                        "class": "Creative Problem Solving"
                     }, 
                     {
                         "assignment": "Learning Journal", 
-                        "score": 30, 
+                        "score": "-",
                         "outOf": 30,
-                        "comment": "Well done!"
+                        "dueDate": "April 28, 2019 00:00:00",
+                        "comment": "",
+                        "class": "Creative Problem Solving"
                     }
             ]
         },
@@ -300,31 +379,41 @@
                         "assignment": "Pre-Assignment", 
                         "score": 10, 
                         "outOf": 10,
-                        "comment": "Good job on assignment #1 Kellen"
+                        "dueDate": "April 18, 2019 00:00:00",
+                        "comment": "Good job on assignment #1 Kellen",
+                        "class": "Negotiation Skills"
                     }, 
                     {
                         "assignment": "Quiz Questions", 
                         "score": 46, 
                         "outOf": 50,
-                        "comment": "-2 on question 4. -2 on question 7."
+                        "dueDate": "April 23, 2019 00:00:00",
+                        "comment": "-2 on question 4. -2 on question 7.",
+                        "class": "Negotiation Skills"
                     }, 
                     {
                         "assignment": "Test Questions", 
-                        "score": 94, 
+                        "score": "-", 
                         "outOf": 100,
-                        "comment": "-2 on question 15. -2 on question 28. -2 on question 31."
+                        "dueDate": "May 18, 2019 00:00:00",
+                        "comment": "",
+                        "class": "Negotiation Skills"
                     },
                     {
                         "assignment": "Communication Management Plan", 
                         "score": 45,
                         "outOf": 50,
-                        "comment": "Nice work Kellen. Lacked some detail in part 2."
+                        "dueDate": "April 24, 2019 00:00:00",
+                        "comment": "Nice work Kellen. Lacked some detail in part 2.",
+                        "class": "Negotiation Skills"
                     }, 
                     {
                         "assignment": "Learning Journal", 
-                        "score": 30,
+                        "score": "-",
                         "outOf": 30,
-                        "comment": "Enjoyed reading about what you took away from the lesson plans!"
+                        "dueDate": "April 28, 2019 00:00:00",
+                        "comment": "",
+                        "class": "Negotiation Skills"
                     }
             ]
         }
@@ -340,32 +429,42 @@
                         "assignment": "Pre-Assignment", 
                         "score": 10,
                         "outOf": 10,
-                        "comment": "Nice job."
+                        "dueDate": "April 18, 2019 00:00:00",
+                        "comment": "Nice job.",
+                        "class": "Negotiation Skills"
                     }, 
                     {
                         "assignment": "Quiz Questions", 
                         "score": 48,
                         "outOf": 50,
-                        "comment": "Well done. -2 on question 7."
+                        "dueDate": "April 23, 2019 00:00:00",
+                        "comment": "Well done. -2 on question 7.",
+                        "class": "Negotiation Skills"
                     }, 
                     {
                         "assignment": "Test Questions", 
-                        "score": 98,
+                        "score": "-",
                         "outOf": 100,
-                        "comment": "Excellent work Johnathan! -2 on question 42."
+                        "dueDate": "May 18, 2019 00:00:00",
+                        "comment": "",
+                        "class": "Negotiation Skills" 
 
                     }, 
                     {
                         "assignment": "Communication Management Plan", 
                         "score": 45,
                         "outOf": 50,
-                        "comment": "Good work but missing a field for the stakeholder role"
+                        "dueDate": "April 24, 2019 00:00:00",
+                        "comment": "Good work but missing a field for the stakeholder role",
+                        "class": "Negotiation Skills"
                     }, 
                     {
                         "assignment": "Learning Journal", 
-                        "score": 30,
+                        "score": "-",
                         "outOf": 30,
-                        "comment": "Nice reflection."
+                        "dueDate": "April 28, 2019 00:00:00",
+                        "comment": "",
+                        "class": "Negotiation Skills"
                     }
             ]
         }
@@ -381,34 +480,41 @@
                         "assignment": "Pre-Assignment", 
                         "score": 10,
                         "outOf": 10,
-                        "comment": "Nice work Natalie."
-
+                        "dueDate": "April 18, 2019 00:00:00",
+                        "comment": "Nice work Natalie.",
+                        "class": "Emotional Intelligence"
                     }, 
                     {
                         "assignment": "Quiz Questions", 
                         "score": 41,
                         "outOf": 50,
-                        "comment": "Good job on quiz one. -5 on question 3. -2 on question 4. -2 on question 9."
-
+                        "dueDate": "April 23, 2019 00:00:00",
+                        "comment": "Good job on quiz one. -5 on question 3. -2 on question 4. -2 on question 9.",
+                        "class": "Emotional Intelligence"
                     }, 
                     {
                         "assignment": "Test Questions", 
-                        "score": 92,
+                        "score": "-",
                         "outOf": 100,
-                        "comment": "-2 on question 2. -2 on question 14. -2 on question 19. -2 on question 35."
-
+                        "dueDate": "May 18, 2019 00:00:00",
+                        "comment": "",
+                        "class": "Emotional Intelligence"
                     }, 
                     {
                         "assignment": "Emotional Awareness Activity",
                         "score": 49,
                         "outOf": 50,
-                        "comment": "Excellent work Natalie!!"
+                        "dueDate": "April 24, 2019 00:00:00",
+                        "comment": "Excellent work Natalie!!",
+                        "class": "Emotional Intelligence"
                     }, 
                     {
                         "assignment": "Learning Journal", 
-                        "score":21,
+                        "score": "-",
                         "outOf": 30,
-                        "comment": "Missing 2 journal entries"
+                        "dueDate": "April 28, 2019 00:00:00",
+                        "comment": "",
+                        "class": "Emotional Intelligence"
                     }
             ]
         },
@@ -419,31 +525,41 @@
                         "assignment": "Pre-Assignment", 
                         "score": 10,
                         "outOf": 10,
-                        "comment": "Well done!"
+                        "dueDate": "April 18, 2019 00:00:00",
+                        "comment": "Well done!",
+                        "class": "Measuring Results From Training"
                     }, 
                     {
                         "assignment": "Quiz Questions", 
                         "score": 34,
                         "outOf": 50,
-                        "comment": "-5 on question 1. -5 on question 4. -5 on question 7. -1 on question 8."
+                        "dueDate": "April 23, 2019 00:00:00",
+                        "comment": "-5 on question 1. -5 on question 4. -5 on question 7. -1 on question 8.",
+                        "class": "Measuring Results From Training"
                     }, 
                     {
                         "assignment": "Test Questions", 
-                        "score": 98,
+                        "score": "-",
                         "outOf": 100,
-                        "comment": "Wow! Nice job Natalie. -2 on question 13."
+                        "dueDate": "May 18, 2019 00:00:00",
+                        "comment": "",
+                        "class": "Measuring Results From Training"
                     }, 
                     {
                         "assignment": "Evaluation Plan", 
                         "score": 49,
                         "outOf": 50,
-                        "comment": "-1 for late submission."
+                        "dueDate": "April 24, 2019 00:00:00",
+                        "comment": "-1 for late submission.",
+                        "class": "Measuring Results From Training"
                     }, 
                     {
                         "assignment": "Learning Journal", 
-                        "score": 30,
+                        "score": "-",
                         "outOf": 30,
-                        "comment": "Thorough reflection. Well done."
+                        "dueDate": "April 28, 2019 00:00:00",
+                        "comment": "",
+                        "class": "Measuring Results From Training"
                     }
             ]
         },
@@ -454,31 +570,41 @@
                         "assignment": "Pre-Assignment", 
                         "score": 10,
                         "outOf": 10,
-                        "comment": "Good job Natalie!"
+                        "dueDate": "April 18, 2019 00:00:00",
+                        "comment": "Good job Natalie!",
+                        "class": "Negotiation Skills"
                     }, 
                     {
                         "assignment": "Quiz Questions", 
                         "score": 44,
                         "outOf": 50,
-                        "comment": "Nice work. -3 on question 6. -3 on question 9."
+                        "dueDate": "April 23, 2019 00:00:00",
+                        "comment": "Nice work. -3 on question 6. -3 on question 9.",
+                        "class": "Negotiation Skills"
                     }, 
                     {
                         "assignment": "Test Questions", 
-                        "score": 94,
+                        "score": "-",
                         "outOf": 100,
-                        "comment": "Great job! -2 on question 1. -2 on question 17. -2 on question 34."
+                        "dueDate": "May 18, 2019 00:00:00",
+                        "comment": "",
+                        "class": "Negotiation Skills"
                     }, 
                     {
                         "assignment": "Communication Management Plan", 
                         "score": 49,
                         "outOf": 50,
-                        "comment": "Very impressed with this assignment Natalie. Keep it up."
+                        "dueDate": "April 24, 2019 00:00:00",
+                        "comment": "Very impressed with this assignment Natalie. Keep it up.",
+                        "class": "Negotiation Skills"
                     }, 
                     {
                         "assignment": "Learning Journal", 
-                        "score": 30,
+                        "score": "-",
                         "outOf": 30,
-                        "comment": "Can tell you put in effort - well done."
+                        "dueDate": "April 28, 2019 00:00:00",
+                        "comment": "",
+                        "class": "Negotiation Skills"
                     }
             ]
         }

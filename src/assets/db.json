@@ -25,7 +25,7 @@
           "id": 3,
           "title": "Test Questions",
           "description": "Please answer the test questions listed in the attached file. This will be worth 100 points of your final grade.",
-          "dueDate": "May 18, 2019 00:00:00",
+          "dueDate": "April 23, 2019 00:00:00",
           "points": 100,
           "type": "Test",
           "class": "Creative Problem Solving"
@@ -58,7 +58,9 @@
           "postDate": "January 28, 2019 00:00:00",
           "class": "Creative Problem Solving"
         }
-      ]
+      ],
+      "instructor": "Bert Robinson",
+      "term": "Spring 2019"
     },
     {
       "title": "Negotiation Skills",
@@ -76,7 +78,7 @@
           "id": 2,
           "title": "Quiz Questions",
           "description": "Please complete the quiz questions listed in the attached file. This will be worth 50 points.",
-          "dueDate": "May 1, 2019 00:00:00",
+          "dueDate": "April 23, 2019 00:00:00",
           "points": 50,
           "type": "Quiz",
           "class": "Negotiation Skills"
@@ -118,7 +120,9 @@
           "postDate": "January 28, 2019 00:00:00",
           "class": "Negotiation Skills"
         }
-      ]
+      ],
+      "instructor": "Bert Robinson",
+      "term": "Spring 2019"
     },
     {
       "title": "Critical Thinking",
@@ -136,7 +140,7 @@
           "id": 2,
           "title": "Quiz Questions",
           "description": "Please complete the quiz questions listed in the attached file. This will be worth 50 points.",
-          "dueDate": "May 1, 2019 00:00:00",
+          "dueDate": "April 23, 2019 00:00:00",
           "points": 50,
           "type": "Quiz",
           "class": "Critical Thinking"
@@ -178,7 +182,9 @@
           "postDate": "January 28, 2019 00:00:00",
           "class": "Critical Thinking"
         }
-      ]
+      ],
+      "instructor": "Bert Robinson",
+      "term": "Spring 2019"
     },
     {
       "title": "Emotional Intelligence",
@@ -196,7 +202,7 @@
           "id": 2,
           "title": "Quiz Questions",
           "description": "Please complete the quiz questions listed in the attached file. This will be worth 50 points.",
-          "dueDate": "May 1, 2019 00:00:00",
+          "dueDate": "April 23, 2019 00:00:00",
           "points": 50,
           "type": "Quiz",
           "class": "Emotional Intelligence"
@@ -238,7 +244,9 @@
           "postDate": "January 28, 2019 00:00:00",
           "class": "Critical Thinking"
         }
-      ]
+      ],
+      "instructor": "Bert Robinson",
+      "term": "Spring 2019"
     },
     {
       "title": "Measuring Results From Training",
@@ -256,7 +264,7 @@
           "id": 2,
           "title": "Quiz Questions",
           "description": "Please complete the quiz questions listed in the attached file. This will be worth 50 points.",
-          "dueDate": "May 1, 2019 00:00:00",
+          "dueDate": "April 23, 2019 00:00:00",
           "points": 50,
           "type": "Quiz",
           "class": "Measuring Results From Training"
@@ -298,7 +306,9 @@
           "postDate": "January 28, 2019 00:00:00",
           "class": "Measuring Results From Training"
         }
-      ]
+      ],
+      "instructor": "Bert Robinson",
+      "term": "Spring 2019"
     }
   ]
 }
