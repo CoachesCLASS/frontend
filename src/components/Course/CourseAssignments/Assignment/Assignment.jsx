@@ -68,13 +68,13 @@ function Assignment(props) {
             <p id="assignmentInfo">{assignmentName}
               <input id="button-file" type="file" accept={accept} style={{display: "none"}} onChange={ (e) => handleChange(e.target.files) }/> 
               <label htmlFor="button-file" id="submitButton"> 
-                <Button raised component="span" variant="contained" size="large" color="primary"> 
+                <Button raised component="span" variant="contained" size="small" color="primary"> 
                   Submit Assignment
                 </Button> 
               </label> 
             </p>
             <hr className="line" />
-            <p><span id="date"><span id="emphasize">Due</span> {dueDate}</span><span id="points"><span id="emphasize">Points</span> {points}</span><span id="submitting"><span id="emphasize">Submitting</span> a PDF file</span></p>
+            <p><span id="date"><span id="emphasize">Due</span> {dueDate.substring(0,15)}</span><span id="points"><span id="emphasize">Points</span> {points}</span><span id="submitting"><span id="emphasize">Submitting</span> a PDF file</span></p>
             <hr className="line" />
             <p id="assignmentTitle">
             {assignmentName}

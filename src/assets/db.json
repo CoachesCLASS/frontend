@@ -16,7 +16,7 @@
           "id": 2,
           "title": "Quiz Questions",
           "description": "Please complete the quiz questions listed in the attached file. This will be worth 50 points.",
-          "dueDate": "May 1, 2019 00:00:00",
+          "dueDate": "April 23, 2019 00:00:00",
           "points": 50,
           "type": "Quiz",
           "class": "Creative Problem Solving"
@@ -25,7 +25,7 @@
           "id": 3,
           "title": "Test Questions",
           "description": "Please answer the test questions listed in the attached file. This will be worth 100 points of your final grade.",
-          "dueDate": "April 23, 2019 00:00:00",
+          "dueDate": "May 18, 2019 00:00:00",
           "points": 100,
           "type": "Test",
           "class": "Creative Problem Solving"

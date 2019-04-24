@@ -44,17 +44,17 @@ function AssignmentList(props) {
         <ul className="list">
           <li>
             <Grid container xs={12} className="courseEntry">
-              <Grid item xs={4}>
+              <Grid item xs={7}>
                 <Typography variant="subtitle2" color="inherit">
                   Title
                 </Typography>
               </Grid>
-              <Grid item xs={4}>
+              <Grid item xs={3}>
                 <Typography variant="subtitle2" color="inherit">
                   Due Date
                 </Typography>
               </Grid>
-              <Grid item xs={4}>
+              <Grid item xs={2}>
                 {props.title === "Past" && (
                   <Typography variant="subtitle2" color="inherit">
                     Score
@@ -66,7 +66,7 @@ function AssignmentList(props) {
             {assignments.map(assignment => (
               <li>
                 <Grid container xs={12} className="courseEntry">
-                  <Grid item xs={4}>
+                  <Grid item xs={7}>
                   <NavLink
                     to={"/CourseAssignments/" + props.courseName + "/" +  assignment.title}
                     className="navLink"
@@ -76,12 +76,12 @@ function AssignmentList(props) {
                     </Typography>
                   </NavLink>
                   </Grid>
-                  <Grid item xs={4}>
+                  <Grid item xs={3}>
                     <Typography variant="body2" color="inherit">
                       {assignment.dueDate.substring(0,15)}
                     </Typography>
                   </Grid>
-                  <Grid item xs={4}>
+                  <Grid item xs={2}>
                     {props.title === "Past" && (
                       <Typography variant="body2" color="inherit">
                         {assignment.points}

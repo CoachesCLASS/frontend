@@ -37,8 +37,8 @@ function NotificationPanel(props) {
     for (var j = 0; j < assignments.length; j++) {
       var obj = assignments[j];
       var dueDate = new Date(obj.dueDate);
-      if ((numDaysBetween(dueDate.getTime(),date.getTime()) >= 0 ) && (numDaysBetween(dueDate.getTime(),date.getTime()) <= 3) ) {
-          comingUp.push(obj);
+      if ((numDaysBetween(dueDate.getTime(),date.getTime()) >= 0 ) && (numDaysBetween(dueDate.getTime(),date.getTime()) <= 5) ) {
+        comingUp.push(obj);
       }
     }
   }
