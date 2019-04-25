@@ -9,8 +9,19 @@ import { Switch, Route } from 'react-router-dom'
 import PasswordSettings from "./SettingsPages/PasswordSettings";
 import BillingSettings from "./SettingsPages/BillingSettings";
 import SubscriptionSettings from "./SettingsPages/SubscriptionSettings";
+import userData from "../../assets/users.json"
+import { connect } from "react-redux"
+
+const mapStateToProps = (state) => {
+  return {
+    userId: state.userId.id,
+  }
+}
 
 function UserSettings(props) {
+  const user = userData.find(x => x.id === props.userId)
+  console.log(user)
+
   return (
     <>
       <Grid
@@ -21,7 +32,7 @@ function UserSettings(props) {
       >
         <Grid item xs={3}>
           <Grid container className="mainImg" justify="center">
-            <Avatar title="Natalie Ryan" initial="N" />
+            <Avatar title={user.name} initial={user.name.substring(0,1)} />
             <Grid item>
               <div
                 style={{
@@ -61,4 +72,4 @@ function UserSettings(props) {
   );
 }
 
-export default UserSettings;
+export default connect(mapStateToProps)(UserSettings);

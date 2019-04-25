@@ -8,7 +8,6 @@ import Tab from "@material-ui/core/Tab";
 import Grid from "@material-ui/core/Grid/Grid";
 import { NavLink, withRouter } from "react-router-dom";
 import logo from "../../assets/CC Logo.png";
-import {connect} from 'react-redux';
 
 const navTabs = [
   {
@@ -36,11 +35,15 @@ function SimpleAppBar(props) {
     pathname.indexOf("/", 1) > 0 ? pathname.indexOf("/", 1) : pathname.length;
   const val = pathname.substr(0, secondSlashIdx);
 
+  const handleToolbarClick = () => {
+    props.history.push("/UserDashboard")
+  }
+
   return (
     <AppBar position="fixed" color="primary">
       <Grid container direction="row" spacing={0} className="pt-2">
         <Grid item xs={6}>
-          <Toolbar className="p-0">
+          <Toolbar className="p-0" onClick={handleToolbarClick}>
             <img
               src={logo}
               alt=""

@@ -1,12 +1,8 @@
-// MyApp.js
 import React, { Component } from 'react';
 import {ArrowBackIos, ArrowForwardIos} from '@material-ui/icons';
 import {IconButton, Grid} from '@material-ui/core';
 import FileViewer from 'react-file-viewer';
 import { Document, Page } from 'react-pdf';
-
-import file from '../../assets/Emotional Intelligence/01-Training Manual/Training Manual.docx';
-const type = 'docx'
 
 class ContentRenderer extends Component {
 
@@ -32,15 +28,22 @@ class ContentRenderer extends Component {
     }
 
     render() {
-        if(type==='docx'){
+        const file = require(`../../assets/${this.props.filePath}`)
+        const fileType = this.props.filePath.substring(this.props.filePath.lastIndexOf(".") + 1)
+        console.log(fileType)
+
+        if (fileType === "doc") {
+            return (<p>File format not supported</p>)
+        }
+        else if (fileType === 'docx'){
             return (
                 <FileViewer
-                    fileType='docx'
+                    fileType="docx"
                     filePath={file}
                 />
             );
         }
-        else if(type ==='pdf'){
+        else if(fileType ==='pdf'){
             const { pageNumber, numPages } = this.state;
             return (
                 <Grid container alignItems="center" justify="center">

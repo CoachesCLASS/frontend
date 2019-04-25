@@ -3,10 +3,8 @@ import { Grid, Button } from "@material-ui/core";
 import "./assignment.scss";
 import Typography from "@material-ui/core/Typography/Typography";
 import Paper from "@material-ui/core/Paper";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import ContentRenderer from "../../../ContentRenderer/ContentRenderer";
-import { Home } from "@material-ui/icons";
-import { renderComponent } from "recompose";
 import HiddenContent from "../../../ContentRenderer/HiddenContent";
 import {connect} from 'react-redux';
 
@@ -32,7 +30,7 @@ function Assignment(props) {
   var dueDate;
   var points; 
   var description;
-  //var fileType;
+  var file;
   for (var i = 0; i < data.courses.length; i++) {
     var title = data.courses[i].title;
     if(title === courseName){
@@ -43,7 +41,7 @@ function Assignment(props) {
           dueDate = obj.dueDate;
           points = obj.points;
           description = obj.description;
-         // fileType = obj.fileType;
+         file = obj.file;
         }
       }
     }
@@ -81,6 +79,8 @@ function Assignment(props) {
             </p>
             <p id="desc">
               {description}
+              <br></br>
+              <Link to={"/CourseFiles/" + courseName + "/FileView/" + file}>{file}</Link>
             </p>
         
         </Paper>

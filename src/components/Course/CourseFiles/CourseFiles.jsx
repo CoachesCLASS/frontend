@@ -1,14 +1,17 @@
 import React from "react";
-import { Grid } from "@material-ui/core";
+import { Grid, ListItem, ListItemAvatar, ListItemText, Avatar as MuiAvatar, List } from "@material-ui/core";
 import "./courseFiles.scss";
 import Typography from "@material-ui/core/Typography/Typography";
 import Avatar from "../../UserSettings/Avatar/Avatar";
 import Paper from "@material-ui/core/Paper";
-import { NavLink } from "react-router-dom";
-import SaveAltIcon from "@material-ui/icons/SaveAlt";
+import { NavLink, Link } from "react-router-dom";
+import { SaveAlt as SaveAltIcon, Folder as FolderIcon } from "@material-ui/icons";
 import IconButton from "@material-ui/core/IconButton";
+import data from "../../../assets/db.json"
 
 function CourseFiles(props) {
+  const files = data.courses.find(x => x.title === props.match.params.courseName).files
+
   return (
     <>
       <div className="wrapper">
@@ -43,34 +46,22 @@ function CourseFiles(props) {
           </NavLink>
         </Grid>
         <Paper className="fileContainer">
-          <ul style={{ listStyle: "none", paddingLeft: "0px" }}>
-            <li>
-              <Grid container direction="row">
-                <IconButton
-                  style={{
-                    margin: "0px 5px 0px 0px",
-                    padding: "0px 3px 0px 3px"
-                  }}
-                >
-                  <SaveAltIcon />
-                </IconButton>
-                <div style={{ padding: "4px" }}>
-                  <NavLink
-                    to={"/CourseFiles/" + props.match.params.courseName +  "/FileView"}
-                    className="navLink"
-                  >
-                    <Typography
-                      variant="body2"
-                      component="h3"
-                      style={{ margin: "auto" }}
-                    >
-                      Powerpoint 1
-                    </Typography>
-                  </NavLink>
-                </div>
-              </Grid>
-            </li>
-          </ul>
+          <List>
+            {
+              files.map(fileName => (
+                <ListItem key={fileName}>
+                  <ListItemAvatar>
+                    <MuiAvatar>
+                      <SaveAltIcon />
+                    </MuiAvatar>
+                  </ListItemAvatar>
+                  <Link to={"/CourseFiles/" + props.match.params.courseName + "/FileView/" + fileName}>
+                    <ListItemText primary={fileName} className="px-3"/>
+                  </Link>
+                </ListItem>
+              ))
+            }
+          </List>
         </Paper>
       </div>
     </>

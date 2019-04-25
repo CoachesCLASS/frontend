@@ -5,29 +5,26 @@ import SimpleAppBar from "../../SimpleAppBar/SimpleAppBar";
 import Paper from "@material-ui/core/Paper";
 import ContentRenderer from "../../ContentRenderer/ContentRenderer";
 import Typography from "@material-ui/core/Typography/Typography";
-import { NavLink } from "react-router-dom";
-
+import { withRouter } from "react-router-dom";
+import { makeStyles} from "@material-ui/styles"
 
 function FileView(props) {
-  return (
+    const handleBackClick = () => {
+        props.history.goBack()
+    }
+
+    return (
         <>
         <SimpleAppBar title="Coaches C.L.A.S.S." value={2} />
         <div className="wrapper">
-            <Grid
-                container
-            >
-                <NavLink
-                    to={"/CourseFiles/" + props.match.params.courseName + "/" + props.match.params.userId}
-                    className="navLink"
-                >
-                    <Typography className="navtab">Back</Typography>
-                </NavLink>
+            <Grid container>
+                  <Typography className="navtab" onClick={handleBackClick}>Back</Typography>
             </Grid>
             <Grid>
                 <Paper className="fileContainer">
-                    <h1>Training Manual</h1>
+                      <h2>{props.match.params.fileName}</h2>
                     <hr/>
-                    <ContentRenderer></ContentRenderer>
+                      <ContentRenderer filePath={`${props.match.params.courseName}/${props.match.params.fileName}`}></ContentRenderer>
                 </Paper>
             </Grid>
         </div>
@@ -35,4 +32,4 @@ function FileView(props) {
     );
 }
 
-export default FileView;
+export default withRouter(FileView);
