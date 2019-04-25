@@ -6,7 +6,7 @@ import Paper from "@material-ui/core/Paper";
 import { NavLink, Link } from "react-router-dom";
 import ContentRenderer from "../../../ContentRenderer/ContentRenderer";
 import HiddenContent from "../../../ContentRenderer/HiddenContent";
-import {connect} from 'react-redux';
+import { connect } from 'react-redux';
 
 var accept = ".pdf";
 var data = require("../../../../assets/db.json");
@@ -19,8 +19,7 @@ const mapStateToProps = (state) => {
 }
 
 function handleChange(selectorFiles: FileList){
-  alert("File " + selectorFiles[0]["name"] + " Submitted!");
-  console.log(selectorFiles);    
+  alert("File " + selectorFiles[0]["name"] + " Submitted!");  
 }
 
 function Assignment(props) {
@@ -88,8 +87,14 @@ function Assignment(props) {
         <Grid className="assignmentContainer" spacing={2}>
         <Paper>
           
-        </Paper>
-            <HiddenContent></HiddenContent>
+          </Paper>
+          {
+            file && (
+              <HiddenContent>
+                <ContentRenderer filePath={`${courseName}/${file}`}/>
+              </HiddenContent>
+            )
+          }
         </Grid>
       </div>
     </>

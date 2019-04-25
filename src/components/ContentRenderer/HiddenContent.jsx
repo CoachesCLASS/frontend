@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Grid, Button } from "@material-ui/core";
 import "./content.scss";
-import ContentRenderer from "./ContentRenderer"
 
 var showHide = "Show"
 
@@ -30,7 +29,7 @@ class HiddenContent extends Component {
                 {showHide} Attachment
               </Button> 
             <div id="showContent" >
-                {!this.state.isHidden && <ContentRenderer></ContentRenderer>}
+                {!this.state.isHidden && this.props.children}
             </div>
         </div>
       )

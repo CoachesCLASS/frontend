@@ -20,8 +20,7 @@ const mapStateToProps = (state) => {
 
 function UserSettings(props) {
   const user = userData.find(x => x.id === props.userId)
-  console.log(user)
-
+  
   return (
     <>
       <Grid

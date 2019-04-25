@@ -30,7 +30,6 @@ class ContentRenderer extends Component {
     render() {
         const file = require(`../../assets/${this.props.filePath}`)
         const fileType = this.props.filePath.substring(this.props.filePath.lastIndexOf(".") + 1)
-        console.log(fileType)
 
         if (fileType === "doc") {
             return (<p>File format not supported</p>)

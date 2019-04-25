@@ -81,20 +81,15 @@ function SignIn(props) {
   
   function submit()
   {
-    console.log(email, password)
-
      for(var u = 0; u < users.length; u++)
      {
-       console.log(users[u].email, users[u].password)
         if(email === users[u].email && password === users[u].password) 
         {
-          console.log(true)
           props.setId(users[u].id)
           props.setIsInstructor(users[u].admin)
           return { newPath: "/UserDashboard"}
         }
      }
-     console.log(false)
      return { newPath: "/login" }
      
   }
